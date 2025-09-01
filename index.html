@@ -1214,7 +1214,7 @@
             </svg>
         </button>
 
-        <div class="start-title">Parasitology</div>
+        <div class="start-title">Anatomy</div>
           <div class="leaderboard">
             <ol id="boardList" style="list-style:decimal inside; padding:0;"></ol>
           </div>
@@ -1226,14 +1226,7 @@
       <div class="dropdown-menu">
           <button class="dropdown-toggle start-button">單元</button>
           <div class="dropdown-content">
-              <button class="dropdown-item" data-json="egg.json">蟲卵</button>
-              <button class="dropdown-item" data-json="線蟲.json">線蟲</button>
-              <button class="dropdown-item" data-json="吸蟲.json">吸蟲</button>
-              <button class="dropdown-item" data-json="絛蟲.json">絛蟲</button>
-              <button class="dropdown-item" data-json="原蟲.json">原蟲</button>
-              <button class="dropdown-item" data-json="舌蟲、蛭類、節肢動物.json">舌蟲、蛭類、節肢動物</button>
-              <button class="dropdown-item" data-json="form.json">型態</button>
-              <button class="dropdown-item" data-json="eng.json">English</button>
+              <button class="dropdown-item" data-json="bones.json">骨頭</button>
           </div>
       </div>
       <button id="openDoc" class="start-button">題庫</button>
@@ -1845,7 +1838,6 @@
             }
 
             fetchLeaderboard();
-            showAlertModal("Cryptosporidium parvum 未收錄，擔心的話可以翻PPT");
             const leaderboardEl = document.querySelector('.leaderboard');
             if (leaderboardEl) {
                 leaderboardEl.addEventListener('click', function() {
