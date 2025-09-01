@@ -234,6 +234,78 @@ foramen rotundum, foramen ovale, foramen spinosum "
       "explanation": "所指部位已是spine沿升至glenoid 後方，為acromion。"
       "description":"紅色箭頭指的是什麼"
     },
-  
+   {
+      "num": "25",
+      "path": "images/image054.png",
+      "answer": [
+        "lesser trochanter of femur"
+      ],
+      "explanation": "此為背側觀，於內側(medial)的是lesser trochanter"
+      "description":"紅色箭頭指的是什麼"
+    },
+ {
+      "num": "26",
+      "path": "images/image056.png",
+      "answer": [
+        "anterior superior iliac spine"
+      ],
+      "explanation": "此為右邊pelvis，位於外側上方的突起是 Anterior superior iliac spine 
+(a.s.i.s.)"
+      "description":"紅色箭頭指的是什麼"
+    },
+   {
+      "num": "27",
+      "path": "images/image058.png",
+      "answer": [
+        "ischial tuberosity"
+      ],
+      "explanation": "此為左側 pelvis的背後觀，大大突起是 Ischial tuberosity"
+      "description":"紅色箭頭指的是什麼"
+    },
+  {
+      "num": "28",
+      "path": "images/image060.png",
+      "answer": [
+        "lateral pterygoid plate"
+      ],
+      "explanation": "此為Sphenoid的Posterior view, 可看到兩邊對稱共四片之 pterygoid plate；內外側分別稱為 Medial/Lateral pterygoid plate "
+      "description":"紅色箭頭指的是什麼"
+    },
+  {
+      "num": "29",
+      "path": "images/image062.png",
+      "answer": [
+        "supinator crest of ulna"
+      ],
+      "explanation": "Olceranon 下方、Radial notch旁，靠 lateral側之突起即為 Supinator crest"
+      "description":"箭頭指的是什麼"
+    },
+  {
+      "num": "30",
+      "path": "images/image064.png",
+      "answer": [
+        "superior articular process"
+      ],
+      "explanation": "脊椎骨連接上下之突起即為 articular process"
+      "description":"紅色箭頭指的是什麼"
+    },
+    {
+      "num": "31",
+      "path": "images/image066.png",
+      "answer": [
+        "xiphoid process"
+      ],
+      "explanation": "胸骨最下端之突起即為 Xiphoid process"
+      "description":"紅色箭頭指的是什麼"
+    },
+  {
+      "num": "32",
+      "path": "images/image068.png",
+      "answer": [
+        "abdominal aorta"
+      ],
+      "explanation": "腹部最粗的動脈"
+      "description":"紅色箭頭指的是什麼"
+    },
   
 ]
