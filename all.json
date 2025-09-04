@@ -77,7 +77,7 @@
     "answer": [
       "lumbar vertebrae"
     ],
-    "explanation": " 可以由以下幾個較明顯的依據判斷該圖為lumbar vertebrae： 1. Vertebral body 比 vertebral foramen 大許多(個人認為是最主要的判斷依據) 2. Spinous p[...]",
+    "explanation": " 可以由以下幾個較明顯的依據判斷該圖為lumbar vertebrae： 1. Vertebral body 比 vertebral foramen 大許多(個人認為是最主要的判斷依據) 2. Spinous process 為片狀、平行四邊形的 Transverse process 變短 ",
     "description": "這是頸椎、胸椎還是腰椎(寫英文)"
   },
   {
@@ -122,7 +122,7 @@
     "answer": [
       "conoid tubercle"
     ],
-    "explanation": "看到長條形的骨頭，兩邊接面平整，沒有大弧度 彎曲，可判斷為 clavicle。箭頭所指為 clavicle 跟 scapula 相接處，該物不是線狀凸起，因��[...]",
+    "explanation": "看到長條形的骨頭，兩邊接面平整，沒有大弧度 彎曲，可判斷為 clavicle。箭頭所指為 clavicle 跟 scapula 相接處，該物不是線狀凸起，因此可知不是Trapezoid line，是Conoid tubercle。",
     "description": "紅色箭頭指的是什麼"
   },
   {
@@ -194,7 +194,7 @@
     "answer": [
       "medial condyle of tibia"
     ],
-    "explanation": "由tibial tuberosity 推測出其為 tibia 的正面觀，再來觀察 tibia 下方的medial malleolus (這張圖片沒有下半部，但考試的時候可以看的到)，便可�[...]",
+    "explanation": "由tibial tuberosity 推測出其為 tibia 的正面觀，再來觀察 tibia 下方的medial malleolus (這張圖片沒有下半部，但考試的時候可以看的到)，便可知道該處的condyle為medial側",
     "description": "紅色框框內的是什麼"
   },
   {
@@ -293,7 +293,7 @@
     "answer": [
       "basilar artery"
     ],
-    "explanation": "Circle of Willis 匯入的血管來源有兩個，一是位於兩側邊的是兩條internal carotid artery，位於後側的是由兩條 vertebral artery 會合而成的basilar a[...]",
+    "explanation": "Circle of Willis 匯入的血管來源有兩個，一是位於兩側邊的是兩條internal carotid artery，位於後側的是由兩條 vertebral artery 會合而成的basilar artery ",
     "description": " 請問箭頭所指的血管為何"
   },
   {
@@ -338,7 +338,7 @@
     "answer": [
       "lamina"
     ],
-    "explanation": "Lamina 觀察到它位在脊椎骨的 transverse process 跟spinous process 之間，應該是 Lamina。Pedicle  是articular process 跟 body 中間那一段，兩者在此 圖�[...]",
+    "explanation": "Lamina 觀察到它位在脊椎骨的 transverse process 跟spinous process 之間，應該是 Lamina。Pedicle  是articular process 跟 body 中間那一段，兩者在此 圖中有相當距離。",
     "description": "白線蓋住的位置是什麼？"
   },
   {
