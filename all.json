@@ -431,5 +431,23 @@
     "explanation": "Aortic arch 的第一個分支，三個分支中最大且最右側，往上再分為 right subclavian、right common   carotid artery。",
     "description": "綠箭頭所指的為何"
   },
+  {
+    "num": "49",
+    "path": "midterm images/image105.png",
+    "answer": [
+      "supraspinous fossa"
+    ],
+    "explanation": "Supraspinous fossa 有 supraspinatus m.附著",
+    "description": "紅色區域為何"
+  },
+  {
+    "num": "50",
+    "path": "midterm images/image108.png",
+    "answer": [
+      "supraspinous fossa"
+    ],
+    "explanation": "Supraspinous fossa 有 supraspinatus m.附著",
+    "description": "紅色區域為何"
+  },
   
 ]
