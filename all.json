@@ -639,6 +639,70 @@
     "explanation": ""
     "description":"請問4號結構是？"
   },
+   {
+    "num": "72",
+    "path": "midterm images/image148.png",
+    "answer": [
+      "cervical vertebra"
+    ],
+    "explanation": "Vertebra區分可由facet面的方向，spinous process有無分岔等等來做判斷，由其 cervical 又具有transverse foramen，為重要特徵"
+    "description":"請問這是何種vertebra （be specific）？"
+  },
+  {
+    "num": "73",
+    "path": "midterm images/image150.png",
+    "answer": [
+      "dorsum sellae"
+    ],
+    "explanation": "構成 Sella turcica 的後側。"
+    "description":"請問箭頭尖端所指的構造？"
+  },
+   {
+    "num": "74",
+    "path": "midterm images/image152.png",
+    "answer": [
+      "greater sciatic notch"
+    ],
+    "explanation": "位於 Posterior inferior iliac spine 和 Ischial spine 之間的凹陷處。 "
+    "description":"請問4號結構是？"
+  },
+  {
+    "num": "75",
+    "path": "midterm images/image154.png",
+    "answer": [
+      "head of fibula"
+    ],
+    "explanation": "長這樣的關節只出現在膝蓋或手肘（至少這次範圍如此），注意到圖中被標色的骨頭沒有接到左邊的骨頭，因此可知道這應是膝關節，只有 tibia 跟 femur 相連，fibula 只靠在隔壁骨頭上。所問構造是它的 head，故應回答 head of fibula。 "
+    "description":"綠色構造為？"
+  },
+  {
+    "num": "76",
+    "path": "midterm images/image156.png",
+    "answer": [
+      "lesser tubercle of humerus "
+    ],
+    "explanation": "先判斷出這是 humerus。所指2號構造位在 head 偏前側，為 Lesser tubercle。注意 lesser tubercle 偏前側；greater 則偏外側。"
+    "description":"請問2號結構是？"
+  },
+  {
+    "num": "77",
+    "path": "midterm images/image158.png",
+    "answer": [
+      "spinous process"
+    ],
+    "explanation": ""
+    "description":"粉紅色構造是？"
+  },
+  {
+    "num": "78",
+    "path": "midterm images/image158.png",
+    "answer": [
+      "spinous process"
+    ],
+    "explanation": ""
+    "description":"粉紅色構造是？"
+  },
+  
   
   
 ]
