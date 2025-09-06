@@ -444,10 +444,201 @@
     "num": "50",
     "path": "midterm images/image108.png",
     "answer": [
-      "supraspinous fossa"
+      "sella turcica",
+      "hypophyseal fossa"
     ],
-    "explanation": "Supraspinous fossa 有 supraspinatus m.附著",
-    "description": "紅色區域為何"
+    "explanation": "Sphenoid Bone 由前面的突起 tuberculum sellae、後面的突起 dorsum sellae、以及中間 U 字形凹陷下去的 hypophyseal fossa(=pituitary fossa,垂體窩)所構成 ，為一個鞍型的凹槽結構。 hypophyseal fossa 內裝有腦垂體(pituitary gland)。",
+    "description": "中間馬鞍型凹槽為何"
   },
+  {
+    "num": "51",
+    "path": "midterm images/image110.png",
+    "answer": [
+      "coronoid process of ulna"
+    ],
+    "explanation": "Coronoid process of ulna 於手臂 flexion 時套進humerus 的 coronoid fossa ",
+    "description": "紅色圈圈內為何"
+  },
+  {
+    "num": "52",
+    "path": "midterm images/image112.png",
+    "answer": [
+      "azygos vein"
+    ],
+    "explanation": "Azygos vein 在 thorax 右側，回收 intercostal vein，向上注入 superior vena cava。",
+    "description": "最下面黑線所指的為什麼構造"
+  },
+  {
+    "num": "53",
+    "path": "midterm images/image114.png",
+    "answer": [
+      "deltoid tuberosity"
+    ],
+    "explanation": "從圖片中上方的 Head of humerus 可辨認出此為肱骨(Humerus)，而題目所指為骨頭中段的表面突起。",
+    "description": "白線所指的是什麼構造"
+  },
+  {
+    "num": "54",
+    "path": "midterm images/image116.png",
+    "answer": [
+      "acetabular notch"
+    ],
+    "explanation": "位於 Acetabulum 下方未完全閉合的缺口。",
+    "description": "紅色的是什麼構造"
+  },
+  {
+    "num": "55",
+    "path": "midterm images/image118.png",
+    "answer": [
+      "intertrochanteric crest"
+    ],
+    "explanation": "由圖片中上方球狀的 Head of femur 可辨別此為股骨(Femur)，左端和右端的突起處分別為 Greater trochanter 和 Lesser trochanter。",
+    "description": "黑線所指的是什麼構造"
+  },
+  {
+    "num": "56",
+    "path": "midterm images/image120.png",
+    "answer": [
+      "talus"
+    ],
+    "explanation": "為 inferior view of right talus。上面與 tibia、側邊與 calcaneus 相接",
+    "description": "這塊骨頭是什麼"
+  },
+  {
+    "num": "58",
+    "path": "midterm images/image122.png",
+    "answer": [
+      "iliac fossa"
+    ],
+    "explanation": "由形狀可知此為髂骨(Ilium)，且該凹窩和耳朵狀的薦椎關節接面(articular surface for sacrum)位於同一側。",
+    "description": "這個凹窩是什麼"
+  },
+  {
+    "num": "59",
+    "path": "midterm images/image124.png",
+    "answer": [
+      "tibial tuberosity"
+    ],
+    "explanation": "由照片中右方的 Medial malleolus 判斷為左腳脛骨。 ",
+    "description": "紅色箭頭所指的是什麼"
+  },
+  {
+    "num": "60",
+    "path": "midterm images/image126.png",
+    "answer": [
+      "medial pterygoid plate"
+    ],
+    "explanation": "先注意到這是從顱底往前上方看。此時看到的空間應該是咽部(pharynx)，圖片中央的兩個對稱孔洞即是鼻腔通到鼻咽的開口。位在鼻腔偏後方的 lateral wall，又有兩個分支的骨頭應是 sphenoid bone，靠內側的分支稱為 medial pterygoid plate。 ",
+    "description": "此鑷子指的構造？"
+  },
+  {
+    "num": "61",
+    "path": "midterm images/image128.png",
+    "answer": [
+      "atlas"
+    ],
+    "explanation": "特點: (1)沒有 vertebral body。 (2)沒有 spinous process (變成 posterior tubercle / arch)。 (3)整體似一圓圈,脊髓(Spinal cord)穿過中間。 ",
+    "description": "此骨頭？"
+  },
+  {
+    "num": "62",
+    "path": "midterm images/image130.png",
+    "answer": [
+      "inferior pubic ramus"
+    ],
+    "explanation": "用 Acetabulum 和 Obturator foramen 為參考點，題目所圈範圍包括 Inferior pubic ramus 和 Ramus of ischium。",
+    "description": "紅色圈圈內的構造"
+  },
+   {
+    "num": "63",
+    "path": "midterm images/image132.png",
+    "answer": [
+      "supraorbital foramen"
+    ],
+    "explanation": "從前方觀看(anterior view),位於眼框上緣偏內側的小凹陷(或孔洞) ",
+    "description": "箭頭所指的構造"
+  },
+  {
+    "num": "64",
+    "path": "midterm images/image134.png",
+    "answer": [
+      "popliteal vein"
+    ],
+    "explanation": ""
+    "description": "以下指的是什麼靜脈？"
+  },
+   {
+    "num": "65",
+    "path": "midterm images/image136.png",
+    "answer": [
+      "horizontal plate of palatine bone"
+    ],
+    "explanation": ""
+    "description": "紅框內構造名稱？"
+  },
+  {
+    "num": "66",
+    "path": "midterm images/image138.png",
+    "answer": [
+      "pulmonary trunk"
+    ],
+    "explanation": "先分辨心臟的上下左右前後，Pulmonary trunk 在基部會比aorta 更前方，基本上就是用相對位置與形狀判斷。"
+    "description": "紅色箭頭所指構造？"
+  },
+  {
+    "num": "67",
+    "path": "midterm images/image140.png",
+    "answer": [
+      "coronary sinus"
+    ],
+    "explanation": "直接注入 right atrium。"
+    "description": "此構造？"
+  },
+   {
+    "num": "68",
+    "path": "midterm images/image142.png",
+    "answer": [
+      "supraglenoid tubercle"
+    ],
+    "explanation": "首先應可判斷出這是右邊的 scapula。且 glenoid cavity 上方位置即是supraglenoid  tubercle。"
+    "description": "紅圈圈內是什麼構造"
+  },
+  {
+    "num": "69",
+    "path": "midterm images/image144.png",
+    "answer": [
+      "radial tuberosity"
+    ],
+    "explanation": "Radius 的近端較細，遠端較粗，跟 ulna 相反，因此可判斷出4號結構指的是radial tuberosity。"
+    "description":"請問4號結構是？"
+  },
+  {
+    "num": "69",
+    "path": "midterm images/image144.png",
+    "answer": [
+      "radial tuberosity"
+    ],
+    "explanation": "Radius 的近端較細，遠端較粗，跟 ulna 相反，因此可判斷出4號結構指的是radial tuberosity。"
+    "description":"請問4號結構是？"
+  },
+  {
+    "num": "70",
+    "path": "midterm images/image146.png",
+    "answer": [
+      "foramen ovale"
+    ],
+    "explanation": ""
+    "description":"請問4號結構是？"
+  },
+  {
+    "num": "71",
+    "path": "midterm images/image146.png",
+    "answer": [
+      "foramen ovale"
+    ],
+    "explanation": ""
+    "description":"請問4號結構是？"
+  },
+  
   
 ]
