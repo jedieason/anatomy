@@ -377,4 +377,59 @@
     "explanation": "Manubrium of sternum  1. 最上緣位於正中的凹陷稱為 jugular notch。  2. 上方的左右兩側各有一個凹陷， 用來連接鎖骨 （clavicle）。  第一肋骨（R1）的關節處位在鎖骨關節處的下方。",
     "description": "這是什麼骨頭？"
   },
+  {
+    "num": "43",
+    "path": "midterm images/image092.png",
+    "answer": [
+      "surgical neck"
+    ],
+    "explanation": "Surgical neck of humerus 易因過度受力而斷裂。此處有 axillary nerve 與 posterior circumferential humeral arteries 經過 ",
+    "description": "紅色箭頭指的是什麼構造？"
+  },
+  {
+    "num": "44",
+    "path": "midterm images/image094.png",
+    "answer": [
+      "alveolar process of maxilla"
+    ],
+    "explanation": "Alveolar process of maxilla 不論是上顎還是下顎，長出牙齒的就稱為 alveolar  process。記得標明它在上顎（Maxilla）上。 ",
+    "description": "標成綠色的構造為何（be specific）"
+  },
+  {
+    "num": "45",
+    "path": "midterm images/image096.png",
+    "answer": [
+      "anterior clinoid process"
+    ],
+    "explanation": "Anterior clinoid process 為 lesser wing 往後方延伸的兩根突起 ",
+    "description": "綠色的構造為何"
+  },
+  {
+    "num": "46",
+    "path": "midterm images/image098.png",
+    "answer": [
+      "glenoid cavity"
+    ],
+    "explanation": "Glenoid cavity of left scapula",
+    "description": "紅色的構造為何"
+  },
+  {
+    "num": "47",
+    "path": "midterm images/image100.png",
+    "answer": [
+      "styloid process of radius"
+    ],
+    "explanation": "Styloid process:為 distal end 末端的突起(複習: ulna 上也有一個;另外頭頸部那章也有一個同名 process) ",
+    "description": "請問7號結構是？"
+  },
+  {
+    "num": "48",
+    "path": "midterm images/image103.png",
+    "answer": [
+      "brachiocephalic trunk"
+    ],
+    "explanation": "Aortic arch 的第一個分支，三個分支中最大且最右側，往上再分為 right subclavian、right common   carotid artery。",
+    "description": "綠箭頭所指的為何"
+  },
+  
 ]
