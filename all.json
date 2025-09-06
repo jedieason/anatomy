@@ -359,4 +359,23 @@
     "explanation": "Medial malleolus 由形狀可知此為脛骨（Tibia）構成踝關節（ankle joint）之處 。",
     "description": "請問14號結構是？"
   }
+  {
+    "num": "41",
+    "path": "midterm images/image088.png",
+    "answer": [
+      "thoracic vertebra"
+    ],
+    "explanation": "Thoracic vertebra 脊椎本體（Vertebral body）有和肋骨相接用的 costal demifacet；而胸椎（Thoracic vertebrae）上下節的接觸面為垂直地前後平行（相較頸椎是水平地上下平行，活動度會較低；此外，胸椎的Vertebral foramen 較圓而小。",
+    "description": "請問此構造為何（be specific）？"
+  }
+  {
+    "num": "42",
+    "path": "midterm images/image090.png",
+    "answer": [
+      "manubrium of sternum"
+    ],
+    "explanation": "Manubrium of sternum  1. 最上緣位於正中的凹陷稱為 jugular notch。  2. 上方的左右兩側各有一個凹陷， 用來連接鎖骨 （clavicle）。  第一肋骨（R1）的關節處位在鎖骨關節處的下方。",
+    "description": "這是什麼骨頭？"
+  }
+
 ]
