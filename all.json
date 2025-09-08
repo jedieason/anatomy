@@ -810,6 +810,15 @@
     "explanation": "首先由大大的head與明顯的neck判斷此為femur，此圖為posterior surface(由突起明顯的intertrochanteric crest 判斷)，位於下端較小的突起為Lesser trochanter，上端較大的突起則為 Greater trochanter。 ",
     "description":"右上而下第六條線所指為何？"
   },
+  {
+    "num": "91",
+    "path": "midterm images/image190.png",
+    "answer": [
+      "lateral epicondyle of humerus"
+    ],
+    "explanation": "由 head 與較不彎的 neck，或由遠端的構造判斷此為 humerus，head 側為 medial side，另一側則為lateral side，因此為 Lateral epicondyle (或可由epicondyle 的大小判斷，Lateral比 Medial小) 。",
+    "description":"左下第一條紅線所指為何？"
+  },
   
   
   
