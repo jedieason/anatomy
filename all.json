@@ -1062,6 +1062,173 @@
     "explanation": "",
     "description":"黑線所指構造？"
   },
+  {
+    "num": "119",
+    "path": "midterm images/image248.png",
+    "answer": [
+      "inferior pubic ramus"
+    ],
+    "explanation": "用 Acetabulum 和 Obturator foramen 為參考點，題 目所圈範圍包括 Inferior pubic ramus 和 Ramus of ischium。",
+    "description":"紅圈構造？"
+  },
+  {
+    "num": "120",
+    "path": "midterm images/image250.png",
+    "answer": [
+      "infraspinous fossa"
+    ],
+    "explanation": "標示區域為位於Spine下方的凹窩。",
+    "description":"紅圈構造？"
+  },
+  {
+    "num": "121",
+    "path": "midterm images/image252.png",
+    "answer": [
+      "glenoid fossa"
+    ],
+    "explanation": "自前側觀之（costal view）的左肩胛骨。 ",
+    "description":"此紅色構造？"
+  },
+  {
+    "num": "122",
+    "path": "midterm images/image254.png",
+    "answer": [
+      "acetabular notch"
+    ],
+    "explanation": "",
+    "description":"此構造（15）？ "
+  },
+  {
+    "num": "123",
+    "path": "midterm images/image256.png",
+    "answer": [
+      "greater palatine foramen"
+    ],
+    "explanation": "位於 Horizontal plate of palatine 的後方外側（posterior lateral site）。",
+    "description":"紅箭頭所指孔洞？"
+  },
+  {
+    "num": "124",
+    "path": "midterm images/image258.png",
+    "answer": [
+      "medial pterygoid plate"
+    ],
+    "explanation": "先注意到這是從顱底往前上方看。此時看到的空 間應該是咽部（pharynx）， 圖 片 中 央 的 兩 個 對 稱 孔洞即是鼻腔通到鼻咽的開口。位在鼻腔偏後方 的 lateral wall，又有兩個分支的骨頭應是 sphenoid bone，靠內側的分支稱為 medial pterygoid plate。",
+    "description":"此鑷子指的構造？"
+  },
+  {
+    "num": "125",
+    "path": "midterm images/image260.png",
+    "answer": [
+      "inion",
+      "external occipital protuberance"
+    ],
+    "explanation": "枕骨外部表面的明顯突起，大約位在正中間",
+    "description":"此鑷子指的構造？"
+  },
+  {
+    "num": "126",
+    "path": "midterm images/image262.png",
+    "answer": [
+      "deltoid tuberosity"
+    ],
+    "explanation": "從圖片中左邊的 Head of humerus 可辨認出此為肱骨（Humerus）， 而 題 目 所 指 為 骨 頭 中 段 的 表 面 突起。 ",
+    "description":"中間所指的構造？"
+  },
+  {
+    "num": "127",
+    "path": "midterm images/image264.png",
+    "answer": [
+      "greater trochanter of femur"
+    ],
+    "explanation": "由圖片中上方球狀的 Head of femur 可辨別此為股骨（Femur）， head 右端和下方（紫色）的突起處分別為 Greater trochanter 和 Lesser trochanter。",
+    "description":"此紅框指的構造？"
+  },
+  {
+    "num": "128",
+    "path": "midterm images/image266.png",
+    "answer": [
+      "manubrium of sternum"
+    ],
+    "explanation": "最上緣位於正中的凹陷稱為 jugular notch。  上方的左右兩側各有一個凹陷，用來連接鎖骨 （clavicle）。  第一肋骨（R1）的關節處位在鎖骨關節處的下 方。",
+    "description":"此骨頭？"
+  },
+  {
+    "num": "129",
+    "path": "midterm images/image268.png",
+    "answer": [
+      "axis"
+    ],
+    "explanation": "首先應可判斷出這是脊椎骨。再由三角形孔洞、兩邊有 transverse foramen 判斷它是 C-spine。再觀察到它有 dens 的構造，因此知道是 C2。 ",
+    "description":"此骨頭？"
+  },
+  {
+    "num": "130",
+    "path": "midterm images/image270.png",
+    "answer": [
+      "internal acoustic meatus"
+    ],
+    "explanation": "位在 temporal bone 的 petrous part，可知這個孔洞接著要通到內耳，因此是 Int. acoustic meatus。",
+    "description":"藍色箭頭所指孔洞？"
+  },
+  {
+    "num": "131",
+    "path": "midterm images/image273.png",
+    "answer": [
+      "metacarpal I"
+    ],
+    "explanation": "接在長得亂七八糟的 carpal 上就是 metacarpal。Phalanges 除了拇指是兩節外都是三節，這也可以作為判斷依據之一。 ",
+    "description":"藍色箭頭所指骨頭？"
+  },
+  {
+    "num": "132",
+    "path": "midterm images/image278.png",
+    "answer": [
+      "iliac crest"
+    ],
+    "explanation": "整塊骨盆上半部（平整的那塊）的頂端就稱之為 Iliac crest。  ",
+    "description":"藍色箭頭所指構造？"
+  },
+  {
+    "num": "133",
+    "path": "midterm images/image280.png",
+    "answer": [
+      "medial pterygoid plate"
+    ],
+    "explanation": "先注意到這是從顱底往前上方看。此時看到的空間應該是咽部（pharynx），圖片中央的兩個對稱孔洞即是鼻腔通到鼻咽的開口。位在鼻腔偏後方的 lateral wall，又有兩個分支的骨頭應是 sphenoid bone，靠內側的分支稱為 medial pterygoid plate。 ",
+    "description":"藍色箭頭所指片狀構造？"
+  },
+  {
+    "num": "134",
+    "path": "midterm images/image283.png",
+    "answer": [
+      "jugular foramen"
+    ],
+    "explanation": "注意到此孔洞位在 temporal bone 跟occipital bone接合處的裂縫，故應為 Jugular foramen。 ",
+    "description":"藍色箭頭所指孔洞？"
+  },
+  {
+    "num": "135",
+    "path": "midterm images/image285.png",
+    "answer": [
+      "head of fibula"
+    ],
+    "explanation": "長這樣的關節只出現在膝蓋或手肘（至少這次範圍如此），注意到圖中被標色的骨頭沒有接到左邊的骨頭，因此可知道這應是膝關節，只有 tibia 跟 femur 相連，fibula 只靠在隔壁骨頭上。所問構造是它的 head，故應回答 head of fibula。 ",
+    "description":"此綠色構造？ "
+  },
+  {
+    "num": "136",
+    "path": "midterm images/image287.png",
+    "answer": [
+      "sacral hiatus",
+      "sacral canal"
+    ],
+    "explanation": "看到融合成一片的脊椎骨，且有四對 foramina 的開口，先判斷是 sacrum bone。在 sacrum bone 的末端開口稱為 Sacral hiatus。",
+    "description":"藍色箭頭所指構造？ "
+  },
+
+
+
 
   
   
