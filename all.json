@@ -801,6 +801,15 @@
     "explanation": "可能背到同一題，也有可能是不同的 view，由相對位置與驚嘆號的樣子可判斷。",
     "description":"右上而下第五條線所指為何？"
   },
+  {
+    "num": "90",
+    "path": "midterm images/image187.png",
+    "answer": [
+      "lesser trochanter"
+    ],
+    "explanation": "首先由大大的head與明顯的neck判斷此為femur，此圖為posterior surface(由突起明顯的intertrochanteric crest 判斷)，位於下端較小的突起為Lesser trochanter，上端較大的突起則為 Greater trochanter。 ",
+    "description":"右上而下第六條線所指為何？"
+  },
   
   
   
