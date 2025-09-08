@@ -828,6 +828,114 @@
     "explanation": "忘記是考模型還是真人了，重點在為 inferior vena cava往下最一開始的分支，且在artery的後方、較扁。 ",
     "description":"紅色箭頭所指的為何"
   },
+  {
+    "num": "93",
+    "path": "midterm images/image199.png",
+    "answer": [
+      "brachiocephalic trunk"
+    ],
+    "explanation": "Aortic arch 的第一個分支，三個分支中最大且最右側，往上再分為 right subclavian、right common carotid artery。",
+    "description":"紅色箭頭所指的為何"
+  },
+  {
+    "num": "94",
+    "path": "midterm images/image200.png",
+    "answer": [
+      "azygos vein"
+    ],
+    "explanation": "在 thorax 右側，回收 intercostal vein，向上注入superior vena cava。 ",
+    "description":"右邊由上往下第三條線為何"
+  },
+  {
+    "num": "95",
+    "path": "midterm images/image203.png",
+    "answer": [
+      "tricuspid valve"
+    ],
+    "explanation": "從前方觀看（anterior view），位於眼框上緣偏內側的小凹陷（或孔洞）",
+    "description":"請問箭頭指的構造？"
+  },
+  {
+    "num": "96",
+    "path": "midterm images/image205.png",
+    "answer": [
+      "patella"
+    ],
+    "explanation": "小巧扇貝型，外側關節接面（lateral articular facet）較內側關節接面大。 ",
+    "description":"此骨頭為？ "
+  },
+  {
+    "num": "97",
+    "path": "midterm images/image207.png",
+    "answer": [
+      "left external iliac artery"
+    ],
+    "explanation": "A: left common iliac artery B: left common iliac vein C: left internal iliac vein E: left internal iliac artery F: left external iliac vein",
+    "description":"請問血管D為？"
+  },
+  {
+    "num": "98",
+    "path": "midterm images/image209.png",
+    "answer": [
+      "occipital condyle"
+    ],
+    "explanation": "接上 atlas",
+    "description":" 黑線所指構造為？"
+  },
+  {
+    "num": "99",
+    "path": "midterm images/image210.png",
+    "answer": [
+      "greater wing of sphenoid bone"
+    ],
+    "explanation": "1. Optic canal 2. Greater wing of sphenoid 3. Superior orbital fissure 4. Lesser wing of sphenoid ",
+    "description":"請問2構造為？"
+  },
+  {
+    "num": "100",
+    "path": "midterm images/image212.png",
+    "answer": [
+      "olecranon fossa of humerus"
+    ],
+    "explanation": "由圖片右方的 Head of humerus 判斷此為肱骨 （Humerus）， 而 題 目 所 圈 之 處 位 於 其 遠 端 末 梢 （distal end），且只有一個大凹窩。",
+    "description":"紅圈構造?"
+  },
+  {
+    "num": "101",
+    "path": "midterm images/image214.png",
+    "answer": [
+      "medial epicondyle of humerus"
+    ],
+    "explanation": "右手 Humerus，位於 medial side",
+    "description":"綠色的構造為？ "
+  },
+  {
+    "num": "102",
+    "path": "midterm images/image215.png",
+    "answer": [
+      "anatomical neck of humerus"
+    ],
+    "explanation": "",
+    "description":"圈中的構造？ "
+  },
+  {
+    "num": "103",
+    "path": "midterm images/image217.png",
+    "answer": [
+      "coronoid process of ulna"
+    ],
+    "explanation": "於手臂 flexion 時套進 humerus 的 coronoid fossa",
+    "description":"紅圈所指的構造？ "
+  },
+  {
+    "num": "104",
+    "path": "midterm images/image218.png",
+    "answer": [
+      "styloid process of temporal bone"
+    ],
+    "explanation": "",
+    "description":"星星所指的構造？ "
+  },
   
   
   
