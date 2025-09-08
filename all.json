@@ -936,6 +936,51 @@
     "explanation": "",
     "description":"星星所指的構造？ "
   },
+  {
+    "num": "105",
+    "path": "midterm images/image220.png",
+    "answer": [
+      "carotid canal"
+    ],
+    "explanation": "位在 Occipital condyle 的前方外側（anterior lateral site）、 Jugular foramen 的前方。 ",
+    "description":"鑷子所指的孔洞？"
+  },
+  {
+    "num": "106",
+    "path": "midterm images/image222.png",
+    "answer": [
+      "jugular foramen"
+    ],
+    "explanation": "此為去除 mandible 的 inferior view，與 styloid process 約位在同一直線上，且孔洞較大的就是jugular vein 通過的 jugular foramen",
+    "description":"星星所指的孔洞？"
+  },
+  {
+    "num": "107",
+    "path": "midterm images/image224.png",
+    "answer": [
+      "inferior vena cava"
+    ],
+    "explanation": "由下方流入右心房",
+    "description":"黑線所指的血管？ "
+  },
+  {
+    "num": "108",
+    "path": "midterm images/image226.png",
+    "answer": [
+      "supraorbital foramen"
+    ],
+    "explanation": "從前方觀看（anterior view），位於眼框上緣偏內側的小凹陷（或孔洞）",
+    "description":"箭頭所指的孔洞？"
+  },
+  {
+    "num": "109",
+    "path": "midterm images/image228.png",
+    "answer": [
+      "left common carotid artery"
+    ],
+    "explanation": "",
+    "description":"箭頭所指的血管？"
+  },
   
   
   
