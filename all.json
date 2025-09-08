@@ -981,6 +981,88 @@
     "explanation": "",
     "description":"箭頭所指的血管？"
   },
+  {
+    "num": "110",
+    "path": "midterm images/image230.png",
+    "answer": [
+      "left internal jugular vein"
+    ],
+    "explanation": "",
+    "description":"A血管？"
+  },
+  {
+    "num": "111",
+    "path": "midterm images/image232.png",
+    "answer": [
+      "great cardiac vein"
+    ],
+    "explanation": "註：圖中的位置剛好在 Great cardiac vein 和coronary sinus 的中間，兩個答案應該都可以",
+    "description":"A血管？"
+  },
+  {
+    "num": "112",
+    "path": "midterm images/image234.png",
+    "answer": [
+      "anterior superior iliac spine"
+    ],
+    "explanation": "",
+    "description":"此紅色構造？ "
+  },
+  {
+    "num": "113",
+    "path": "midterm images/image236.png",
+    "answer": [
+      "tibial tuberosity of left tibia"
+    ],
+    "explanation": "由照片中右方的 Medial malleolus 判斷為左腳脛骨。",
+    "description":"紅色箭頭所指構造？ "
+  },
+  {
+    "num": "114",
+    "path": "midterm images/image238.png",
+    "answer": [
+      "ischial spine"
+    ],
+    "explanation": "此為從前側上方觀看（anterior superior view）的骨盆，題目標示處為坐骨（Ischium）上明顯的向後突起處。",
+    "description":"綠色構造？ "
+  },
+  {
+    "num": "115",
+    "path": "midterm images/image240.png",
+    "answer": [
+      "head of radius"
+    ],
+    "explanation": "",
+    "description":"紅圈構造？ "
+  },
+  {
+    "num": "116",
+    "path": "midterm images/image242.png",
+    "answer": [
+      "lumbar vertebra"
+    ],
+    "explanation": "Vertebral body 面積遠大於其三角形的 Vertebral foramen ，用於支撐重量。而 Spinous process 為了 固定，交疊成一整片的形狀。",
+    "description":"請問這是哪個vertebra？  "
+  },
+  {
+    "num": "117",
+    "path": "midterm images/image244.png",
+    "answer": [
+      "atlas"
+    ],
+    "explanation": "特點： (1)沒有 vertebral body。 (2)沒有 spinous process （變成 posterior tubercle / arch）。 (3)整體似一圓圈，脊髓（Spinal cord）穿過中間。 ",
+    "description":"此骨頭？"
+  },
+  {
+    "num": "118",
+    "path": "midterm images/image246.png",
+    "answer": [
+      "transverse process"
+    ],
+    "explanation": "",
+    "description":"黑線所指構造？"
+  },
+
   
   
   
