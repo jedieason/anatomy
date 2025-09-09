@@ -1262,6 +1262,42 @@
     "explanation": "位在 anterior cranial fossa，上面都是洞的板狀物就是 Cribriform plate。",
     "description":"藍色箭頭所指平板構造？"
   },
+  {
+    "num": "141",
+    "path": "midterm images/image298.png",
+    "answer": [
+      "lateral epicondyle of humerus"
+    ],
+    "explanation": "因反光不容易清楚看見 radial fossa 跟 coronoid fossa，但可由圖片右側的 head 判斷應是 femur 或 humerus 其一。注意到 head of femur 是明顯向外側凸出的，因此這支骨頭應該是 humerus。仔細觀察右側的 head，上半部跟下半部中間有個較大且明顯的凹陷，為 anatomical neck，位在 medial，因此箭頭所指應為 Lateral epicondyle。",
+    "description":"藍色箭頭所指構造？"
+  },
+  {
+    "num": "142",
+    "path": "midterm images/image302.png",
+    "answer": [
+      "greater sciatic notch"
+    ],
+    "explanation": "骨盆明顯有兩個 notch，這個 notch 位在比較偏 superior 的位子，也比較大，因此是 Greater sciatic notch。",
+    "description":"藍色箭頭所指構造？"
+  },
+  {
+    "num": "143",
+    "path": "midterm images/image303.png",
+    "answer": [
+      "xiphoid process"
+    ],
+    "explanation": "位在胸骨的最下緣，一塊半獨立的東西。 ",
+    "description":"44號結構？"
+  },
+  {
+    "num": "144",
+    "path": "midterm images/image306.png",
+    "answer": [
+      "adductor tubercle"
+    ],
+    "explanation": "承 13 題的詳解，這支骨頭的 head 有明顯向外側凸出，因此應是 femur。箭頭所指構造位在 medial方向，因此可能是 medial epicondyle 或 Adductor tubercle。再觀察它的細部位置，為在 medial 方向朝 superior 的凸起，因此答案寫 Adductor tubercle 或許還是比較適合。 ",
+    "description":"藍色箭頭結構？"
+  },
 
 
 
