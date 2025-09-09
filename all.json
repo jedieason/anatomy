@@ -1226,6 +1226,43 @@
     "explanation": "看到融合成一片的脊椎骨，且有四對 foramina 的開口，先判斷是 sacrum bone。在 sacrum bone 的末端開口稱為 Sacral hiatus。",
     "description":"藍色箭頭所指構造？ "
   },
+  {
+    "num": "137",
+    "path": "midterm images/image290.png",
+    "answer": [
+      "dorsum sellae"
+    ],
+    "explanation": "看到該構造位在sphenoid bone 上，可知它應是 sella turcica 的一部分。其中央凹陷靠 posterior 側的突起便稱為 Dorsum sellae。",
+    "description":"藍色箭頭所指構造？ "
+  },
+  {
+    "num": "138",
+    "path": "midterm images/image291.png",
+    "answer": [
+      "trochlear notch"
+    ],
+    "explanation": "這個有點 L 型的關節面便是 ulna 跟 humerus 的接面，L 的開口稱為 Trochlea notch，對應到 humerus 上的 trochlea。 註：肘膝關節的每個接面都要辨認並熟記！",
+    "description":"藍色箭頭所指構造？"
+  },
+  {
+    "num": "139",
+    "path": "midterm images/image294.png",
+    "answer": [
+      "conoid tubercle"
+    ],
+    "explanation": "看到長條形的骨頭，兩邊接面平整，沒有大弧度彎曲，可判斷為 clavicle。箭頭所指為 clavicle 跟 scapula 相接處，該物不是線狀凸起，因此可知不是 trapezius line，是 Conoid tubercle。 ",
+    "description":"藍色箭頭所指構造？"
+  },
+  {
+    "num": "140",
+    "path": "midterm images/image297.png",
+    "answer": [
+      "cribriform plate"
+    ],
+    "explanation": "位在 anterior cranial fossa，上面都是洞的板狀物就是 Cribriform plate。",
+    "description":"藍色箭頭所指平板構造？"
+  },
+
 
 
 
