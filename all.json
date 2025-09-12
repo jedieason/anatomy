@@ -1295,7 +1295,196 @@
     "answer": [
       "adductor tubercle"
     ],
-    "explanation": "承 13 題的詳解，這支骨頭的 head 有明顯向外側凸出，因此應是 femur。箭頭所指構造位在 medial方向，因此可能是 medial epicondyle 或 Adductor tubercle。再觀察它的細部位置，為在 medial 方向朝 superior 的凸起，因此答案寫 Adductor tubercle 或許還是比較適合。 ",
+    "explanation": "這支骨頭的 head 有明顯向外側凸出，因此應是 femur。箭頭所指構造位在 medial方向，因此可能是 medial epicondyle 或 Adductor tubercle。再觀察它的細部位置，為在 medial 方向朝 superior 的凸起，因此答案寫 Adductor tubercle 或許還是比較適合。 ",
     "description": "藍色箭頭結構？"
+  }
+  {
+    "num": "145",
+    "path": "midterm images/image308.png",
+    "answer": [
+      "ischial tuberosity"
+    ],
+    "explanation": "此題要在心裡把骨盆擺成人體中的位置比較好作答。總之先觀察它在整個骨盆的相對位置在偏後 tuberosity。若把它擺成 3D 方位正確的模樣，應該會是骨盆的最低點。 ",
+    "description": "紅色箭頭結構？"
+  }
+  {
+    "num": "146",
+    "path": "midterm images/image310.png",
+    "answer": [
+      "foramen rotundum"
+    ],
+    "explanation": "該孔洞的 medial side 有 sellae turcica；anterior side 有 sup. orbital fissure；位在 sphenoid bone 上，因此應該是 Foramen rotundum。注意它的開口方向是往前下方通到 pterygopalatine fossa，而不是正下方。",
+    "description": "紅色箭頭結構？"
+  }
+  {
+    "num": "147",
+    "path": "midterm images/image311.png",
+    "answer": [
+      "mental foramen"
+    ],
+    "explanation": "位在下顎的 anterior side。",
+    "description": "紅色箭頭結構？"
+  }
+  {
+    "num": "148",
+    "path": "midterm images/image314.png",
+    "answer": [
+      "coronoid process of mandible"
+    ],
+    "explanation": "Mandible 上，張嘴時沒有被卡住的 process，應是 Coronoid process。",
+    "description": "紅色箭頭結構？"
+  }
+  {
+    "num": "149",
+    "path": "midterm images/image317.png",
+    "answer": [
+      "alveolar process of maxilla"
+    ],
+    "explanation": "不論是上顎還是下顎，長出牙齒的就稱為 alveolar process。記得標明它在上顎（Maxilla）上。",
+    "description": "紅色箭頭結構？"
+  }
+  {
+    "num": "150",
+    "path": "midterm images/image317.png",
+    "answer": [
+      "alveolar process of maxilla"
+    ],
+    "explanation": "不論是上顎還是下顎，長出牙齒的就稱為 alveolar process。記得標明它在上顎（Maxilla）上。",
+    "description": "紅色箭頭結構？"
+  }
+  {
+    "num": "151",
+    "path": "midterm images/image319.png",
+    "answer": [
+      "lamina"
+    ],
+    "explanation": "觀察到它位在脊椎骨的 transverse process 跟 spinous process 之間，應該是 Lamina。Pedicle 是 articular process 跟 body 中間那一段，兩者在此圖中有相當距離",
+    "description": "紅色箭頭結構？"
+  }
+  {
+    "num": "152",
+    "path": "midterm images/image321.png",
+    "answer": [
+      "lesser trochanter"
+    ],
+    "explanation": "先判斷出這支是 femur。所指構造是靠近 head、位在 medial side 的凸起，相較於外側的較小，為 Lesser trochanter。",
+    "description": "紅色箭頭結構？"
+  }
+  {
+    "num": "153",
+    "path": "midterm images/image323.png",
+    "answer": [
+      "lesser tubercle"
+    ],
+    "explanation": "先判斷出這支是 humerus。所指構造位在 head 偏前側，為 Lesser tubercle。注意 lesser tubercle 偏前側；greater 則偏外側。",
+    "description": "紅色箭頭結構？"
+  }
+  {
+    "num": "154",
+    "path": "midterm images/image326.png",
+    "answer": [
+      "superior pubic ramus"
+    ],
+    "explanation": "注意到最靠近紙面的構造為 pubic symphysis；中央下方的構造為 ischial tuberosity。搭配 ischial spine 以及兩個 sciatic notch 的相對位置可以判斷所指構造偏上方，因此為 Superior pubic ramus。 ",
+    "description": "紅色箭頭結構？"
+  }
+  {
+    "num": "155",
+    "path": "midterm images/image329.png",
+    "answer": [
+      "inferior vena cava"
+    ],
+    "explanation": "（由示意圖較好判斷）可先由血管走向判斷出所指構造位在心室，再由靠後面的兩支肺動脈判斷其應為右心室，因此為 Inferior vena cava。",
+    "description": "鑷子所指的構造？"
+  }
+  {
+    "num": "156",
+    "path": "midterm images/image336.png",
+    "answer": [
+      "chordae tendineae"
+    ],
+    "explanation": "注意 Chordae tendineae 是細小很多條，papillary muscle 是較粗大一條。 ",
+    "description": "紅色所指的構造？"
+  }
+  {
+    "num": "157",
+    "path": "midterm images/image337.png",
+    "answer": [
+      "brachiocephalic trunk"
+    ],
+    "explanation": "從主動脈弓分支出去，位在右邊且只有一條，可知為 Brachiocephalic trunk。",
+    "description": "紅色所指的構造？"
+  }
+  {
+    "num": "158",
+    "path": "midterm images/image340.png",
+    "answer": [
+      "right coronary artery"
+    ],
+    "explanation": "注意到它從主動脈基部單一分支出來，故應為冠狀動脈。圖片右側還有另一條分支，可知這張圖應是從心臟正面拍攝。注意到圖片會跟人體左右相反，因此圖示為 Right coronary artery。",
+    "description": "鑷子所夾的血管？ "
+  }
+  {
+    "num": "159",
+    "path": "midterm images/image342.png",
+    "answer": [
+      "external iliac artery"
+    ],
+    "explanation": "先從周圍臟器判斷其位於骨盆腔，接著注意到它身後還有一條分支走深入骨盆腔，它自己走在偏 ventral side，故應為 External iliac artery。",
+    "description": "血管D？ "
+  }
+  {
+    "num": "160",
+    "path": "midterm images/image344.png",
+    "answer": [
+      "azygos vein"
+    ],
+    "explanation": "看到貼著背部，所有的 intercostal vein 都匯入它身上，且位在偏右方的位子，故為 Azygos vein。 ",
+    "description": "紅色箭頭所指構造 "
+  }
+  {
+    "num": "161",
+    "path": "midterm images/image346.png",
+    "answer": [
+      "transverse process"
+    ],
+    "explanation": "",
+    "description": "黑線所指構造 "
+  }
+  {
+    "num": "162",
+    "path": "midterm images/image348.png",
+    "answer": [
+      "foramen ovale"
+    ],
+    "explanation": "在Foramen rotundum後方的橢圓形孔洞",
+    "description": "綠色區域孔洞？"
+  }
+  {
+    "num": "163",
+    "path": "midterm images/image350.png",
+    "answer": [
+      "zygomatic process of maxillary bone"
+    ],
+    "explanation": "由下方連接牙齒可判斷此為maxillary bone，而紅色部分為連接zygomatic bone的突出 ",
+    "description": "紅色區域構造？ "
+  }
+  {
+    "num": "164",
+    "path": "midterm images/image352.png",
+    "answer": [
+      "jugular foramen"
+    ],
+    "explanation": "此為去除mandible顱骨的inferior view，與 styloid process 約位在同一直線上，且孔洞較大的就是jugular vein 通過的 jugular foramen",
+    "description": "綠色區域孔洞？"
+  }
+  {
+    "num": "165",
+    "path": "midterm images/image353.png",
+    "answer": [
+      "trochlea of humerus"
+    ],
+    "explanation": "為posterior view of distal end of humerus。凹窩為Olecranon fossa",
+    "description": "紅色箭頭所指構造？"
   }
 ]
