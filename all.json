@@ -1957,11 +1957,38 @@
   }
   {
     "num": "218",
-    "path": "midterm images/image450.png",
+    "path": "midterm images/image454.png",
     "answer": [
-      "mitral valve"
+      "chordae tendineae"
     ],
     "explanation": "",
-    "description": "黑箭頭所指構造"
+    "description": "白箭頭所指構造"
+  }
+  {
+    "num": "219",
+    "path": "midterm images/image455.png",
+    "answer": [
+      "Ia.right atrium 1.superior vena cava 1a.left brachiocephalic vein 1b.right brachiocephalic vein IIb.left atrium 4.pulmonary trunk 4a.left pulmonary artery 7.aorta 8.right coronary artery 9a.left coronary artery A.apex of heart a.aortic arch b.brachiocephalic trunk c.left common carotid artery d.left subclavian artery"
+    ],
+    "explanation": "",
+    "description": "Ia、1、1a、1b、IIb、4、4a、7、8、9a、A、a、b、c、d各為什麼(範例:Ia.brain 1.lung 1a. liver)"
+  }
+  {
+    "num": "220",
+    "path": "midterm images/image457.png",
+    "answer": [
+      "inferior vena cava"
+    ],
+    "explanation": "",
+    "description": "黑線所指血管?"
+  }
+  {
+    "num": "221",
+    "path": "midterm images/image459.png",
+    "answer": [
+      "inferior vena cava"
+    ],
+    "explanation": "",
+    "description": "黑線所指血管?"
   }
 ]
