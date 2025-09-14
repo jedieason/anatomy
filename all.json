@@ -2306,4 +2306,247 @@
     "explanation": "",
     "description": "1、3、5、6、8、9各是什麼?(範例:1.brain 3.lung 5.liver)"
   }
+  {
+    "num": "257",
+    "path": "midterm images/image525.png",
+    "answer": [
+      "median sacral crest"
+    ],
+    "explanation": "位於薦椎（Sacrum）後側正中間，相當於各個 Spinous process 的結合，是最明顯的突起。 ",
+    "description": "紅線指的是什麼"
+  }
+  {
+    "num": "258",
+    "path": "midterm images/image527.png",
+    "answer": [
+      "axis"
+    ],
+    "explanation": "有 Vertebral body 和 Spinous process，但都很小（C1 至 C3 逐漸變大）。",
+    "description": "這是什麼骨頭"
+  }
+  {
+    "num": "259",
+    "path": "midterm images/image528.png",
+    "answer": [
+      "thoracic vertebra"
+    ],
+    "explanation": "脊椎本體（Vertebral body）有和肋骨相接用的 costal demifacet；而胸椎（Thoracic vertebrae）上下節的接觸面為垂直地前後平行（相較頸椎是水平地上下平行，活動度會較低；此外，胸椎的 Vertebral foramen 較圓而小。",
+    "description": "這是頸、胸還是腰椎"
+  }
+  {
+    "num": "260",
+    "path": "midterm images/image530.png",
+    "answer": [
+      "sacral hiatus"
+    ],
+    "explanation": "Vertebral canal 的終點。",
+    "description": "黑色箭頭所指構造?"
+  }
+  {
+    "num": "261",
+    "path": "midterm images/image532.png",
+    "answer": [
+      "manubrium of sternum"
+    ],
+    "explanation": "1.最上緣位於正中的凹陷稱為 jugular notch。 2.上方的左右兩側各有一個凹陷，用來連接鎖骨（clavicle）。 3.第一肋骨（R1）的關節處位在鎖骨關節處的下方。",
+    "description": "這是什麼構造?"
+  }
+  {
+    "num": "262",
+    "path": "midterm images/image534.png",
+    "answer": [
+      "first rib"
+    ],
+    "explanation": "1. 接在 Sternal manubrium 上，接面較其他肋骨大。 2. 上方表面（superior site）不光滑，有兩個凹陷處（groove）和一個突起（tubercle）： (1) Groove for subclavian artery (2) (3) Groove for subclavian vein Scalene tubercle 3. 下方表面（inferior site）光滑。",
+    "description": "這是什麼骨頭?"
+  }
+  {
+    "num": "263",
+    "path": "midterm images/image536.png",
+    "answer": [
+      "xiphoid process of sternum"
+    ],
+    "explanation": "胸骨最下端之處。",
+    "description": "綠色是什麼構造"
+  }
+  {
+    "num": "264",
+    "path": "midterm images/image538.png",
+    "answer": [
+      "body of sternum"
+    ],
+    "explanation": "",
+    "description": "藍色勾勾是什麼構造"
+  }
+  {
+    "num": "265",
+    "path": "midterm images/image540.png",
+    "answer": [
+      "twelfth rib"
+    ],
+    "explanation": "頭部（head）只有一個完整的關節接面（facet），只與第十二胸椎（T12）本體的 Costal facet 相接，沒有與 Transverse process 關節。",
+    "description": "藍色勾勾是什麼構造"
+  }
+  {
+    "num": "266",
+    "path": "midterm images/image542.png",
+    "answer": [
+      "carotid canal"
+    ],
+    "explanation": "",
+    "description": "鑷子指的是什麼構造"
+  }
+  {
+    "num": "267",
+    "path": "midterm images/image544.png",
+    "answer": [
+      "lateral pterygoid plate"
+    ],
+    "explanation": "",
+    "description": "鑷子指的是什麼構造"
+  }
+  {
+    "num": "268",
+    "path": "midterm images/image546.png",
+    "answer": [
+      "optic canal"
+    ],
+    "explanation": "",
+    "description": "10孔洞?"
+  }
+  {
+    "num": "269",
+    "path": "midterm images/image548.png",
+    "answer": [
+      "sella turcica"
+    ],
+    "explanation": "",
+    "description": "黃色棒子指的構造?"
+  }
+  {
+    "num": "270",
+    "path": "midterm images/image550.png",
+    "answer": [
+      "zygomatic process of temporal bone"
+    ],
+    "explanation": "",
+    "description": "紅色箭頭指的構造?"
+  }
+  {
+    "num": "271",
+    "path": "midterm images/image552.png",
+    "answer": [
+      "external occipital protuberance"
+    ],
+    "explanation": "枕骨外部表面的明顯突起，大約位在正中間。",
+    "description": "鑷子指的構造?"
+  }
+  {
+    "num": "272",
+    "path": "midterm images/image554.png",
+    "answer": [
+      "external acoustic meatus"
+    ],
+    "explanation": "",
+    "description": "數字1上方的構造?"
+  }
+  {
+    "num": "273",
+    "path": "midterm images/image556.png",
+    "answer": [
+      "condylar process of mandible"
+    ],
+    "explanation": "Mandible 後側和顳骨（Temporal bone）關節處。",
+    "description": "紅色的構造?"
+  }
+  {
+    "num": "274",
+    "path": "midterm images/image557.png",
+    "answer": [
+      "grooves for middle meningeal arteries"
+    ],
+    "explanation": "",
+    "description": "紅色箭頭指的構造?"
+  }
+  {
+    "num": "275",
+    "path": "midterm images/image559.png",
+    "answer": [
+      "cribriform plate"
+    ],
+    "explanation": "位於 Anterior cranial fossa 中間，為嗅神經（Olfactory nerve）通過之處。 ",
+    "description": "黑色箭頭指的板狀構造?"
+  }
+  {
+    "num": "276",
+    "path": "midterm images/image561.png",
+    "answer": [
+      "mastoid process of temporal"
+    ],
+    "explanation": "裡面有蜂巢狀的空腔，可以幫助共振。",
+    "description": "紅圈構造?"
+  }
+  {
+    "num": "277",
+    "path": "midterm images/image563.png",
+    "answer": [
+      "internal acoustic meatus"
+    ],
+    "explanation": "位於 Petrous part of temporal bone，Jugular foramen的上方，為水平向外深入顳骨的孔道。",
+    "description": "針插入的構造?"
+  }
+  {
+    "num": "278",
+    "path": "midterm images/image564.png",
+    "answer": [
+      "foramen ovale"
+    ],
+    "explanation": "位於 Carotid canal 前方，較大的卵圓形孔洞。",
+    "description": "紅圈構造?"
+  }
+  {
+    "num": "279",
+    "path": "midterm images/image566.png",
+    "answer": [
+      "hypoglossal canal"
+    ],
+    "explanation": "位在枕骨大孔（Foramen magnum）內壁上的小洞，向外側穿透lateral part of occipital bone。 ",
+    "description": "針指的構造?"
+  }
+  {
+    "num": "280",
+    "path": "midterm images/image568.png",
+    "answer": [
+      "coronoid process of mandible"
+    ],
+    "explanation": "Mandible 後側的錐狀突起，位於 Condylar process of mandible 前方，其突起朝向前側上方，提供Temporalis m. 以及 Masseter m. 附著。",
+    "description": "綠色構造?"
+  }
+  {
+    "num": "281",
+    "path": "midterm images/image570.png",
+    "answer": [
+      "dorsum sellae"
+    ],
+    "explanation": "構成 Sella turcica 的後側。",
+    "description": "紅圈構造?"
+  }
+  {
+    "num": "282",
+    "path": "midterm images/image572.png",
+    "answer": [
+      "medial pterygoid plate"
+    ],
+    "explanation": "和 Perpendicular plate of palatine 相接，構成鼻腔外壁（lateral nasal wall）最後側的部分，其上有小鉤狀構造（hamulus）。 ",
+    "description": "鑷子所指構造?"
+  }
+  {
+    "num": "283",
+    "path": "midterm images/image574.png",
+    "answer": [
+      "greater palatine foramen"
+    ],
+    "explanation": "位於 Horizontal plate of palatine 的後方外側（posterior lateral site）。 ",
+    "description": "紅色箭頭所指構造?"
+  }
 ]
