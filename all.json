@@ -2189,4 +2189,121 @@
     "explanation": "小腿外側和後側淺層靜脈，注入popliteal v.",
     "description": "name me?"
   }
+  {
+    "num": "244",
+    "path": "midterm images/image502.png",
+    "answer": [
+      "left cephalic vein"
+    ],
+    "explanation": "手臂外側淺層靜脈，注入axillary v. ",
+    "description": "綠線所指靜脈"
+  }
+  {
+    "num": "245",
+    "path": "midterm images/image504.png",
+    "answer": [
+      "right median cubital vein"
+    ],
+    "explanation": "由cephalic v.分出注入到 basilic v.",
+    "description": "白色箭頭所指靜脈"
+  }
+  {
+    "num": "246",
+    "path": "midterm images/image506.png",
+    "answer": [
+      "right femoral vein"
+    ],
+    "explanation": "",
+    "description": "白色箭頭所指靜脈"
+  }
+  {
+    "num": "247",
+    "path": "midterm images/image508.png",
+    "answer": [
+      "inferior mesenteric vein"
+    ],
+    "explanation": "注入splenic v.中，再和superior mesenteric v.會合成hepatic portal v. ",
+    "description": "白色箭頭所指靜脈"
+  }
+  {
+    "num": "248",
+    "path": "midterm images/image510.png",
+    "answer": [
+      "dens"
+    ],
+    "explanation": "樞椎（Axis）本體的向上突起（故樞椎自側面觀為 L 型） ",
+    "description": "綠色構造"
+  }
+  {
+    "num": "249",
+    "path": "midterm images/image512.png",
+    "answer": [
+      "lamina"
+    ],
+    "explanation": "Pedicle 向後突出連接的兩片寬扁骨板，左右對稱。",
+    "description": "粉紅色構造"
+  }
+  {
+    "num": "250",
+    "path": "midterm images/image514.png",
+    "answer": [
+      "anterior sacral foramina"
+    ],
+    "explanation": "相當於 Intervertebral foramen，有 S1 到 S4 的Anterior primary rami 通過 ",
+    "description": "紅線所指構造"
+  }
+  {
+    "num": "251",
+    "path": "midterm images/image516.png",
+    "answer": [
+      "atlas"
+    ],
+    "explanation": "特點： (1)沒有 vertebral body。 (2)沒有 spinous process （變成 posterior tubercle / arch）。 (3)整體似一圓圈，脊髓（Spinal cord）穿過中間。",
+    "description": "這是哪塊骨頭"
+  }
+  {
+    "num": "252",
+    "path": "midterm images/image517.png",
+    "answer": [
+      "transverse process"
+    ],
+    "explanation": "Pedicle 與 Lamina 交接處往後外側凸起的構造。典型的脊椎骨一節有兩個，左右各一。",
+    "description": "這是什麼構造"
+  }
+  {
+    "num": "253",
+    "path": "midterm images/image518.png",
+    "answer": [
+      "lumbar vertebra"
+    ],
+    "explanation": "Vertebral body 面積遠大於其三角形的 Vertebral foramen ，用於支撐重量。而 Spinous process 為了固定，交疊成一整片的形狀。",
+    "description": "這是頸、胸還是腰椎?"
+  }
+  {
+    "num": "254",
+    "path": "midterm images/image520.png",
+    "answer": [
+      "transverse foramen"
+    ],
+    "explanation": "位在 Transverse process 中央的孔洞（由 Anterior tubercle 和 Posterior tubercle 連接形成），為頸椎（Cervical vertebrae）特有構造，部分會有 Vertebral artery 穿過。.",
+    "description": "這是什麼構造"
+  }
+  {
+    "num": "255",
+    "path": "midterm images/image522.png",
+    "answer": [
+      "spinous process"
+    ],
+    "explanation": "",
+    "description": "粉紅色構造"
+  }
+  {
+    "num": "256",
+    "path": "midterm images/image523.png",
+    "answer": [
+      "1.spinous process 3.superior articular process 5.pedicle 6.vetebral Body 8.articular facet of transverse process for ribs 9.inferior articular process"
+    ],
+    "explanation": "",
+    "description": "1、3、5、6、8、9各是什麼?(範例:1.brain 3.lung 5.liver)"
+  }
 ]
