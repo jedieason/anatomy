@@ -3046,5 +3046,149 @@
     "explanation": "和腕骨（Carpals）相關節。",
     "description": "綠色所指構造"
   }
+  {
+    "num": "338",
+    "path": "midterm images/image682.png",
+    "answer": [
+      "coronoid process of left ulna"
+    ],
+    "explanation": "",
+    "description": "紅圈所指構造"
+  }
+  {
+    "num": "339",
+    "path": "midterm images/image684.png",
+    "answer": [
+      "olecranon fossa of right humerus"
+    ],
+    "explanation": "由圖片右方的 Head of humerus 判斷出此為肱骨（Humerus）， 而 題 目 所 圈 之 處 位 於 其 遠 端 末 梢（distal end），且只有一個大凹窩。",
+    "description": "紅圈所指構造"
+  }
+  {
+    "num": "340",
+    "path": "midterm images/image686.png",
+    "answer": [
+      "subscapular fossa of left scapula"
+    ],
+    "explanation": "辨別方式參考第二題與第三題，此為自前側觀之（costal/anterior view）的左肩胛骨。",
+    "description": "紅星所指構造"
+  }
+  {
+    "num": "341",
+    "path": "midterm images/image688.png",
+    "answer": [
+      "right calcaneus"
+    ],
+    "explanation": "七塊踝骨（Tarsal bone）中最大的，長得很特別，就是要會認。",
+    "description": "骨頭名稱?"
+  }
+  {
+    "num": "342",
+    "path": "midterm images/image690.png",
+    "answer": [
+      "right patella"
+    ],
+    "explanation": "小巧扇貝型，外側關節接面（lateral articular facet）較內側關節接面大。",
+    "description": "骨頭名稱?"
+  }
+  {
+    "num": "343",
+    "path": "midterm images/image691.png",
+    "answer": [
+      "iliac fossa of left ilium"
+    ],
+    "explanation": "由形狀可知此為髂骨（Ilium），且該凹窩和耳朵狀的薦椎關節接面（articular surface for sacrum）位於同一側。 ",
+    "description": "紅線指的構造"
+  }
+  {
+    "num": "344",
+    "path": "midterm images/image692.png",
+    "answer": [
+      "inferior pubic ramus"
+    ],
+    "explanation": "題目所指之處構成 Obturator foramen 的前側下方。",
+    "description": "綠色構造"
+  }
+  {
+    "num": "345",
+    "path": "midterm images/image694.png",
+    "answer": [
+      "ischial tuberosity of left ischium"
+    ],
+    "explanation": "坐骨（Ischium）構成 Obturator foramen 的後側，以及 Acetabulum 的後側下方，題目所指之處為其外側表面的突起處。",
+    "description": "紅色箭頭構造"
+  }
+  {
+    "num": "346",
+    "path": "midterm images/image696.png",
+    "answer": [
+      "greater sciatic notch of left ilium"
+    ],
+    "explanation": "位於 Posterior inferior iliac spine 和 Ischial spine 之間的凹陷處。",
+    "description": "紅色箭頭構造"
+  }
+  {
+    "num": "347",
+    "path": "midterm images/image698.png",
+    "answer": [
+      "A.lateral malleolus B.medial malleolus"
+    ],
+    "explanation": "由形狀可知此為脛骨（Tibia）和腓骨（Fibula）構成踝關節（ankle joint）之處。",
+    "description": "A、B各是什麼?(範例:A.liver B.lung)"
+  }
+  {
+    "num": "348",
+    "path": "midterm images/image700.png",
+    "answer": [
+      "A.anterior superior iliac spine B.pubic tubercle C.pubic symphysis D.body of pubis"
+    ],
+    "explanation": "此為從前側下方（anterior posterior view）觀察的骨盆（Pelvis）。",
+    "description": "A、B、C、D各是什麼?(範例:A.liver B.lung)"
+  }
+  {
+    "num": "349",
+    "path": "midterm images/image702.png",
+    "answer": [
+      "intertrochanteric crest of left femur"
+    ],
+    "explanation": "由圖片中上方球狀的 Head of femur 可辨別此為股骨（Femur）， 紅 線 左 端 和 右 端 的 突 起 處 分 別 為 Greater trochanter 和 Lesser trochanter。 ",
+    "description": "紅線是什麼構造"
+  }
+  {
+    "num": "350",
+    "path": "midterm images/image704.png",
+    "answer": [
+      "malleolar fossa of right fibula"
+    ],
+    "explanation": "由形狀可知此為腓骨的遠端末梢（Distal end of fibula），而下方較大的凹面應為和 Talus 的關節接面（Articular surface for talus）。 ",
+    "description": "紅色箭頭是什麼構造"
+  }
+  {
+    "num": "351",
+    "path": "midterm images/image706.png",
+    "answer": [
+      "medial condyle of right tibia"
+    ],
+    "explanation": "由兩個 Tubercles of intercondylar eminence 的存在可知此為脛骨的近端末梢（Proximal end of tibia）， 而 在 兩 突 起 的 下 方 並 未 觀 察 到 連 接 後 十 字韌帶的凹陷處（attachment site for posterior cruciate ligament）， 可 知 此 為 正 面 觀 （ anterior view）的脛骨。",
+    "description": "紅框是什麼構造"
+  }
+  {
+    "num": "352",
+    "path": "midterm images/image708.png",
+    "answer": [
+      "anterior superior iliac spine of right ilium"
+    ],
+    "explanation": "由 Greater sciatic notch 和 Acetabulum 可判斷這是從後側觀之（posterior  view）的右骨盆（Pelvis）， 題 目 標 示 處 位 於 髂 骨 （ Ilium）前方，Iliac crest 的末端。",
+    "description": "綠色是什麼構造"
+  }
+  {
+    "num": "353",
+    "path": "midterm images/image711.png",
+    "answer": [
+      "tibial tuberosity of left tibia"
+    ],
+    "explanation": "可由照片中右方的 Medial malleolus 判斷此為左腳脛骨。",
+    "description": "紅圈是什麼構造"
+  }
   
 ]
