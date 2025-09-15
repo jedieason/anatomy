@@ -3190,5 +3190,76 @@
     "explanation": "可由照片中右方的 Medial malleolus 判斷此為左腳脛骨。",
     "description": "紅圈是什麼構造"
   }
-  
+  {
+    "num": "354",
+    "path": "midterm images/image713.png",
+    "answer": [
+      "lesser trochanter of left femur"
+    ],
+    "explanation": "圖片左側的大球形物體為 Head of femur。",
+    "description": "紅圈是什麼構造"
+  }
+  {
+    "num": "355",
+    "path": "midterm images/image715.png",
+    "answer": [
+      "lesser sciatic notch of right ischium"
+    ],
+    "explanation": "在 Greater sciatic notch 的下方，位於 Ischial spine和 Ischial tuberosity 之間的小凹陷處。",
+    "description": "綠色是什麼構造"
+  }
+  {
+    "num": "356",
+    "path": "midterm images/image717.png",
+    "answer": [
+      "ischial spine"
+    ],
+    "explanation": "此為從前側上方觀看（anterior superior view）的骨盆，題目標示處為坐骨（Ischium）上明顯的向後突起處。",
+    "description": "綠色是什麼構造"
+  }
+  {
+    "num": "357",
+    "path": "midterm images/image719.png",
+    "answer": [
+      "iliac crest"
+    ],
+    "explanation": "髂骨（Ilium）上緣。 ",
+    "description": "紅線所指是什麼構造"
+  }
+  {
+    "num": "358",
+    "path": "midterm images/image721.png",
+    "answer": [
+      "ischiopubic ramus"
+    ],
+    "explanation": "用 Acetabulum 和 Obturator foramen 為參考點，題目所圈範圍包括 Inferior pubic ramus 和 Ramus of ischium。",
+    "description": "紅線所指是什麼構造"
+  }
+  {
+    "num": "359",
+    "path": "midterm images/image723.png",
+    "answer": [
+      "acetabulum of left pelvic"
+    ],
+    "explanation": "",
+    "description": "綠色是什麼構造"
+  }
+  {
+    "num": "360",
+    "path": "midterm images/image725.png",
+    "answer": [
+      "talus"
+    ],
+    "explanation": "上方trochlear關節面接tibia",
+    "description": "這是什麼骨頭"
+  }
+  {
+    "num": "361",
+    "path": "midterm images/image727.png",
+    "answer": [
+      "superior pubic ramus"
+    ],
+    "explanation": "構成 Obturator foramen 的上方。",
+    "description": "綠色是什麼構造"
+  }
 ]
