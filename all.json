@@ -2830,5 +2830,59 @@
     "explanation": "以 Coracoid process 和 Acromion 為定位點，判斷出這是左邊的肩胛骨（Scapula），而標示位於肩臼窩（Glenoid fossa）之上方。",
     "description": "紅色構造?"
   }
+  {
+    "num": "315",
+    "path": "midterm images/image635.png",
+    "answer": [
+      "radial fossa of left humerus"
+    ],
+    "explanation": "先由 Trochlea of humerus 和 Capitulum 辨識出此為肱骨，而此二構造的近端（proximal）皆有一凹窩，以此判斷出這是由前側觀之（anterior view）的左手肱骨。 ",
+    "description": "綠圈構造?"
+  }
+  {
+    "num": "316",
+    "path": "midterm images/image637.png",
+    "answer": [
+      "trochlea of right humerus"
+    ],
+    "explanation": "",
+    "description": "綠色構造?"
+  }
+  {
+    "num": "317",
+    "path": "midterm images/image641.png",
+    "answer": [
+      "styloid process of right ulna"
+    ],
+    "explanation": "Styloid process 為尺骨（Ulna）的重要特徵（surface landmark）； 勉 強 可 由 Trochlear notch 和 Coronoid process 的構型辨別為右手尺骨。",
+    "description": "紅箭頭構造?"
+  }
+  {
+    "num": "317",
+    "path": "midterm images/image641.png",
+    "answer": [
+      "styloid process of right ulna"
+    ],
+    "explanation": "Styloid process 為尺骨（Ulna）的重要特徵（surface landmark）； 勉 強 可 由 Trochlear notch 和 Coronoid process 的構型辨別為右手尺骨。",
+    "description": "紅箭頭構造?"
+  }
+  {
+    "num": "318",
+    "path": "midterm images/image643.png",
+    "answer": [
+      "infraglenoid tubercle of right scapula"
+    ],
+    "explanation": "辨別方式同第二題，以 Coracoid process 和 Acromion 為定位點，標示點為位於肩臼窩（glenoid fossa）下方的突起物。（註：此為右肩胛骨） ",
+    "description": "紅星星構造?"
+  }
+  {
+    "num": "319",
+    "path": "midterm images/image645.png",
+    "answer": [
+      "medial epicondyle of right humerus"
+    ],
+    "explanation": "",
+    "description": "綠色構造?"
+  }
   
 ]
