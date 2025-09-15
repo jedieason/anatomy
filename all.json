@@ -2938,5 +2938,113 @@
     "explanation": "此為由後側觀之（posterior view）的右肩胛骨（Scapula），標示點為其 Spine 外側的膨大突起。",
     "description": "星星指的構造?"
   }
+  {
+    "num": "326",
+    "path": "midterm images/image660.png",
+    "answer": [
+      "A.olecranon B.radial notch of ulna C.coronoid process D.trochlear notch of left ulna"
+    ],
+    "explanation": "",
+    "description": "A、B、C、D各是什麼?(範例:A.brain B.lung C.liver)"
+  }
+  {
+    "num": "327",
+    "path": "midterm images/image662.png",
+    "answer": [
+      "head of radius of left radius"
+    ],
+    "explanation": "圓盤狀關節接面。",
+    "description": "4是什麼"
+  }
+  {
+    "num": "328",
+    "path": "midterm images/image664.png",
+    "answer": [
+      "lateral epicondyle of right humerus"
+    ],
+    "explanation": "",
+    "description": "綠色構造"
+  }
+  {
+    "num": "329",
+    "path": "midterm images/image666.png",
+    "answer": [
+      "greater tubercle of left humerus"
+    ],
+    "explanation": "此應為從後側觀之（posterior view）的左手肱骨，題目所指之處為位於 Head of humerus 外側的膨大突起。 ",
+    "description": "黑線所指構造"
+  }
+  {
+    "num": "330",
+    "path": "midterm images/image668.png",
+    "answer": [
+      "capitulum of left humerus"
+    ],
+    "explanation": "",
+    "description": "綠色所指構造"
+  }
+  {
+    "num": "331",
+    "path": "midterm images/image670.png",
+    "answer": [
+      "hook of hamate"
+    ],
+    "explanation": "同時和第四與第五掌骨（IV and V metacarpal）關節，可判斷此構造位於 Hamate。（ 今 年 講 課 未 強調，投影片有上色） ",
+    "description": "綠色所指構造"
+  }
+  {
+    "num": "332",
+    "path": "midterm images/image672.png",
+    "answer": [
+      "clavicle"
+    ],
+    "explanation": "",
+    "description": "這是什麼骨頭"
+  }
+  {
+    "num": "333",
+    "path": "midterm images/image674.png",
+    "answer": [
+      "glenoid cavity of left scapula"
+    ],
+    "explanation": "此為自前側觀之（costal view）的左肩胛骨。",
+    "description": "紅色構造"
+  }
+  {
+    "num": "334",
+    "path": "midterm images/image675.png",
+    "answer": [
+      "deltoid tuberosity of right humerus"
+    ],
+    "explanation": "從圖片中左邊的 Head of humerus 可辨認出此為肱骨（Humerus）， 而 題 目 所 指 之 處 為 骨 頭 中 段 的 表面突起。",
+    "description": "木棒所指構造"
+  }
+  {
+    "num": "335",
+    "path": "midterm images/image677.png",
+    "answer": [
+      "oblique line of right radius"
+    ],
+    "explanation": "由圓盤狀關節接面判斷此為橈骨（Radius）， 題 目所圈之處為自 Radial tuberosity 延伸出的斜線狀表面突起。",
+    "description": "紅圈所指構造"
+  }
+  {
+    "num": "336",
+    "path": "midterm images/image679.png",
+    "answer": [
+      "spine of right scapula"
+    ],
+    "explanation": "",
+    "description": "紅線所指構造"
+  }
+  {
+    "num": "337",
+    "path": "midterm images/image680.png",
+    "answer": [
+      "metacarpals"
+    ],
+    "explanation": "和腕骨（Carpals）相關節。",
+    "description": "綠色所指構造"
+  }
   
 ]
