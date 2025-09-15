@@ -2884,5 +2884,59 @@
     "explanation": "",
     "description": "綠色構造?"
   }
+  {
+    "num": "320",
+    "path": "midterm images/image649.png",
+    "answer": [
+      "olecranon of right ulna"
+    ],
+    "explanation": "可由 Trochlear notch 的特殊構型辨認出此為尺骨(Ulna）， 而 標 示 點 位 於 其 上 方 突 起 處 ； 此 外 ， 並未於Trochlear notch 的遠端處（distal）見到 Radial notch，推測此應為右手尺骨。",
+    "description": "上方黑線指的構造?"
+  }
+  {
+    "num": "321",
+    "path": "midterm images/image651.png",
+    "answer": [
+      "supinator crest of right ulna"
+    ],
+    "explanation": "此角度可觀察到完整的 Radial notch 接面，可判斷此為由外側面觀之（lateral view）的尺骨近端末梢（Proximal end）， 而 箭 頭 所 指 之 處 為 緊 鄰 Radial notch 外側的表面突起處；另外可由 Trochlear notch、Radial notch 以及 Coronoid process 三者的相對位置推斷此為右手尺骨。 ",
+    "description": "黑白箭頭指的構造?"
+  }
+  {
+    "num": "322",
+    "path": "midterm images/image652.png",
+    "answer": [
+      "radial tuberosity"
+    ],
+    "explanation": "由圖中左側的圓盤狀關節接面（即 Head of radius）判斷出此為橈骨的近端末梢（Proximal end of radius），而題目所指之處為位於 Head of radius 遠端的大塊表面突起。 ",
+    "description": "木棍指的構造?"
+  }
+  {
+    "num": "323",
+    "path": "midterm images/image654.png",
+    "answer": [
+      "pisiform"
+    ],
+    "explanation": "最靠近內側（medial site），且位於手掌面。 ",
+    "description": "箭頭指的構造?"
+  }
+  {
+    "num": "324",
+    "path": "midterm images/image656.png",
+    "answer": [
+      "infraspinous fossa of right scapula"
+    ],
+    "explanation": "辨別方式參考第三題；標示區域為位於 Spine 下方的凹窩。",
+    "description": "紅圈指的構造?"
+  }
+  {
+    "num": "325",
+    "path": "midterm images/image658.png",
+    "answer": [
+      "acromion of right scapula"
+    ],
+    "explanation": "此為由後側觀之（posterior view）的右肩胛骨（Scapula），標示點為其 Spine 外側的膨大突起。",
+    "description": "星星指的構造?"
+  }
   
 ]
