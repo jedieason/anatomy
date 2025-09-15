@@ -2606,11 +2606,155 @@
   }
   {
     "num": "290",
-    "path": "midterm images/image587.png",
+    "path": "midterm images/image589.png",
     "answer": [
-      "superciliary arch"
+      "mastoid process"
     ],
-    "explanation": "從前方觀看（anterior view），位於眼框上方的拱形結構，為額骨（Frontal bone）較厚之處。",
+    "explanation": "",
+    "description": "紅圈所指構造?"
+  }
+  {
+    "num": "291",
+    "path": "midterm images/image591.png",
+    "answer": [
+      "pterion"
+    ],
+    "explanation": "位於頭顱側面，額骨（Frontal bone）、 頂 骨（Parietal bone）、 顳 骨 （ Temporal bone）、 蝶 骨（Sphenoid bone）的交會處。",
+    "description": "黑圈所指構造?"
+  }
+  {
+    "num": "292",
+    "path": "midterm images/image593.png",
+    "answer": [
+      "internal occipital crest"
+    ],
+    "explanation": "位於 Internal occipital protuberance 下方的矢狀走向表面突起，為 Falx cerebelli的附著處。",
+    "description": "紅圈所指構造?"
+  }
+  {
+    "num": "293",
+    "path": "midterm images/image595.png",
+    "answer": [
+      "clivus"
+    ],
+    "explanation": "構成枕骨（Occipital bone）的 basilar part，往前和 Sella turcica 相接，往後（下）構成枕骨大孔（Foramen magnum）的前緣。",
     "description": "綠色所指構造?"
+  }
+  {
+    "num": "294",
+    "path": "midterm images/image597.png",
+    "answer": [
+      "pharyngeal tubercle"
+    ],
+    "explanation": "從下方觀看（inferior view），位於枕骨大孔正前方的表面突起。 ",
+    "description": "綠色所指構造?"
+  }
+  {
+    "num": "295",
+    "path": "midterm images/image599.png",
+    "answer": [
+      "occipital condyle"
+    ],
+    "explanation": "",
+    "description": "灰色所指構造?"
+  }
+  {
+    "num": "296",
+    "path": "midterm images/image601.png",
+    "answer": [
+      "glabella"
+    ],
+    "explanation": "Nasal bone 上方較平緩的地方，在兩個 Superciliary arch 中間。俗稱眉心（印堂）。",
+    "description": "紅圈所指構造?"
+  }
+  {
+    "num": "297",
+    "path": "midterm images/image603.png",
+    "answer": [
+      "superior temporal line"
+    ],
+    "explanation": "頭顱側面突起的上下兩條弧線，跨越額骨（Frontal bone）、 頂 骨 （ Parietal bone）及顳骨（Temporal bone）， 下 方 那 條 為 Inferior temporal line。",
+    "description": "箭頭所指構造?"
+  }
+  {
+    "num": "298",
+    "path": "midterm images/image605.png",
+    "answer": [
+      "anterior clinoid process"
+    ],
+    "explanation": "自 Lesser wing 向後方延伸的兩根突起，和 Sella turcica 在差不多的位置。 ",
+    "description": "綠色所指構造?"
+  }
+  {
+    "num": "299",
+    "path": "midterm images/image607.png",
+    "answer": [
+      "inferior nuchal line"
+    ],
+    "explanation": "先找到 External occipital protuberance，自該處向兩側（外側）水平延伸的突起為 Superior nuchal line，其下方平行的橫向突起即為 Inferior nuchal line。 ",
+    "description": "木棒所指線狀構造?"
+  }
+  {
+    "num": "300",
+    "path": "midterm images/image609.png",
+    "answer": [
+      "vomer"
+    ],
+    "explanation": "",
+    "description": "箭頭所指構造?"
+  }
+  {
+    "num": "301",
+    "path": "midterm images/image610.png",
+    "answer": [
+      "foramen spinosum"
+    ],
+    "explanation": "位在 Foramen ovale 的後方（posterior site）。",
+    "description": "針所指構造?"
+  }
+  {
+    "num": "302",
+    "path": "midterm images/image611.png",
+    "answer": [
+      "foramen cecum"
+    ],
+    "explanation": "位在 Crista galii 前方的小洞。",
+    "description": "綠色構造?"
+  }
+  {
+    "num": "303",
+    "path": "midterm images/image613.png",
+    "answer": [
+      "frontal crest"
+    ],
+    "explanation": "前額中央的突起，為 Falx cerebri 的附著處。 ",
+    "description": "綠色構造?"
+  }
+  {
+    "num": "304",
+    "path": "midterm images/image614.png",
+    "answer": [
+      "alveolar process of maxilla"
+    ],
+    "explanation": "",
+    "description": "紅色圈起構造?"
+  }
+  {
+    "num": "305",
+    "path": "midterm images/image616.png",
+    "answer": [
+      "nasolacrimal canal"
+    ],
+    "explanation": "位在眼窩內側下緣，Fossa for lacrimal sac 的底部，即淚骨（Lacrimal bone）和上顎骨（Maxilla bone）、鼻骨（Nasal bone）的交接處。 ",
+    "description": "箭頭所指構造?"
+  }
+  {
+    "num": "306",
+    "path": "midterm images/image619.png",
+    "answer": [
+      "pterygoid hamulus"
+    ],
+    "explanation": "位於顎骨（Palatine bone）後方，鼻腔外壁底部（inferior site）的小勾狀構造。 ",
+    "description": "鑷子所指構造?"
   }
 ]
