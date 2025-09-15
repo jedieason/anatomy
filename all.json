@@ -2757,4 +2757,78 @@
     "explanation": "位於顎骨（Palatine bone）後方，鼻腔外壁底部（inferior site）的小勾狀構造。 ",
     "description": "鑷子所指構造?"
   }
+  {
+    "num": "307",
+    "path": "midterm images/image621.png",
+    "answer": [
+      "zygomatic process of maxilla"
+    ],
+    "explanation": "Maxilla 連接 Zygomatic bone 的突起。",
+    "description": "紅色構造?"
+  }
+  {
+    "num": "308",
+    "path": "midterm images/image623.png",
+    "answer": [
+      "incisive fossa",
+      "incisive foramen"
+    ],
+    "explanation": "位在門牙（incisor）後方。",
+    "description": "箭頭指的構造?"
+  }
+  {
+    "num": "309",
+    "path": "midterm images/image625.png",
+    "answer": [
+      "mental foramen"
+    ],
+    "explanation": "",
+    "description": "箭頭指的構造?"
+  }
+  {
+    "num": "310",
+    "path": "midterm images/image626.png",
+    "answer": [
+      "styloid process of temporal bone"
+    ],
+    "explanation": "",
+    "description": "箭頭指的構造?"
+  }
+  {
+    "num": "311",
+    "path": "midterm images/image628.png",
+    "answer": [
+      "greater wing of sphenoid bone"
+    ],
+    "explanation": "",
+    "description": "黑線圍出構造?"
+  }
+  {
+    "num": "312",
+    "path": "midterm images/image629.png",
+    "answer": [
+      "lesser tubercle of right humerus"
+    ],
+    "explanation": "以 Head of humerus 和 Olecranon fossa 為定位點，可判斷出這是右手的肱骨，且笑臉所標示的突起處位於前側（anterior site），以此辨認之。",
+    "description": "藍色笑臉構造?"
+  }
+  {
+    "num": "313",
+    "path": "midterm images/image631.png",
+    "answer": [
+      "supraglenoid tubercle of left scapula"
+    ],
+    "explanation": "以 Coracoid process 和 Acromion 為定位點，判斷出這是左邊的肩胛骨（Scapula），而標示位於肩臼窩（Glenoid fossa）之上方。",
+    "description": "紅色構造?"
+  }
+  {
+    "num": "314",
+    "path": "midterm images/image633.png",
+    "answer": [
+      "supraglenoid tubercle of left scapula"
+    ],
+    "explanation": "以 Coracoid process 和 Acromion 為定位點，判斷出這是左邊的肩胛骨（Scapula），而標示位於肩臼窩（Glenoid fossa）之上方。",
+    "description": "紅色構造?"
+  }
+  
 ]
