@@ -3262,4 +3262,40 @@
     "explanation": "構成 Obturator foramen 的上方。",
     "description": "綠色是什麼構造"
   }
+  {
+    "num": "362",
+    "path": "midterm images/image730.png",
+    "answer": [
+      "1.iliac crest 2.gluteal surface 3.posterior superior iliac spine 4.posterior inferior iliac spine 5.greater sciatic notch 6.ischial spine 7.lesser sciatic notch 8.ischial tuberosity 9.anterior superior iliac spine 10.anterior inferior iliac spine 11.acetabulum 12.lunate surface 13.superior pubic ramus 14.pubic tubercle 15.obturator foramen 16.inferior pubic ramus 17.ramus of ischial ramus"
+    ],
+    "explanation": "",
+    "description": "1~17是什麼構造(範例:1.liver 2.lung 3.brain)"
+  }
+  {
+    "num": "363",
+    "path": "midterm images/image731.png",
+    "answer": [
+      "medial condyle of right femur"
+    ],
+    "explanation": "和大球狀的 Head of femur 位於同一側（內側）。 ",
+    "description": "綠色是什麼構造"
+  }
+  {
+    "num": "364",
+    "path": "midterm images/image733.png",
+    "answer": [
+      "trochanteric fossa of right femur"
+    ],
+    "explanation": "位在 Greater trochanter 和 neck of femur 連結處的小凹窩。 ",
+    "description": "木棒指的是什麼構造"
+  }
+  {
+    "num": "365",
+    "path": "midterm images/image735.png",
+    "answer": [
+      "lateral condyle of right tibia"
+    ],
+    "explanation": "和 Medial malleolus 位於不同側。",
+    "description": "紅圈構造"
+  }
 ]
