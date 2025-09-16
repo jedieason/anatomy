@@ -3298,4 +3298,58 @@
     "explanation": "和 Medial malleolus 位於不同側。",
     "description": "紅圈構造"
   }
+  {
+    "num": "366",
+    "path": "midterm images/image737.png",
+    "answer": [
+      "gluteal tuberosity of right femur"
+    ],
+    "explanation": "位在 Lesser trochanter 旁邊（外側）的長條突起。",
+    "description": "箭頭構造"
+  }
+  {
+    "num": "367",
+    "path": "midterm images/image739.png",
+    "answer": [
+      "soleal line of right tibia"
+    ],
+    "explanation": "可以明顯看到腓骨（Fibula）往前貼在脛骨（Tibia）上，故此為從後側觀看（posterior view）的小腿骨，且該突起自腓骨與脛骨的關節處向內側斜下延伸。",
+    "description": "黑線構造"
+  }
+  {
+    "num": "368",
+    "path": "midterm images/image741.png",
+    "answer": [
+      "adductor tubercle"
+    ],
+    "explanation": "位在 Medial epicondyle 上的小突起。",
+    "description": "箭頭構造"
+  }
+  {
+    "num": "369",
+    "path": "midterm images/image743.png",
+    "answer": [
+      "greater trochanter of right femur"
+    ],
+    "explanation": "",
+    "description": "綠色構造"
+  }
+  {
+    "num": "370",
+    "path": "midterm images/image745.png",
+    "answer": [
+      "head of left fibula"
+    ],
+    "explanation": "此為自後側觀看（posterior view）的膝關節（Knee joint），而非肘關節（Elbow joint）。 ",
+    "description": "綠色構造"
+  }
+  {
+    "num": "371",
+    "path": "midterm images/image747.png",
+    "answer": [
+      "anterior inferior iliac spine of left ilium"
+    ],
+    "explanation": "題目標示處位於 Anterior superior iliac spine 的下方。",
+    "description": "紅框構造"
+  }
 ]
