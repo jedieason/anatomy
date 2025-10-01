@@ -1,0 +1,1135 @@
+[
+  {
+    "num": "1001001",
+    "path": "midterm-image/舊Lab骨骼/1001001.png",
+    "answer": [
+      "Dens"
+    ],
+    "explanation": "樞椎（Axis）本體的向上突起（故樞椎自側面觀為 L 型）",
+    "description": "此構造？（B95）"
+  },
+  {
+    "num": "1001002",
+    "path": "midterm-image/舊Lab骨骼/1001002.png",
+    "answer": [
+      "Lamina"
+    ],
+    "explanation": "Pedicle 向後突出連接的兩片寬扁骨板，左右對稱。",
+    "description": "此構造？（粉紅色處）（B95、B98"
+  },
+  {
+    "num": "1001003",
+    "path": "midterm-image/舊Lab骨骼/1001003.png",
+    "answer": [
+      "Anterior sacral foramina",
+      "pelvic"
+    ],
+    "explanation": "相當於 Intervertebral foramen，有 S1 到S4的Anterior primary rami通過",
+    "description": "這些孔洞？（B95、B97、B02）"
+  },
+  {
+    "num": "1001004",
+    "path": "midterm-image/舊Lab骨骼/1001004.png",
+    "answer": [
+      "Atlas"
+    ],
+    "explanation": "特點：(1)沒有 vertebral body。(2)沒有 spinous process（變成 posterior tubercle / arch）。(3)整體似一圓圈，脊髓（Spinal cord）穿過中間。",
+    "description": "此塊骨頭？（B97、B99、B01）"
+  },
+  {
+    "num": "1001005",
+    "path": "midterm-image/舊Lab骨骼/1001005.png",
+    "answer": [
+      "Transverse process"
+    ],
+    "explanation": "Pedicle 與 Lamina 交接處往後外側凸起的構造。典型的脊椎骨一節有兩個，左右各一。",
+    "description": "這個構造？（B97、B02）"
+  },
+  {
+    "num": "1001006",
+    "path": "midterm-image/舊Lab骨骼/1001006.png",
+    "answer": [
+      "Lumbar vertebra"
+    ],
+    "explanation": "Vertebral body 面積遠大於其三角形的 Vertebral foramen ，用於支撐重量。而 Spinous process 為了固定，交疊成一整片的形狀。",
+    "description": "這是哪裡的vertebra？（B98）"
+  },
+  {
+    "num": "1001007",
+    "path": "midterm-image/舊Lab骨骼/1001007.png",
+    "answer": [
+      "Transverse foramen"
+    ],
+    "explanation": "位在 Transverse process 中央的孔洞（由 Anterior tubercle 和 Posterior tubercle 連接形成），為頸椎（Cervical vertebrae）特有構造，部分會有 Vertebral artery 穿過。",
+    "description": "此構造？（B98、B01）"
+  },
+  {
+    "num": "1001008",
+    "path": "midterm-image/舊Lab骨骼/1001008.png",
+    "answer": [
+      "Spinous process"
+    ],
+    "explanation": "nil",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001009",
+    "path": "midterm-image/舊Lab骨骼/1001009.png",
+    "answer": [
+      "Articular facet for rib"
+    ],
+    "explanation": "1.Spinous process3.Superior articular process5.Pedicle6.Vetebral Body8.Transverse process的articular facet for rib9.Inferior articular process",
+    "description": "構造8？（B00）"
+  },
+  {
+    "num": "1001010",
+    "path": "midterm-image/舊Lab骨骼/1001010.png",
+    "answer": [
+      "Median sacral crest"
+    ],
+    "explanation": "位於薦椎（Sacrum）後側正中間，相當於各個 Spinous process 的結合，是最明顯的突起。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001011",
+    "path": "midterm-image/舊Lab骨骼/1001011.png",
+    "answer": [
+      "Axis"
+    ],
+    "explanation": "有 Vertebral body 和 Spinous process，但都很小（C1 至 C3 逐漸變大）。",
+    "description": "此骨頭？（B00、B02）"
+  },
+  {
+    "num": "1001012",
+    "path": "midterm-image/舊Lab骨骼/1001012.png",
+    "answer": [
+      "Thoracic vertebra"
+    ],
+    "explanation": "脊椎本體（Vertebral body）有和肋骨相接用的 costal demifacet；而胸椎（Thoracic vertebrae）上下節的接觸面為垂直地前後平行（相較頸椎是水平地上下平行，活動度會較低；此外，胸椎的 Vertebral foramen 較圓而小。",
+    "description": "這是哪裡的vertebra？（B01）"
+  },
+  {
+    "num": "1001013",
+    "path": "midterm-image/舊Lab骨骼/1001013.png",
+    "answer": [
+      "Sacral hiatus"
+    ],
+    "explanation": "Vertebral canal 的終點。",
+    "description": "此構造？（B98、B01）"
+  },
+  {
+    "num": "1001014",
+    "path": "midterm-image/舊Lab骨骼/1001014.png",
+    "answer": [
+      "Manubrium of sternum"
+    ],
+    "explanation": "1.最上緣位於正中的凹陷稱為 jugular notch。2.上方的左右兩側各有一個凹陷，用來連接鎖骨（clavicle）。3.第一肋骨（R1）的關節處位在鎖骨關節處的下方。",
+    "description": "此部分骨頭名稱？（B95、B97、B01）"
+  },
+  {
+    "num": "1001015",
+    "path": "midterm-image/舊Lab骨骼/1001015.png",
+    "answer": [
+      "First rib"
+    ],
+    "explanation": "1. 接在 Sternal manubrium 上，接面較其他肋骨大。2. 上方表面（superior site）不光滑，有兩個凹陷處（groove）和一個突起（tubercle）：(1)Groove for subclavian artery(2)Groove for subclavian vein(3)Scalene tubercle3. 下方表面（inferior site）光滑。",
+    "description": "此骨頭？（B97、B99）"
+  },
+  {
+    "num": "1001016",
+    "path": "midterm-image/舊Lab骨骼/1001016.png",
+    "answer": [
+      "Xiphoid process of sternum"
+    ],
+    "explanation": "胸骨最下端之處",
+    "description": "此構造？（B98、B02）"
+  },
+  {
+    "num": "1001017",
+    "path": "midterm-image/舊Lab骨骼/1001017.png",
+    "answer": [
+      "Body of sternum"
+    ],
+    "explanation": "nil",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001018",
+    "path": "midterm-image/舊Lab骨骼/1001018.png",
+    "answer": [
+      "Twelfth rib",
+      "R12"
+    ],
+    "explanation": "頭部（head）只有一個完整的關節接面（facet），只與第十二胸椎（T12）本體的 Costal facet 相接，沒有與 Transverse process 關節。",
+    "description": "哪塊骨頭？（B00）"
+  },
+  {
+    "num": "1001019",
+    "path": "midterm-image/舊Lab骨骼/1001019.png",
+    "answer": [
+      "Carotid canal"
+    ],
+    "explanation": "1.最上緣位於正中的凹陷稱為 jugular notch。2.上方的左右兩側各有一個凹陷，用來連接鎖骨（clavicle）。3.第一肋骨（R1）的關節處位在鎖骨關節處的下方。",
+    "description": "鎳子比的孔洞？（B95、B97、B98、B01）"
+  },
+  {
+    "num": "1001020",
+    "path": "midterm-image/舊Lab骨骼/1001020.png",
+    "answer": [
+      "Lateral pterygoid plate"
+    ],
+    "explanation": "1. 接在 Sternal manubrium 上，接面較其他肋骨大。2. 上方表面（superior site）不光滑，有兩個凹陷處（groove）和一個突起（tubercle）：(1)Groove for subclavian artery(2)Groove for subclavian vein(3)Scalene tubercle3. 下方表面（inferior site）光滑。",
+    "description": "鎳子指的片狀構造？（B95、B97、B02）"
+  },
+  {
+    "num": "1001021",
+    "path": "midterm-image/舊Lab骨骼/1001021.png",
+    "answer": [
+      "Optic canal"
+    ],
+    "explanation": "胸骨最下端之處。",
+    "description": "編號10的孔洞？（B95、B97）"
+  },
+  {
+    "num": "1001022",
+    "path": "midterm-image/舊Lab骨骼/1001022.png",
+    "answer": [
+      "Sella turcica"
+    ],
+    "explanation": "nil",
+    "description": "此構造？（B95、B98、B01、B02）"
+  },
+  {
+    "num": "1001023",
+    "path": "midterm-image/舊Lab骨骼/1001023.png",
+    "answer": [
+      "Zygomatic process of temporal bone"
+    ],
+    "explanation": "頭部（head）只有一個完整的關節接面（facet），只與第十二胸椎（T12）本體的 Costal facet 相接，沒有與 Transverse process 關節。",
+    "description": "此構造？（B95）"
+  },
+  {
+    "num": "1001024",
+    "path": "midterm-image/舊Lab骨骼/1001024.png",
+    "answer": [
+      "External occipital protuberance",
+      "inion"
+    ],
+    "explanation": "枕骨外部表面的明顯突起，大約位在正中間。",
+    "description": "此構造？（B95、B98、B01）"
+  },
+  {
+    "num": "1001025",
+    "path": "midterm-image/舊Lab骨骼/1001025.png",
+    "answer": [
+      "External acoustic meatus"
+    ],
+    "explanation": "外耳道。",
+    "description": "此構造？（B95）"
+  },
+  {
+    "num": "1001026",
+    "path": "midterm-image/舊Lab骨骼/1001026.png",
+    "answer": [
+      "Condylar process of mandible"
+    ],
+    "explanation": "Mandible 後側和顳骨（Temporal bone）關節處。",
+    "description": "此構造？（B95、B00）"
+  },
+  {
+    "num": "1001027",
+    "path": "midterm-image/舊Lab骨骼/1001027.png",
+    "answer": [
+      "Grooves for middle meningeal arteries"
+    ],
+    "explanation": "nil",
+    "description": "箭頭指的溝溝們（B95）"
+  },
+  {
+    "num": "1001028",
+    "path": "midterm-image/舊Lab骨骼/1001028.png",
+    "answer": [
+      "Cribriform plate"
+    ],
+    "explanation": "位於 Anterior cranial fossa 中間，為嗅神經（Olfactory nerve）通過之處。",
+    "description": "此構造？（B95、B97、B99、B01）"
+  },
+  {
+    "num": "1001029",
+    "path": "midterm-image/舊Lab骨骼/1001029.png",
+    "answer": [
+      "Mastoid process of temporal"
+    ],
+    "explanation": "裡面有蜂巢狀的空腔，可以幫助共振。",
+    "description": "貼上標籤的構造（B97、B01）"
+  },
+  {
+    "num": "1001030",
+    "path": "midterm-image/舊Lab骨骼/1001030.png",
+    "answer": [
+      "Internal acoustic meatus"
+    ],
+    "explanation": "位於 Petrous part of temporal bone，Jugular foramen的上方，為水平向外深入顳骨的孔道。",
+    "description": "此構造？（B97、B98、B00）"
+  },
+  {
+    "num": "1001031",
+    "path": "midterm-image/舊Lab骨骼/1001031.png",
+    "answer": [
+      "Foramen ovale"
+    ],
+    "explanation": "位於 Carotid canal 前方，較大的卵圓形孔洞。",
+    "description": "此構造？（B97）"
+  },
+  {
+    "num": "1001032",
+    "path": "midterm-image/舊Lab骨骼/1001032.png",
+    "answer": [
+      "Hypoglossal canal"
+    ],
+    "explanation": "位在枕骨大孔（Foramen magnum）內壁上的小洞，向外側穿透lateral part of occipital bone。",
+    "description": "此構造？（B97、B01）"
+  },
+  {
+    "num": "1001033",
+    "path": "midterm-image/舊Lab骨骼/1001033.png",
+    "answer": [
+      "Coronoid process of mandible"
+    ],
+    "explanation": "Mandible 後側的錐狀突起，位於 Condylar process of mandible 前方，其突起朝向前側上方，提供Temporalis m. 以及 Masseter m. 附著。",
+    "description": "此構造？（B97、B00）"
+  },
+  {
+    "num": "1001034",
+    "path": "midterm-image/舊Lab骨骼/1001034.png",
+    "answer": [
+      "Dorsum sellae"
+    ],
+    "explanation": "構成 Sella turcica 的後側。",
+    "description": "此構造？（B97）"
+  },
+  {
+    "num": "1001035",
+    "path": "midterm-image/舊Lab骨骼/1001035.png",
+    "answer": [
+      "Medial pterygoid plate"
+    ],
+    "explanation": "和 Perpendicular plate of palatine 相接，構成鼻腔外壁（lateral nasal wall）最後側的部分，其上有小鉤狀構造（hamulus）。",
+    "description": "此片狀構造？（B98）"
+  },
+  {
+    "num": "1001036",
+    "path": "midterm-image/舊Lab骨骼/1001036.png",
+    "answer": [
+      "Greater palatine foramen"
+    ],
+    "explanation": "位於 Horizontal plate of palatine 的後方外側（posterior lateral site）。",
+    "description": "此構造？（B98）"
+  },
+  {
+    "num": "1001037",
+    "path": "midterm-image/舊Lab骨骼/1001037.png",
+    "answer": [
+      "Jugular foramen"
+    ],
+    "explanation": "位在 Occipital condyle 旁邊，Carotid canal 的後方，其開口朝向前方。",
+    "description": "此構造？（B98、B02）"
+  },
+  {
+    "num": "1001038",
+    "path": "midterm-image/舊Lab骨骼/1001038.png",
+    "answer": [
+      "Crista galli"
+    ],
+    "explanation": "位在 Anterior cranial fossa 正中間、Cribriform plate中央的突起處，為 Falx cerebri 的附著處。",
+    "description": "片狀構造？（B98、B02）"
+  },
+  {
+    "num": "1001039",
+    "path": "midterm-image/舊Lab骨骼/1001039.png",
+    "answer": [
+      "Superior orbital fissure"
+    ],
+    "explanation": "位於 Sella turcica兩側，由 Lesser wing、Greater wing 以及 Body of sphenoid 三者共同構成的狹長形裂口，Oculomotor n.(III)、Trochlear n.(IV)、Ophthalmic n.(V1)、Abducens n.(VI) 由此處進入眼窩。",
+    "description": "此構造？（B98）"
+  },
+  {
+    "num": "1001040",
+    "path": "midterm-image/舊Lab骨骼/1001040.png",
+    "answer": [
+      "Mandibular foramen"
+    ],
+    "explanation": "位於 Ramus of mandible 內側面的孔洞，為 Mandibular canal 的在 Mandible 內側的開口。（註：該通道在外側開口為 Mental foramen）",
+    "description": "圈起的構造？（B98、B01）"
+  },
+  {
+    "num": "1001041",
+    "path": "midterm-image/舊Lab骨骼/1001041.png",
+    "answer": [
+      "Supraorbital notch",
+      "foramen"
+    ],
+    "explanation": "從前方觀看（anterior view），位於眼框上緣偏內側的小凹陷（或孔洞）。",
+    "description": "此構造？（B99、B01）"
+  },
+  {
+    "num": "1001042",
+    "path": "midterm-image/舊Lab骨骼/1001042.png",
+    "answer": [
+      "Inferior nasal concha"
+    ],
+    "explanation": "位於鼻腔（nasal cavity）側壁，是獨立的一塊骨頭喔。",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001043",
+    "path": "midterm-image/舊Lab骨骼/1001043.png",
+    "answer": [
+      "Superciliary arch"
+    ],
+    "explanation": "從前方觀看（anterior view），位於眼框上方的拱形結構，為額骨（Frontal bone）較厚之處。",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001044",
+    "path": "midterm-image/舊Lab骨骼/1001044.png",
+    "answer": [
+      "Mastoid notch"
+    ],
+    "explanation": "Mastoid process 內側的凹溝（今年上課未提及）。",
+    "description": "此構造？（較深的溝）（B99"
+  },
+  {
+    "num": "1001045",
+    "path": "midterm-image/舊Lab骨骼/1001045.png",
+    "answer": [
+      "Pterion"
+    ],
+    "explanation": "位於頭顱側面，額骨（Frontal bone）、頂骨（Parietal bone）、顳骨（Temporal bone）、蝶骨（Sphenoid bone）的交會處。",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001046",
+    "path": "midterm-image/舊Lab骨骼/1001046.png",
+    "answer": [
+      "Internal occipital crest"
+    ],
+    "explanation": "位於 Internal occipital protuberance 下方的矢狀走向表面突起，為 Falx cerebelli的附著處。",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001047",
+    "path": "midterm-image/舊Lab骨骼/1001047.png",
+    "answer": [
+      "Clivus"
+    ],
+    "explanation": "構成枕骨（Occipital bone）的 basilar part，往前和 Sella turcica 相接，往後（下）構成枕骨大孔（Foramen magnum）的前緣。",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001048",
+    "path": "midterm-image/舊Lab骨骼/1001048.png",
+    "answer": [
+      "Pharyngeal tubercle"
+    ],
+    "explanation": "從下方觀看（inferior view），位於枕骨大孔正前方的表面突起。",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001049",
+    "path": "midterm-image/舊Lab骨骼/1001049.png",
+    "answer": [
+      "Occipital condyle"
+    ],
+    "explanation": "【出處】共筆 Vol 2 p.33",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001050",
+    "path": "midterm-image/舊Lab骨骼/1001050.png",
+    "answer": [
+      "Glabella"
+    ],
+    "explanation": "Nasal bone 上方較平緩的地方，在兩個 Superciliary arch 中間。俗稱眉心（印堂）。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001051",
+    "path": "midterm-image/舊Lab骨骼/1001051.png",
+    "answer": [
+      "Superior temporal line"
+    ],
+    "explanation": "頭顱側面突起的上下兩條弧線，跨越額骨（Frontal bone）、頂骨（Parietal bone）及顳骨（Temporal bone），下方那條為 Inferior temporal line。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001052",
+    "path": "midterm-image/舊Lab骨骼/1001052.png",
+    "answer": [
+      "Anterior clinoid process"
+    ],
+    "explanation": "自 Lesser wing 向後方延伸的兩根突起，和 Sella turcica 在差不多的位置。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001053",
+    "path": "midterm-image/舊Lab骨骼/1001053.png",
+    "answer": [
+      "Inferior nuchal line"
+    ],
+    "explanation": "先找到 External occipital protuberance，自該處向兩側（外側）水平延伸的突起為 Superior nuchal line，其下方平行的橫向突起即為 Inferior nuchal line。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001054",
+    "path": "midterm-image/舊Lab骨骼/1001054.png",
+    "answer": [
+      "Vomer"
+    ],
+    "explanation": "nil",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001055",
+    "path": "midterm-image/舊Lab骨骼/1001055.png",
+    "answer": [
+      "Foramen spinosum"
+    ],
+    "explanation": "位在 Foramen ovale 的後方（posterior site）。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001056",
+    "path": "midterm-image/舊Lab骨骼/1001056.png",
+    "answer": [
+      "Foramen caecum",
+      "cecum"
+    ],
+    "explanation": "位在 Crista galii 前方的小洞。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001057",
+    "path": "midterm-image/舊Lab骨骼/1001057.png",
+    "answer": [
+      "Frontal crest"
+    ],
+    "explanation": "前額中央的突起，為 Falx cerebri 的附著處。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001058",
+    "path": "midterm-image/舊Lab骨骼/1001058.png",
+    "answer": [
+      "Alveolar process of maxilla"
+    ],
+    "explanation": "nil",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001059",
+    "path": "midterm-image/舊Lab骨骼/1001059.png",
+    "answer": [
+      "Nasolacrimal canal"
+    ],
+    "explanation": "位在眼窩內側下緣，Fossa for lacrimal sac 的底部，即淚骨（Lacrimal bone）和上顎骨（Maxilla bone）、鼻骨（Nasal bone）的交接處。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001060",
+    "path": "midterm-image/舊Lab骨骼/1001060.png",
+    "answer": [
+      "Pterygoid hamulus",
+      "of medial pterygoid plate"
+    ],
+    "explanation": "位於顎骨（Palatine bone）後方，鼻腔外壁底部（inferior site）的小勾狀構造。",
+    "description": "此構造？（B01）"
+  },
+  {
+    "num": "1001062",
+    "path": "midterm-image/舊Lab骨骼/1001062.png",
+    "answer": [
+      "Zygomatic process of maxilla"
+    ],
+    "explanation": "位在門牙（incisor）後方。",
+    "description": "此構造？（B02）"
+  },
+  {
+    "num": "1001063",
+    "path": "midterm-image/舊Lab骨骼/1001063.png",
+    "answer": [
+      "Incisive fossa",
+      "foramen"
+    ],
+    "explanation": "nil",
+    "description": "此構造？（B02）"
+  },
+  {
+    "num": "1001064",
+    "path": "midterm-image/舊Lab骨骼/1001064.png",
+    "answer": [
+      "Mental foramen"
+    ],
+    "explanation": "nil",
+    "description": "此構造？（Be specific）（B02）"
+  },
+  {
+    "num": "1001065",
+    "path": "midterm-image/舊Lab骨骼/1001065.png",
+    "answer": [
+      "Styloid process of temporal bone"
+    ],
+    "explanation": "nil",
+    "description": "此構造？（B02）"
+  },
+  {
+    "num": "1001066",
+    "path": "midterm-image/舊Lab骨骼/1001066.png",
+    "answer": [
+      "Greater wing"
+    ],
+    "explanation": "以 Head of humerus 和 Olecranon fossa 為定位點，可判斷出這是右手的肱骨，且笑臉所標示的突起處位於前側（anterior site），以此辨認之。",
+    "description": "笑臉的構造？（B97、B01、B02）"
+  },
+  {
+    "num": "1001067",
+    "path": "midterm-image/舊Lab骨骼/1001067.png",
+    "answer": [
+      "Supraglenoid tubercle of left scapula"
+    ],
+    "explanation": "以 Coracoid process 和 Acromion 為定位點，判斷出這是左邊的肩胛骨（Scapula），而標示位於肩臼窩（Glenoid fossa）之上方。",
+    "description": "此構造？（B95、B99）"
+  },
+  {
+    "num": "1001068",
+    "path": "midterm-image/舊Lab骨骼/1001068.png",
+    "answer": [
+      "Supraspinous fossa of left scapula"
+    ],
+    "explanation": "由肩臼窩（Glenoid fossa）的位置和 Spine 可判斷出這是由後側觀之（posterior view）的肩胛骨，而標示區域是位於 Spine 上方的凹窩。",
+    "description": "此構造？（B95、B97）"
+  },
+  {
+    "num": "1001069",
+    "path": "midterm-image/舊Lab骨骼/1001069.png",
+    "answer": [
+      "Intertubercular groove of left humerus"
+    ],
+    "explanation": "由圖片下方的圓形構造（Head of humerus）可辨別出這是一根肱骨，而標示區域位於其對側的兩個突起處中間的凹陷處。",
+    "description": "此構造？（B95、B98）"
+  },
+  {
+    "num": "1001070",
+    "path": "midterm-image/舊Lab骨骼/1001070.png",
+    "answer": [
+      "Radial fossa of left humerus"
+    ],
+    "explanation": "先由 Trochlea of humerus 和 Capitulum 辨識出此為肱骨，而此二構造的近端（proximal）皆有一凹窩，以此判斷出這是由前側觀之（anterior view）的左手肱骨。",
+    "description": "此構造？（B95、B98、B00）"
+  },
+  {
+    "num": "1001071",
+    "path": "midterm-image/舊Lab骨骼/1001071.png",
+    "answer": [
+      "Trochlea of right humerus"
+    ],
+    "explanation": "辨別方式參考第一題與第五題。",
+    "description": "此構造？（B95、B98、B00、B01）"
+  },
+  {
+    "num": "1001072",
+    "path": "midterm-image/舊Lab骨骼/1001072.png",
+    "answer": [
+      "Styloid process of right ulna"
+    ],
+    "explanation": "Styloid process 為尺骨（Ulna）的重要特徵（surface landmark）；勉強可由 Trochlear notch 和 Coronoid process 的構型辨別為右手尺骨。",
+    "description": "此構造？（B95、B97、B98、B01）"
+  },
+  {
+    "num": "1001073",
+    "path": "midterm-image/舊Lab骨骼/1001073.png",
+    "answer": [
+      "Infraglenoid tubercle of right scapula"
+    ],
+    "explanation": "辨別方式同第二題，以 Coracoid process 和 Acromion 為定位點，標示點為位於肩臼窩（glenoid fossa）下方的突起物。（註：此為右肩胛骨）",
+    "description": "此構造？（B97、B01）"
+  },
+  {
+    "num": "1001074",
+    "path": "midterm-image/舊Lab骨骼/1001074.png",
+    "answer": [
+      "Medial epicondyle of right humerus"
+    ],
+    "explanation": "辨別方式參考第一題與第五題。",
+    "description": "此構造？（B97、B99）"
+  },
+  {
+    "num": "1001075",
+    "path": "midterm-image/舊Lab骨骼/1001075.png",
+    "answer": [
+      "Olecranon of right ulna"
+    ],
+    "explanation": "可由 Trochlear notch 的特殊構型辨認出此為尺骨（Ulna），而標示點位於其上方突起處；此外，並未於Trochlear notch 的遠端處（distal）見到 Radial notch，推測此應為右手尺骨。",
+    "description": "此構造？（B97）"
+  },
+  {
+    "num": "1001076",
+    "path": "midterm-image/舊Lab骨骼/1001076.png",
+    "answer": [
+      "Supinator crest of right ulna"
+    ],
+    "explanation": "此角度可觀察到完整的 Radial notch 接面，可判斷此為由外側面觀之（lateral view）的尺骨近端末梢（Proximal end），而箭頭所指之處為緊鄰 Radial notch 外側的表面突起處；另外可由 Trochlear notch、Radial notch 以及 Coronoid process 三者的相對位置推斷此為右手尺骨。",
+    "description": "此構造？（B97）"
+  },
+  {
+    "num": "1001077",
+    "path": "midterm-image/舊Lab骨骼/1001077.png",
+    "answer": [
+      "Radial tuberosity"
+    ],
+    "explanation": "由圖中左側的圓盤狀關節接面（即 Head of radius）判斷出此為橈骨的近端末梢（Proximal end of radius），而題目所指之處為位於 Head of radius遠端的大塊表面突起。",
+    "description": "此構造？（B97）"
+  },
+  {
+    "num": "1001078",
+    "path": "midterm-image/舊Lab骨骼/1001078.png",
+    "answer": [
+      "Pisiform"
+    ],
+    "explanation": "最靠近內側（medial site），且位於手掌面。",
+    "description": "此塊骨頭？（B97、B99、B01）"
+  },
+  {
+    "num": "1001079",
+    "path": "midterm-image/舊Lab骨骼/1001079.png",
+    "answer": [
+      "Infraspinous fossa of right scapula"
+    ],
+    "explanation": "辨別方式參考第三題；標示區域為位於 Spine 下方的凹窩。",
+    "description": "此構造？（B98）"
+  },
+  {
+    "num": "1001080",
+    "path": "midterm-image/舊Lab骨骼/1001080.png",
+    "answer": [
+      "Acromion of right scapula"
+    ],
+    "explanation": "此為由後側觀之（posterior view）的右肩胛骨（Scapula），標示點為其 Spine 外側的膨大突起。",
+    "description": "此構造？（紅色＊處）（B98）"
+  },
+  {
+    "num": "1001081",
+    "path": "midterm-image/舊Lab骨骼/1001081.png",
+    "answer": [
+      "Trochlear notch of left ulna"
+    ],
+    "explanation": "構造 A：Olecranon；構造 B：Radial notch of Ulna；構造 C：Coronoid process",
+    "description": "構造D？（B98）"
+  },
+  {
+    "num": "1001082",
+    "path": "midterm-image/舊Lab骨骼/1001082.png",
+    "answer": [
+      "Head of radius of left radius"
+    ],
+    "explanation": "圓盤狀關節接面。",
+    "description": "此構造？（B98、B00）"
+  },
+  {
+    "num": "1001083",
+    "path": "midterm-image/舊Lab骨骼/1001083.png",
+    "answer": [
+      "Lateral epicondyle of right humerus"
+    ],
+    "explanation": "辨別方式參考第一題與第五題。",
+    "description": "此構造？（B98）"
+  },
+  {
+    "num": "1001084",
+    "path": "midterm-image/舊Lab骨骼/1001084.png",
+    "answer": [
+      "Greater tubercle of left humerus"
+    ],
+    "explanation": "此應為從後側觀之（posterior view）的左手肱骨，題目所指之處為位於 Head of humerus 外側的膨大突起。",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001085",
+    "path": "midterm-image/舊Lab骨骼/1001085.png",
+    "answer": [
+      "Capitulum of left humerus"
+    ],
+    "explanation": "辨別方式參考第一題與第五題。（註：此為左手）",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001086",
+    "path": "midterm-image/舊Lab骨骼/1001086.png",
+    "answer": [
+      "Hook of hamate"
+    ],
+    "explanation": "同時和第四與第五掌骨（IV and V metacarpal）關節，可判斷此構造位於 Hamate。（今年講課未強調，投影片有上色）",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001087",
+    "path": "midterm-image/舊Lab骨骼/1001087.png",
+    "answer": [
+      "Clavicle"
+    ],
+    "explanation": "不知道能說什麼，鎖骨就長這個樣子，微 S 型。",
+    "description": "骨頭名？（B00）"
+  },
+  {
+    "num": "1001088",
+    "path": "midterm-image/舊Lab骨骼/1001088.png",
+    "answer": [
+      "Glenoid cavity of left scapula"
+    ],
+    "explanation": "辨別方式參考第二題。此為自前側觀之（costal view）的左肩胛骨。",
+    "description": "此構造？（B00、B02）"
+  },
+  {
+    "num": "1001089",
+    "path": "midterm-image/舊Lab骨骼/1001089.png",
+    "answer": [
+      "Deltoid tuberosity of right humerus"
+    ],
+    "explanation": "從圖片中左邊的 Head of humerus 可辨認出此為肱骨（Humerus），而題目所指之處為骨頭中段的表面突起。",
+    "description": "此構造？（B00、B01、B02）"
+  },
+  {
+    "num": "1001090",
+    "path": "midterm-image/舊Lab骨骼/1001090.png",
+    "answer": [
+      "Oblique line of right radius"
+    ],
+    "explanation": "由圓盤狀關節接面判斷此為橈骨（Radius），題目所圈之處為自 Radial tuberosity 延伸出的斜線狀表面突起。",
+    "description": "圈起來的構造？（B01）"
+  },
+  {
+    "num": "1001091",
+    "path": "midterm-image/舊Lab骨骼/1001091.png",
+    "answer": [
+      "Spine of right scapula"
+    ],
+    "explanation": "辨別方式參考第二題和第三題。",
+    "description": "此構造？（B97）"
+  },
+  {
+    "num": "1001092",
+    "path": "midterm-image/舊Lab骨骼/1001092.png",
+    "answer": [
+      "Metacarpal bones"
+    ],
+    "explanation": "和腕骨（Carpals）相關節。",
+    "description": "這些骨頭？（B01、B02）"
+  },
+  {
+    "num": "1001093",
+    "path": "midterm-image/舊Lab骨骼/1001093.png",
+    "answer": [
+      "Coronoid process of left ulna"
+    ],
+    "explanation": "參考第十題和第十六題。",
+    "description": "此構造？（Be specific）（B02）"
+  },
+  {
+    "num": "1001094",
+    "path": "midterm-image/舊Lab骨骼/1001094.png",
+    "answer": [
+      "Olecranon fossa of right humerus"
+    ],
+    "explanation": "由圖片右方的 Head of humerus 判斷出此為肱骨（Humerus），而題目所圈之處位於其遠端末梢（distal end），且只有一個大凹窩。",
+    "description": "此構造？（B02）"
+  },
+  {
+    "num": "1001095",
+    "path": "midterm-image/舊Lab骨骼/1001095.png",
+    "answer": [
+      "Subscapular fossa of left scapula"
+    ],
+    "explanation": "辨別方式參考第二題與第三題，此為自前側觀之（costal/anterior view）的左肩胛骨。",
+    "description": "此構造？（B02）"
+  },
+  {
+    "num": "1001096",
+    "path": "midterm-image/舊Lab骨骼/1001096.png",
+    "answer": [
+      "Calcaneus"
+    ],
+    "explanation": "七塊踝骨（Tarsal bone）中最大的，長得很特別，就是要會認。",
+    "description": "骨頭名稱？（B95、B97、B99）"
+  },
+  {
+    "num": "1001097",
+    "path": "midterm-image/舊Lab骨骼/1001097.png",
+    "answer": [
+      "Patella"
+    ],
+    "explanation": "小巧扇貝型，外側關節接面（lateral articular facet）較內側關節接面大。",
+    "description": "骨頭名稱？（B95、B00）"
+  },
+  {
+    "num": "1001098",
+    "path": "midterm-image/舊Lab骨骼/1001098.png",
+    "answer": [
+      "Iliac fossa of left ilium"
+    ],
+    "explanation": "由形狀可知此為髂骨（Ilium），且該凹窩和耳朵狀的薦椎關節接面（articular surface for sacrum）位於同一側。",
+    "description": "這個凹窩？（B95）"
+  },
+  {
+    "num": "1001099",
+    "path": "midterm-image/舊Lab骨骼/1001099.png",
+    "answer": [
+      "Inferior pubic ramus"
+    ],
+    "explanation": "題目所指之處構成 Obturator foramen 的前側下方。",
+    "description": "此構造？（天藍色的）（B95、B00）"
+  },
+  {
+    "num": "1001100",
+    "path": "midterm-image/舊Lab骨骼/1001100.png",
+    "answer": [
+      "Ischial tuberosity of left ischium"
+    ],
+    "explanation": "坐骨（Ischium）構成 Obturator foramen 的後側，以及 Acetabulum 的後側下方，題目所指之處為其外側表面的突起處。",
+    "description": "此構造？（B95、B97、B01、B02）"
+  },
+  {
+    "num": "1001101",
+    "path": "midterm-image/舊Lab骨骼/1001101.png",
+    "answer": [
+      "Greater sciatic notch of left ilium"
+    ],
+    "explanation": "位於 Posterior inferior iliac spine 和 Ischial spine 之間的凹陷處。",
+    "description": "此構造？（B95、B97、B99、B01、B02）"
+  },
+  {
+    "num": "1001102",
+    "path": "midterm-image/舊Lab骨骼/1001102.png",
+    "answer": [
+      "Medial malleolus"
+    ],
+    "explanation": "由形狀可知此為脛骨（Tibia）和腓骨（Fibula）構成踝關節（ankle joint）之處。構造 A：位於腓骨外側，為 Lateral malleolus。",
+    "description": "構造B？（B95、B00）"
+  },
+  {
+    "num": "1001103",
+    "path": "midterm-image/舊Lab骨骼/1001103.png",
+    "answer": [
+      "Pubic tubercle"
+    ],
+    "explanation": "此為從前側下方（anterior posterior view）觀察的骨盆（Pelvis）。構造 A：Anterior superior iliac spine。構造 C：Pubic symphysis。構造 D：Body of pubis。",
+    "description": "構造B？（B97）"
+  },
+  {
+    "num": "1001104",
+    "path": "midterm-image/舊Lab骨骼/1001104.png",
+    "answer": [
+      "Intertrochanteric crest of left femur"
+    ],
+    "explanation": "由圖片中上方球狀的 Head of femur 可辨別此為股骨（Femur），紅線左端和右端的突起處分別為 Greater trochanter 和 Lesser trochanter。",
+    "description": "此構造？（B97）"
+  },
+  {
+    "num": "1001105",
+    "path": "midterm-image/舊Lab骨骼/1001105.png",
+    "answer": [
+      "Malleolar fossa of right fibula"
+    ],
+    "explanation": "由形狀可知此為腓骨的遠端末梢（Distal end of fibula），而下方較大的凹面應為和 Talus 的關節接面（Articular surface for talus）。",
+    "description": "此構造？（B97、B01）"
+  },
+  {
+    "num": "1001106",
+    "path": "midterm-image/舊Lab骨骼/1001106.png",
+    "answer": [
+      "Medial condyle of right tibia"
+    ],
+    "explanation": "由形狀可知此為腓骨的遠端末梢（Distal end of fibula），而下方較大的凹面應為和 Talus 的關節接面（Articular surface for talus）。",
+    "description": "此構造？（B97）"
+  },
+  {
+    "num": "1001107",
+    "path": "midterm-image/舊Lab骨骼/1001107.png",
+    "answer": [
+      "Anterior superior iliac spine of right ilium"
+    ],
+    "explanation": "由 Greater sciatic notch 和 Acetabulum 可判斷這是從後側觀之（posterior  view）的右骨盆（Pelvis），題目標示處位於髂骨（Ilium）前方，Iliac crest 的末端。",
+    "description": "此構造？（B97）"
+  },
+  {
+    "num": "1001108",
+    "path": "midterm-image/舊Lab骨骼/1001108.png",
+    "answer": [
+      "Tibial tuberosity of left tibia"
+    ],
+    "explanation": "可由照片中右方的 Medial malleolus 判斷此為左腳脛骨。",
+    "description": "此構造？（B98、B02）"
+  },
+  {
+    "num": "1001109",
+    "path": "midterm-image/舊Lab骨骼/1001109.png",
+    "answer": [
+      "Lesser trochanter of left femur"
+    ],
+    "explanation": "圖片左側的大球形物體為 Head of femur。",
+    "description": "此構造？（B98）"
+  },
+  {
+    "num": "1001110",
+    "path": "midterm-image/舊Lab骨骼/1001110.png",
+    "answer": [
+      "Lesser sciatic notch of right ischium"
+    ],
+    "explanation": "在 Greater sciatic notch的下方，位於 Ischial spine和 Ischial tuberosity 之間的小凹陷處。",
+    "description": "此構造？（B98）"
+  },
+  {
+    "num": "1001111",
+    "path": "midterm-image/舊Lab骨骼/1001111.png",
+    "answer": [
+      "Ischial spine"
+    ],
+    "explanation": "此為從前側上方觀看（anterior superior view）的骨盆，題目標示處為坐骨（Ischium）上明顯的向後突起處。",
+    "description": "此構造？（B98）"
+  },
+  {
+    "num": "1001112",
+    "path": "midterm-image/舊Lab骨骼/1001112.png",
+    "answer": [
+      "Iliac crest"
+    ],
+    "explanation": "髂骨（Ilium）上緣。",
+    "description": "此構造？（B98、B00、B01）"
+  },
+  {
+    "num": "1001113",
+    "path": "midterm-image/舊Lab骨骼/1001113.png",
+    "answer": [
+      "Ischiopubic ramus",
+      "= inferior pubic ramus + ramus of ischium"
+    ],
+    "explanation": "用 Acetabulum 和 Obturator foramen 為參考點，題目所圈範圍包括 Inferior pubic ramus 和 Ramus of ischium。（老師上課時沒有提過這個詞；一般解剖教科書似乎也不太使用）",
+    "description": "此構造？（B98）"
+  },
+  {
+    "num": "1001114",
+    "path": "midterm-image/舊Lab骨骼/1001114.png",
+    "answer": [
+      "Acetabulum of left pelvic"
+    ],
+    "explanation": "認不出來可以準備重修惹。",
+    "description": "此構造？（B98）"
+  },
+  {
+    "num": "1001115",
+    "path": "midterm-image/舊Lab骨骼/1001115.png",
+    "answer": [
+      "Talus"
+    ],
+    "explanation": "上方trochlear關節面接tibia",
+    "description": "此骨頭？（B98）"
+  },
+  {
+    "num": "1001116",
+    "path": "midterm-image/舊Lab骨骼/1001116.png",
+    "answer": [
+      "Superior pubic ramus"
+    ],
+    "explanation": "構成 Obturator foramen 的上方。",
+    "description": "此構造？（B99、B01）"
+  },
+  {
+    "num": "1001117",
+    "path": "midterm-image/舊Lab骨骼/1001117.png",
+    "answer": [
+      "Acetabular notch"
+    ],
+    "explanation": "位於 Acetabulum 下方未完全閉合的缺口。",
+    "description": "構造15？（B99、B02）"
+  },
+  {
+    "num": "1001118",
+    "path": "midterm-image/舊Lab骨骼/1001118.png",
+    "answer": [
+      "Medial condyle of right femur"
+    ],
+    "explanation": "和大球狀的 Head of femur 位於同一側（內側）。",
+    "description": "此構造？（B99）"
+  },
+  {
+    "num": "1001119",
+    "path": "midterm-image/舊Lab骨骼/1001119.png",
+    "answer": [
+      "Trochanteric fossaof right femur"
+    ],
+    "explanation": "位在 Greater trochanter 和 neck of femur 連結處的小凹窩。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001120",
+    "path": "midterm-image/舊Lab骨骼/1001120.png",
+    "answer": [
+      "Lateral condyle of right tibia"
+    ],
+    "explanation": "和 Medial malleolus 位於不同側。",
+    "description": "此構造？（B00、B01）"
+  },
+  {
+    "num": "1001121",
+    "path": "midterm-image/舊Lab骨骼/1001121.png",
+    "answer": [
+      "Gluteal tuberosity of right femur"
+    ],
+    "explanation": "位在 Lesser trochanter 旁邊（外側）的長條突起。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001122",
+    "path": "midterm-image/舊Lab骨骼/1001122.png",
+    "answer": [
+      "Soleal line of right tibia"
+    ],
+    "explanation": "可以明顯看到腓骨（Fibula）往前貼在脛骨（Tibia）上，故此為從後側觀看（posterior view）的小腿骨，且該突起自腓骨與脛骨的關節處向內側斜下延伸。",
+    "description": "此構造？（B00）"
+  },
+  {
+    "num": "1001123",
+    "path": "midterm-image/舊Lab骨骼/1001123.png",
+    "answer": [
+      "Adductor tubercle"
+    ],
+    "explanation": "位在 Medial epicondyle 上的小突起。",
+    "description": "箭頭處構造？（B01）"
+  },
+  {
+    "num": "1001124",
+    "path": "midterm-image/舊Lab骨骼/1001124.png",
+    "answer": [
+      "Greater trochanter of right femur"
+    ],
+    "explanation": "參考第九題與第十四題。",
+    "description": "綠色構造？（B01）"
+  },
+  {
+    "num": "1001125",
+    "path": "midterm-image/舊Lab骨骼/1001125.png",
+    "answer": [
+      "Head of left fibula"
+    ],
+    "explanation": "此為自後側觀看（posterior view）的膝關節（Knee joint），而非肘關節（Elbow joint）。",
+    "description": "此構造？（B02）"
+  },
+  {
+    "num": "1001126",
+    "path": "midterm-image/舊Lab骨骼/1001126.png",
+    "answer": [
+      "Anterior inferior iliac spine of left ilium"
+    ],
+    "explanation": "題目標示處位於 Anterior superior iliac spine 的下方。",
+    "description": "此構造？（B02）"
+  }
+]

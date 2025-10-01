@@ -1,0 +1,310 @@
+[
+  {
+    "num": "111101",
+    "path": "midterm-image/b11lab/111101.png",
+    "answer": [
+      "Lateral condyle of femur"
+    ],
+    "explanation": "看head知道是femur",
+    "description": "紅色標示的構造是什麼？"
+  },
+  {
+    "num": "111102",
+    "path": "midterm-image/b11lab/111102.png",
+    "answer": [
+      "Iliac fossa"
+    ],
+    "explanation": "Ilium內側的凹面，放置骨盆內器官",
+    "description": "請問綠色標示是哪個構造？"
+  },
+  {
+    "num": "111103",
+    "path": "midterm-image/b11lab/111103.png",
+    "answer": [
+      "Occipital condyle"
+    ],
+    "explanation": "在Foramen magnum（枕骨大孔）兩側的大突起",
+    "description": "標示的構造為何？"
+  },
+  {
+    "num": "111104",
+    "path": "midterm-image/b11lab/111104.png",
+    "answer": [
+      "Manubrium of sternum"
+    ],
+    "explanation": "Sternum上半部分的骨頭，連接clavicle與1st rib",
+    "description": "紅色標示的地方是什麼？"
+  },
+  {
+    "num": "111105",
+    "path": "midterm-image/b11lab/111105.png",
+    "answer": [
+      "Vertebral",
+      "a."
+    ],
+    "explanation": "原圖是反過來的腦",
+    "description": "請問G是什麼血管"
+  },
+  {
+    "num": "111106",
+    "path": "midterm-image/b11lab/111106.png",
+    "answer": [
+      "Styloid process of temporal bone"
+    ],
+    "explanation": "temporal bone小的尖錐形突起",
+    "description": "請問圈圈處是何構造？"
+  },
+  {
+    "num": "111107",
+    "path": "midterm-image/b11lab/111107.png",
+    "answer": [
+      "Greater tubercle of humerus"
+    ],
+    "explanation": "看head知道是humerus",
+    "description": "請問A是何構造？"
+  },
+  {
+    "num": "111108",
+    "path": "midterm-image/b11lab/111108.png",
+    "answer": [
+      "Tibial tuberosity"
+    ],
+    "explanation": "tibia前方，medial與lateral condyle相連部位下方的粗糙隆起",
+    "description": "紅線標示處的構造叫做什麼？"
+  },
+  {
+    "num": "111109",
+    "path": "midterm-image/b11lab/111109.png",
+    "answer": [
+      "Dorsum sellae"
+    ],
+    "explanation": "superior view of sphenoid。sella turcica上的dorsum sellae",
+    "description": "標示紅色構造為何？"
+  },
+  {
+    "num": "111110",
+    "path": "midterm-image/b11lab/111110.png",
+    "answer": [
+      "Olecranon fossa"
+    ],
+    "explanation": "humerus背面，ulna的olecranon會扣在此處",
+    "description": "藍圈標示處為何構造?"
+  },
+  {
+    "num": "111111",
+    "path": "midterm-image/b11lab/111111.png",
+    "answer": [
+      "Radial notch of ulna"
+    ],
+    "explanation": "位於ulna內側，和radius圓盤狀的頭相接",
+    "description": "紅線標示處構造為何？"
+  },
+  {
+    "num": "111112",
+    "path": "midterm-image/b11lab/111112.png",
+    "answer": [
+      "crista galli"
+    ],
+    "explanation": "Cribriform plate中央向上的片狀構造，屬於ethmoid bone",
+    "description": "紅色所標示構造為何？"
+  },
+  {
+    "num": "111113",
+    "path": "midterm-image/b11lab/111113.png",
+    "answer": [
+      "Infraglenoid tubercle"
+    ],
+    "explanation": "Glenoid cavity下面",
+    "description": "紅色箭號所指為何？"
+  },
+  {
+    "num": "111114",
+    "path": "midterm-image/b11lab/111114.png",
+    "answer": [
+      "Infraorbital foramen"
+    ],
+    "explanation": "眼窩下面的孔洞，位於maxilla上",
+    "description": "請問箭頭所指構造為何？"
+  },
+  {
+    "num": "111115",
+    "path": "midterm-image/b11lab/111115.png",
+    "answer": [
+      "Transverse process"
+    ],
+    "explanation": "vertebrae 有三條process，往旁邊兩側的是Transverse process",
+    "description": "請寫出標示的構造"
+  },
+  {
+    "num": "111116",
+    "path": "midterm-image/b11lab/111116.png",
+    "answer": [
+      "Right subclavian vein"
+    ],
+    "explanation": "跟subclavian artery並行，在IJV匯入前為subclavian v.。注意左右側",
+    "description": "綠色圈起來的血管是哪一個（不是白色箭頭）"
+  },
+  {
+    "num": "111117",
+    "path": "midterm-image/b11lab/111117.png",
+    "answer": [
+      "Medial pterygoid plate"
+    ],
+    "explanation": "Sphenoid側邊有兩對plate，內側的為medial",
+    "description": "請寫出鑷子所指構造"
+  },
+  {
+    "num": "111118",
+    "path": "midterm-image/b11lab/111118.png",
+    "answer": [
+      "Acetabular notch"
+    ],
+    "explanation": "acetabulum下方凹陷處",
+    "description": "以下結構是？"
+  },
+  {
+    "num": "111119",
+    "path": "midterm-image/b11lab/111119.png",
+    "answer": [
+      "Medial epicondyle of humerus"
+    ],
+    "explanation": "內側，condyle上方。根據fossa位置可判斷此為前側",
+    "description": "綠色構造為何？"
+  },
+  {
+    "num": "111120",
+    "path": "midterm-image/b11lab/111120.png",
+    "answer": [
+      "Intertrochanteric crest"
+    ],
+    "explanation": "posterior，greater trochanter和lesser trochanter間的凸起",
+    "description": "請問這是什麼構造？"
+  },
+  {
+    "num": "111121",
+    "path": "midterm-image/b11lab/111121.png",
+    "answer": [
+      "Ischial spine"
+    ],
+    "explanation": "分隔Greater/lesser sciatic notch的構造",
+    "description": "箭頭所指構造為何？"
+  },
+  {
+    "num": "111122",
+    "path": "midterm-image/b11lab/111122.png",
+    "answer": [
+      "Stylomastoid foramen"
+    ],
+    "explanation": "styloid process和mastoid process之間的孔洞",
+    "description": "請問紅匡標示的是什麼構造？"
+  },
+  {
+    "num": "111123",
+    "path": "midterm-image/b11lab/111123.png",
+    "answer": [
+      "Greater palatine foramen"
+    ],
+    "explanation": "口腔頂的後方，大洞為greater，小洞為lesser",
+    "description": "請問以下構造是什麼(紅)？"
+  },
+  {
+    "num": "111124",
+    "path": "midterm-image/b11lab/111124.png",
+    "answer": [
+      "Radial styloid process"
+    ],
+    "explanation": "Styloid process為distal end末端的突起（複習：ulna上也有一個；另外temporal bone也有一個同名的process）",
+    "description": "請問7號構造是？"
+  },
+  {
+    "num": "111125",
+    "path": "midterm-image/b11lab/111125.png",
+    "answer": [
+      "Supraspinous fossa"
+    ],
+    "explanation": "可先觀察出這是scapula的posterior view，又該構造為spine之上的凹窩",
+    "description": "紅色箭頭所指構造為？"
+  },
+  {
+    "num": "111126",
+    "path": "midterm-image/b11lab/111126.png",
+    "answer": [
+      "Azygos vein"
+    ],
+    "explanation": "Azygos vein在thorax後壁右側，回收右側posterior intercostal vein的血液，向上注入superior vena cava",
+    "description": "紅色箭頭所指構造為？"
+  },
+  {
+    "num": "111127",
+    "path": "midterm-image/b11lab/111127.png",
+    "answer": [
+      "Left common carotid artery"
+    ],
+    "explanation": "Aortic arch的第二個分支",
+    "description": "白色箭頭所指構造為？"
+  },
+  {
+    "num": "111128",
+    "path": "midterm-image/b11lab/111128.png",
+    "answer": [
+      "Greater wing of sphenoid bone"
+    ],
+    "explanation": "Sphenoid比較大的那片，有很多洞",
+    "description": "紅色標示的構造為？"
+  },
+  {
+    "num": "111129",
+    "path": "midterm-image/b11lab/111129.png",
+    "answer": [
+      "C3-C6",
+      "typical cervical vertebra"
+    ],
+    "explanation": "articular facet朝上，有transverse foramen，spinous process有分岔，可知為cervical vertebra。而此vertebra無特殊構造(如: C1沒有body，C2有dens…等)，為典型頸椎",
+    "description": "這是何種vertebra？（be specific）"
+  },
+  {
+    "num": "111130",
+    "path": "midterm-image/b11lab/111130.png",
+    "answer": [
+      "Deltoid tuberosity"
+    ],
+    "explanation": "位於humerus外側中段的突起（寫手按：考試時是posterior view，箭頭指的位置在radial groove和deltoid tuberosity交界處，不知道正確答案究竟是什麼）",
+    "description": "白線所指構造為？"
+  },
+  {
+    "num": "111131",
+    "path": "midterm-image/b11lab/111131.png",
+    "answer": [
+      "Anterior sacral foramina"
+    ],
+    "explanation": "sacrum上面的洞，要寫出anterior或posterior",
+    "description": "紅色箭頭所指構造為？"
+  },
+  {
+    "num": "111132",
+    "path": "midterm-image/b11lab/111132.png",
+    "answer": [
+      "Iliac crest"
+    ],
+    "explanation": "在ilium的anterior superior iliac spine到posterior superior iliac spine之間突起的稜線",
+    "description": "藍色標示的構造為？"
+  },
+  {
+    "num": "111133",
+    "path": "midterm-image/b11lab/111133.png",
+    "answer": [
+      "Pulmonary trunk"
+    ],
+    "explanation": "先分辨心臟的上下左右前後，Pulmonary trunk 在基部會比aorta更前方，基本上就是用相對位置與形狀判斷",
+    "description": "紅色箭頭所指構造為？"
+  },
+  {
+    "num": "111134",
+    "path": "midterm-image/b11lab/111134.png",
+    "answer": [
+      "Chordae tendineae"
+    ],
+    "explanation": "連接papillary muscle和房室辦的數條結締組織",
+    "description": "紅色箭頭所指構造為？"
+  }
+]

@@ -3,11 +3,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="Parasite Game">
-    <meta name="keywords" content="parasites">
-    <link rel="icon" href="icon.png" type="image/png">
+    <meta name="description" content="國立臺灣大學醫學系解剖學跑台機">
+    <meta name="keywords" content="解剖學跑台機">
+    <link rel="icon" href="/anatomy/icon.png" type="image/png">
     <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <title>解剖跑台</title>
+    <title>解剖學跑台</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         .doc-container {
@@ -140,7 +140,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            --bg-primary: #F9F7F3;
+            --bg-primary: #FFFFFF;
             --bg-secondary: #FFFFFF;
             --text-primary: #404040;
             --text-secondary: #666;
@@ -281,6 +281,308 @@
             box-shadow: 0 1px 3px var(--shadow-color);
         }
 
+        #signInBtn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border: 1px solid #d3d3d3 !important;
+            box-shadow: none !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 20px;
+            z-index: 10;
+            transition: transform 0.2s ease;
+        }
+
+        #signInBtn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Dark mode styles for sign in button */
+        body.dark-mode #signInBtn {
+            background-color: var(--bg-secondary) !important;
+            color: var(--text-primary) !important;
+            border: 1px solid var(--border-primary) !important;
+        }
+
+        body.dark-mode #signInBtn:hover {
+            background-color: var(--bg-primary) !important;
+            border-color: var(--border-secondary) !important;
+        }
+
+        #greeting {
+            position: absolute;
+            top: 28px;
+            right: 90px;
+            background-color: transparent;
+            color: #333333;
+            font-size: 14px;
+            border-radius: 20px;
+            z-index: 10;
+        }
+
+        /* Dark mode styles for greeting */
+        body.dark-mode #greeting {
+            background-color: transparent;
+            color: var(--text-primary);
+        }
+        .edit-nickname-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            margin-left: 6px;
+            border: 1px solid var(--border-secondary);
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            line-height: 1;
+        }
+        .edit-nickname-btn:hover { background: var(--bg-primary); }
+
+        /* 暱稱編輯樣式 */
+        #nicknameInput {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #ffffff;
+            color: #333333;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #nicknameInput:focus {
+            outline: none;
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 2px rgba(121, 168, 143, 0.25);
+        }
+
+        #nicknameInput::placeholder {
+            color: #999;
+        }
+
+        #saveNicknameBtn {
+            padding: 12px 24px;
+            background-color: var(--accent-green);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            min-width: 80px;
+        }
+
+        #saveNicknameBtn:hover {
+            background-color: #6B9B7F;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        #saveNicknameBtn:active {
+            transform: translateY(0);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        #saveNicknameBtn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* 暗色模式下的暱稱編輯樣式 */
+        body.dark-mode #nicknameInput {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-primary);
+        }
+
+        body.dark-mode #nicknameInput:focus {
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 2px rgba(135, 199, 168, 0.25);
+        }
+
+        body.dark-mode #nicknameInput::placeholder {
+            color: var(--text-muted);
+        }
+
+        body.dark-mode #saveNicknameBtn:disabled {
+            background-color: var(--border-primary);
+            color: var(--text-muted);
+        }
+
+        /* 登入模態框樣式 */
+        .login-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-modal-content {
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 30px;
+            border: none;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .login-modal h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333333;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .login-form input {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: #ffffff;
+            color: #333333;
+            transition: border-color 0.3s;
+        }
+
+        .login-form input:focus {
+            outline: none;
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 2px rgba(121, 168, 143, 0.25);
+        }
+
+        .login-form button {
+            padding: 15px;
+            background-color: var(--accent-green);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-form button:hover {
+            background-color: #6B9B7F;
+        }
+
+        .login-form button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .login-toggle {
+            text-align: center;
+            margin-top: 20px;
+            color: #666666;
+        }
+
+        .login-toggle a {
+            color: var(--accent-green);
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .login-toggle a:hover {
+            text-decoration: underline;
+        }
+
+        .forgot-password-link {
+            color: #e74c3c !important;
+            margin-left: 15px;
+        }
+
+        .forgot-password-link:hover {
+            color: #c0392b !important;
+            text-decoration: underline;
+        }
+
+        .close-modal {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #999999;
+            cursor: pointer;
+        }
+
+        .close-modal:hover {
+            color: #333333;
+        }
+
+        /* Dark mode styles for login modal */
+        body.dark-mode .login-modal-content {
+            background-color: var(--modal-bg);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        body.dark-mode .login-modal h2 {
+            color: var(--text-primary);
+        }
+
+        body.dark-mode .login-form input {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-primary);
+        }
+
+        body.dark-mode .login-form input:focus {
+            border-color: var(--accent-green);
+            box-shadow: 0 0 0 2px rgba(135, 199, 168, 0.25);
+        }
+
+        body.dark-mode .login-form input::placeholder {
+            color: var(--text-muted);
+        }
+
+        body.dark-mode .login-form button:disabled {
+            background-color: var(--border-primary);
+            color: var(--text-muted);
+        }
+
+        body.dark-mode .login-toggle {
+            color: var(--text-secondary);
+        }
+
+        body.dark-mode .close-modal {
+            color: var(--text-secondary);
+        }
+
+        body.dark-mode .close-modal:hover {
+            color: var(--text-primary);
+        }
+
         .dropdown-menu {
             position: relative;
             display: inline-block;
@@ -301,9 +603,14 @@
             transition: transform 0.3s ease;
         }
 
-        .dropdown-menu:hover .dropdown-toggle::after,
         .dropdown-menu.active .dropdown-toggle::after {
             transform: translateY(-50%) rotate(180deg);
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .dropdown-menu:hover .dropdown-toggle::after {
+                transform: translateY(-50%) rotate(180deg);
+            }
         }
 
         .dropdown-content {
@@ -311,17 +618,18 @@
             position: absolute;
             background-color: var(--bg-secondary);
             min-width: 240px;
+            max-height: 520px;
             box-shadow: 0 10px 25px var(--shadow-color);
             z-index: 10;
             border-radius: 8px;
             padding: 8px;
-            bottom: 100%;
+            bottom: -100%;
             left: 50%;
             margin-bottom: 8px;
             transform-origin: bottom center;
             overflow-y: auto;
             scrollbar-width: thin;
-            scrollbar-color: var(--accent-blue) var(--bg-secondary);
+            scrollbar-color: #00000030 var(--bg-secondary);
         }
 
         .dropdown-content::-webkit-scrollbar {
@@ -343,11 +651,18 @@
         }
 
 
-        .dropdown-menu:hover .dropdown-content,
         .dropdown-menu.active .dropdown-content {
             display: block;
             opacity: 0;
             animation: elegantDropdownAppear 0.4s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .dropdown-menu:hover .dropdown-content {
+                display: block;
+                opacity: 0;
+                animation: elegantDropdownAppear 0.4s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+            }
         }
 
         @keyframes elegantDropdownAppear {
@@ -387,6 +702,23 @@
             transform: none;
         }
 
+        .modal-errata-number {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            margin-bottom: 0;
+            font-weight: 400;
+            opacity: 0.6;
+            transition: color 0.4s ease, opacity 0.4s ease;
+        }
+
+        .doc-text .errata-number {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            margin-bottom: 0;
+        }
+
 
         .footer {
             position: absolute;
@@ -410,28 +742,58 @@
         .day-night-toggle {
             position: absolute;
             top: 20px;
-            right: 20px;
-            padding: 8px;
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
+            left: 20px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
+            border: 1px solid var(--border-primary);
+            background-color: var(--bg-secondary);
+            cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
             z-index: 10;
-            transition: transform 0.3s ease;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
         }
         .day-night-toggle:focus {
             outline: none;
         }
-        .day-night-toggle:hover {
-            transform: scale(1.1);
+        .day-night-toggle:hover { transform: scale(1.05); }
+        body.dark-mode .day-night-toggle {
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-secondary);
+        }
+
+        .star-top {
+            position: absolute;
+            top: 20px;
+            left: 76px; /* to the right of day-night toggle */
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid var(--border-primary);
+            background-color: var(--bg-secondary);
+            color: #F59E0B; /* yellow star */
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+        .star-top:hover { transform: scale(1.05); }
+        body.dark-mode .star-top {
+            background-color: var(--bg-primary);
+            color: #FBBF24; /* brighter yellow for dark mode */
+            border: 1px solid var(--border-secondary);
         }
 
         .toggle-icon {
-            width: 32px;
-            height: 32px;
+            width: 30px;
+            height: 30px;
             overflow: visible;
             transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -584,6 +946,31 @@
             opacity: 1;
         }
 
+        .star-toggle {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            z-index: 2;
+            width: 36px;
+            height: 36px;
+            border: none;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.45);
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+        }
+        .star-toggle:hover { transform: scale(1.05); }
+        .star-toggle.active {
+            color: #F59E0B;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
         .your-answer-label {
             font-size: 0.8rem;
             font-weight: 500;
@@ -707,12 +1094,23 @@
             color: var(--accent-orange) !important;
         }
 
+        .error-number {
+            position: absolute;
+            bottom: 8px;
+            right: 12px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            opacity: 0.6;
+            pointer-events: none;
+            font-weight: 400;
+            transition: color 0.4s ease, opacity 0.4s ease;
+        }
+
         #showExplanation {
             font-size: 0.9rem;
             color: var(--text-secondary);
             line-height: 1.5;
             margin-top: 5px;
-            max-height: 100px;
             overflow-y: auto;
             overflow: visible;
             transition: color 0.4s ease;
@@ -1018,12 +1416,32 @@
             border-radius: 12px;
             box-shadow: 0 2px 6px var(--shadow-color);
             padding: 20px 20px 0;
-            max-height: 250px;
-            overflow: hidden;
-            transition: max-height 0.5s ease 0.5s;
-            cursor: pointer;
+            height: 250px; 
+            overflow-y: auto; 
             position: relative;
+            scrollbar-width: thin;
+            scrollbar-color: #00000030 var(--bg-secondary);
         }
+        
+        .leaderboard::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .leaderboard::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+            border-radius: 0 12px 12px 0;
+        }
+        
+        .leaderboard::-webkit-scrollbar-thumb {
+            background-color: var(--accent-blue);
+            border-radius: 4px;
+            border: 2px solid var(--bg-secondary);
+        }
+        
+        .leaderboard::-webkit-scrollbar-thumb:hover {
+            background-color: var(--accent-blue-hover);
+        }
+        
         .leaderboard::after {
             content: "";
             position: absolute;
@@ -1034,17 +1452,23 @@
             pointer-events: none;
             background: linear-gradient(transparent, var(--bg-secondary));
             opacity: 1;
-            transition: opacity 0.3s ease 0.5s;
+            transition: opacity 0.3s ease;
         }
         .leaderboard h3 {
             margin-bottom: 12px;
             font-size: 1.2rem;
             font-weight: 600;
             color: var(--heading-color);
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-secondary);
+            z-index: 1;
+            padding-bottom: 8px;
         }
         .leaderboard ol {
             padding-left: 0;
             margin: 0;
+            padding-bottom: 20px; 
         }
         .leaderboard li {
             display: flex;
@@ -1072,20 +1496,9 @@
             color: var(--accent-blue);
         }
 
-           .leaderboard.expanded {
-               max-height: 500px;
-           }
-           .leaderboard.expanded::after {
-               opacity: 0;
-               transition-delay: 0s;
-           }
-        .leaderboard:hover {
-            max-height: 500px;
-            transition-delay: 0s;
-        }
         .leaderboard:hover::after {
             opacity: 0;
-            transition-delay: 0s;
+            transition: opacity 0.3s ease;
         }
         .tooltip {
             position: absolute;
@@ -1135,6 +1548,7 @@
             left: 50%;
             translate: -50%;
             padding-right: 40px;
+            z-index: 300000;
         }
         .nav-button {
             background-color: transparent;
@@ -1213,23 +1627,50 @@
             <svg id="dayNightIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="toggle-icon day">
             </svg>
         </button>
+        <button id="openStarredTop" class="star-top" title="已加星號" aria-label="已加星號" style="display:none;">★</button>
+        
+        <button id="signInBtn">
+            登入
+        </button>
 
         <div class="start-title">Anatomy</div>
           <div class="leaderboard">
             <ol id="boardList" style="list-style:decimal inside; padding:0;"></ol>
           </div>
           <div class="player-input" style="text-align:center;">
-            <input type="text" id="playerName" placeholder="輸入玩家名稱">
           </div>
+          <div id="greeting" style="display:none;"></div>
     <div class="start-buttons">
-      <button id="startAllGame" class="start-button">全部</button>
       <div class="dropdown-menu">
           <button class="dropdown-toggle start-button">單元</button>
           <div class="dropdown-content">
-              <button class="dropdown-item" data-json="bones.json">骨頭</button>
+            <button class="dropdown-item" data-json="midterm/b11lab.json">B11 實驗小考</button>
+            <button class="dropdown-item" data-json="midterm/b10lab.json">B10 實驗小考</button>
+            <button class="dropdown-item" data-json="midterm/b09lab.json">B09 實驗小考</button>
+            <button class="dropdown-item" data-json="midterm/b08lab.json">B08 實驗小考</button>
+            <button class="dropdown-item" data-json="midterm/b07lab.json">B07 實驗小考</button>
+            <button class="dropdown-item" data-json="midterm/b06lab.json">B06 實驗小考</button>
+            <button class="dropdown-item" data-json="midterm/b05lab.json">B05 實驗小考</button>
+            <button class="dropdown-item" data-json="midterm/b04lab.json">B04 實驗小考</button>
+            <button class="dropdown-item" data-json="midterm/舊Lab循環.json">舊Lab循環</button>
+            <button class="dropdown-item" data-json="midterm/舊Lab骨骼.json">舊Lab骨骼</button>
           </div>
       </div>
-      <button id="openDoc" class="start-button">題庫</button>
+      <div class="dropdown-menu">
+        <button id="openDoc" class="dropdown-toggle start-button">題庫</button>
+        <div class="dropdown-content">
+          <button class="dropdown-item" data-json="midterm/b11lab.json">B11 實驗小考</button>
+          <button class="dropdown-item" data-json="midterm/b10lab.json">B10 實驗小考</button>
+          <button class="dropdown-item" data-json="midterm/b09lab.json">B09 實驗小考</button>
+          <button class="dropdown-item" data-json="midterm/b08lab.json">B08 實驗小考</button>
+          <button class="dropdown-item" data-json="midterm/b07lab.json">B07 實驗小考</button>
+          <button class="dropdown-item" data-json="midterm/b06lab.json">B06 實驗小考</button>
+          <button class="dropdown-item" data-json="midterm/b05lab.json">B05 實驗小考</button>
+          <button class="dropdown-item" data-json="midterm/b04lab.json">B04 實驗小考</button>
+          <button class="dropdown-item" data-json="midterm/舊Lab循環.json">舊Lab循環</button>
+          <button class="dropdown-item" data-json="midterm/舊Lab骨骼.json">舊Lab骨骼</button>
+        </div>
+      </div>
     </div>
     <div class="progress-actions" style="text-align:center; margin-top:10px; display:none;">
       <button id="resumeButton" class="start-button" style="background-color: var(--accent-green); display:none;">接續上次</button>
@@ -1238,7 +1679,6 @@
       </div>
     </div>
         <div class="footer">
-          <a href="https://christmaskid.github.io/parasite_game/" target="_blank">前往舊版</a> ｜
           <a href="https://chromewebstore.google.com/detail/%E5%8F%B0%E5%A4%A7%E9%86%AB%E5%A1%AB%E5%95%8F%E5%8D%B7/ciioeecbkbnmnedkgmkfaicngidogdkj?authuser=0&hl=en" target="_blank">問卷外掛</a> ｜
           <span id="download-block">
             <a href="profile.mobileconfig" download="Parasite.mobileconfig">蘋果下載</a> ｜
@@ -1267,10 +1707,17 @@
         </div>
 
         <div class="card-content">
+            <button id="starToggle" class="star-toggle" aria-label="加入星號">☆</button>
             <div class="loading-screen">
                 <div class="spinner"></div>
             </div>
-            <img id="image" onload="this.classList.add('loaded'); document.querySelector('.loading-screen').style.display='none'; preloadNextImage();" src="" alt="Parasite Image">
+            <img id="image"
+                 loading="eager"
+                 decoding="async"
+                 fetchpriority="high"
+                 onload="handleMainImageLoad(this);"
+                 src=""
+                 alt="Parasite Image">
         </div>
 
         <div class="card-answer">
@@ -1296,6 +1743,22 @@
             <div id="modalBody"></div>
         </div>
     </div>
+    <div id="starredModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span id="closeStarredModal" class="close">×</span>
+            <div id="starredModalBody"></div>
+        </div>
+    </div>
+    <div id="nicknameModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span id="closeNicknameModal" class="close">×</span>
+            <h2>編輯暱稱</h2>
+            <input type="text" id="nicknameInput" placeholder="請輸入新的暱稱">
+            <div class="modal-actions" style="margin-top: 16px; text-align: right;">
+                <button id="saveNicknameBtn">儲存</button>
+            </div>
+        </div>
+    </div>
     <div id="alertModal" class="alert-modal" style="display: none;">
         <span class="close" onclick="closeAlertModal()">×</span>
         <div id="alertModalBody"></div>
@@ -1312,10 +1775,16 @@
         <span id="closeImageModal" class="close" style="top: 4px; right: 10px;">&times;</span>
         <button id="prevImageButton" class="nav-button nav-left" aria-label="上一題">‹</button>
         <button id="nextImageButton" class="nav-button nav-right" aria-label="下一題">›</button>
-        <img id="modalImage" src="" alt="Image preview" style="max-width: 100%; height: auto; border-radius:6px;">
+        <img id="modalImage"
+             loading="lazy"
+             decoding="async"
+             src=""
+             alt="Image preview"
+             style="max-width: 100%; height: auto; border-radius:6px;">
         <div id="modalInfo" style="text-align:center;">
           <p id="modalAnswer" style="font-weight:600;"></p>
-          <p id="modalExplanation" style="color:var(--text-secondary); margin-bottom: 0;"></p>
+          <p id="modalExplanation" style="color:var(--text-secondary); margin-bottom: 4px;"></p>
+          <p id="modalNumber" class="modal-errata-number"></p>
         </div>
       </div>
     </div>
@@ -1344,34 +1813,368 @@
             orderByChild,
             limitToLast,
             get,
-            set
+            set,
+            update
         } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
         import {
             getAuth,
-            signInAnonymously,
-            onAuthStateChanged
+            GoogleAuthProvider,
+            signInWithPopup,
+            signInWithRedirect,
+            signInWithEmailAndPassword,
+            createUserWithEmailAndPassword,
+            updateProfile,
+            signOut,
+            onAuthStateChanged,
+            sendPasswordResetEmail
         } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
 
         const app       = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
         const db        = getDatabase(app);
         const auth = getAuth(app);
-        signInAnonymously(auth).catch(err => console.error("匿名登入失敗：", err));
+        const provider = new GoogleAuthProvider();
+        
+        // Firebase progress management functions
+        async function checkForExistingProgress() {
+            let hasProgress = false;
+            
+            if (window.currentUserUid) {
+                // Check Firebase first for logged in users
+                try {
+                    const firebaseProgress = await loadProgressFromFirebase();
+                    if (firebaseProgress) {
+                        console.log("[checkForExistingProgress] Found progress in Firebase");
+                        hasProgress = true;
+                    }
+                } catch (error) {
+                    console.error("[checkForExistingProgress] Error checking Firebase progress:", error);
+                }
+            }
+            
+            // localStorage fallback removed - Firebase only
+            
+            // Update UI based on progress availability
+            if (hasProgress) {
+                document.getElementById('resumeButton').style.display = 'inline-block';
+                document.querySelector('.progress-actions').style.display = 'block';
+                document.querySelector('.start-buttons').style.display = 'none';
+            } else {
+                document.getElementById('resumeButton').style.display = 'none';
+                document.querySelector('.progress-actions').style.display = 'none';
+                document.querySelector('.start-buttons').style.display = 'flex';
+            }
+            
+            return hasProgress;
+        }
+        
+        async function saveProgressToFirebase(progressData) {
+            if (!window.currentUserUid) {
+                console.warn("[saveProgressToFirebase] No user logged in, cannot save progress to Firebase");
+                return false;
+            }
+            
+            try {
+                const progressRef = ref(db, `ntumedsa-quiz-anatomy/${window.currentUserUid}/gameProgress/anatomy`);
+                await set(progressRef, {
+                    ...progressData,
+                    lastUpdated: Date.now(),
+                    timestamp: new Date().toISOString()
+                });
+                console.log("[saveProgressToFirebase] Progress saved successfully to Firebase");
+                return true;
+            } catch (error) {
+                console.error("[saveProgressToFirebase] Error saving progress to Firebase:", error);
+                return false;
+            }
+        }
+        
+        async function loadProgressFromFirebase() {
+            if (!window.currentUserUid) {
+                console.warn("[loadProgressFromFirebase] No user logged in, cannot load progress from Firebase");
+                return null;
+            }
+            
+            try {
+                const progressRef = ref(db, `ntumedsa-quiz-anatomy/${window.currentUserUid}/gameProgress/anatomy`);
+                const snapshot = await get(progressRef);
+                
+                if (snapshot.exists()) {
+                    const progressData = snapshot.val();
+                    console.log("[loadProgressFromFirebase] Progress loaded successfully from Firebase");
+                    return progressData;
+                } else {
+                    console.log("[loadProgressFromFirebase] No progress found in Firebase");
+                    return null;
+                }
+            } catch (error) {
+                console.error("[loadProgressFromFirebase] Error loading progress from Firebase:", error);
+                return null;
+            }
+        }
+        
+        async function removeProgressFromFirebase() {
+            if (!window.currentUserUid) {
+                console.warn("[removeProgressFromFirebase] No user logged in, cannot remove progress from Firebase");
+                return false;
+            }
+            
+            try {
+                const progressRef = ref(db, `ntumedsa-quiz-anatomy/${window.currentUserUid}/gameProgress/anatomy`);
+                await set(progressRef, null);
+                console.log("[removeProgressFromFirebase] Progress removed successfully from Firebase");
+                return true;
+            } catch (error) {
+                console.error("[removeProgressFromFirebase] Error removing progress from Firebase:", error);
+                return false;
+            }
+        }
+        const signInBtn = document.getElementById('signInBtn');
+        function setAuthControlsEnabled(enabled) {
+            const openDoc = document.getElementById('openDoc');
+            if (openDoc) {
+                // 不要禁用「題庫」按鈕，讓點擊可顯示「請先登入」提醒
+                openDoc.removeAttribute('disabled');
+            }
+            const resume = document.getElementById('resumeButton');
+            if (resume) resume.disabled = !enabled;
+            document.querySelectorAll('.dropdown-item, .dropdown-toggle').forEach(el => { el.disabled = !enabled; });
+        }
+        setAuthControlsEnabled(false);
+// 登入模態框控制
+const loginModal = document.getElementById('loginModal');
+const closeModal = document.getElementById('closeLoginModal');
+const loginForm = document.getElementById('loginForm');
+const toggleMode = document.getElementById('toggleMode');
+const modalTitle = document.getElementById('modalTitle');
+const displayNameInput = document.getElementById('displayName');
+const submitBtn = document.getElementById('submitBtn');
+
+let isSignUpMode = false;
+
+if (signInBtn) {
+    signInBtn.addEventListener('click', async () => {
+        // 如果已登入，執行登出
+        if (auth.currentUser) {
+            try {
+                await signOut(auth);
+                console.log('登出成功');
+                showAlertModal('已成功登出');
+            } catch (error) {
+                console.error('登出失敗:', error);
+                showAlertModal('登出失敗，請稍後再試');
+            }
+        } else {
+            // 如果未登入，顯示登入模態框
+            loginModal.style.display = 'flex';
+            resetForm();
+        }
+    });
+}
+
+if (closeModal) {
+    closeModal.addEventListener('click', () => {
+        loginModal.style.display = 'none';
+    });
+}
+
+if (toggleMode) {
+    toggleMode.addEventListener('click', () => {
+        isSignUpMode = !isSignUpMode;
+        if (isSignUpMode) {
+            modalTitle.textContent = '註冊';
+            displayNameInput.style.display = 'block';
+            displayNameInput.required = true;
+            submitBtn.textContent = '註冊';
+            toggleMode.textContent = '登入';
+            document.querySelector('.login-toggle span').textContent = '已有帳號？';
+        } else {
+            modalTitle.textContent = '登入';
+            displayNameInput.style.display = 'none';
+            displayNameInput.required = false;
+            submitBtn.textContent = '登入';
+            toggleMode.textContent = '註冊';
+            document.querySelector('.login-toggle span').textContent = '還沒有帳號？';
+        }
+        hideForgotPasswordLink();
+    });
+}
+
+function resetForm() {
+    isSignUpMode = false;
+    modalTitle.textContent = '登入';
+    displayNameInput.style.display = 'none';
+    displayNameInput.required = false;
+    submitBtn.textContent = '登入';
+    toggleMode.textContent = '註冊';
+    document.querySelector('.login-toggle span').textContent = '還沒有帳號？';
+    loginForm.reset();
+    hideForgotPasswordLink();
+}
+
+// 點擊模態框外部關閉
+window.addEventListener('click', (event) => {
+    if (event.target === loginModal) {
+        loginModal.style.display = 'none';
+    }
+});
+
+if (loginForm) {
+    loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const displayName = document.getElementById('displayName').value;
+        
+        submitBtn.disabled = true;
+        submitBtn.textContent = isSignUpMode ? '註冊中...' : '登入中...';
+        
+        try {
+            if (isSignUpMode) {
+                // 註冊新用戶
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                const user = userCredential.user;
+                
+                // 更新用戶顯示名稱
+                if (displayName) {
+                    await updateProfile(user, {
+                        displayName: displayName
+                    });
+                }
+                
+                console.log('註冊成功:', user);
+                showAlertModal('註冊成功！');
+            } else {
+                // 登入現有用戶
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                console.log('登入成功:', userCredential.user);
+                showAlertModal('登入成功！');
+            }
+            
+            loginModal.style.display = 'none';
+            resetForm();
+            
+        } catch (error) {
+            console.error('認證失敗:', error);
+            let errorMessage = '發生錯誤，請稍後再試。';
+            
+            switch (error.code) {
+                case 'auth/operation-not-allowed':
+                    errorMessage = 'Email/Password 認證尚未啟用。請聯繫管理員。';
+                    break;
+                case 'auth/email-already-in-use':
+                    errorMessage = '此電子郵件已被使用。';
+                    break;
+                case 'auth/weak-password':
+                    errorMessage = '密碼強度不足，至少需要6個字符。';
+                    break;
+                case 'auth/user-not-found':
+                    errorMessage = '找不到此用戶。';
+                    break;
+                case 'auth/wrong-password':
+                    errorMessage = '密碼錯誤。';
+                    break;
+                case 'auth/invalid-login-credentials':
+                    errorMessage = '登入憑證無效。請檢查您的電子郵件和密碼。';
+                    break;
+                case 'auth/invalid-email':
+                    errorMessage = '電子郵件格式無效。';
+                    break;
+                case 'auth/user-disabled':
+                    errorMessage = '此帳戶已被停用。';
+                    break;
+            }
+            
+            // 顯示忘記密碼提示的錯誤類型
+            const showForgotPasswordErrors = [
+                'auth/wrong-password',
+                'auth/invalid-login-credentials',
+                'auth/email-already-in-use'
+            ];
+            
+            showAlertModal(errorMessage);
+            
+            if (showForgotPasswordErrors.includes(error.code)) {
+                showForgotPasswordLink();
+            }
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = isSignUpMode ? '註冊' : '登入';
+        }
+    });
+}
         onAuthStateChanged(auth, user => {
+            const btn = document.getElementById('signInBtn');
+            const greet = document.getElementById('greeting');
             if (user) {
                 window.currentUserUid = user.uid;
+                // 優先使用暱稱(displayName)，如果沒有則使用email
+                const name = user.displayName || user.email;
+                if (name) {
+                    window.currentPlayer = name;
+                    // 登入後按鈕改為「登出」
+                    if (btn) {
+                        btn.textContent = '登出';
+                        btn.style.display = 'flex';
+                    }
+                    // 問候語顯示在左邊，優先顯示暱稱
+                    const displayName = user.displayName || user.email.split('@')[0];
+                    if (greet) { 
+                        greet.innerHTML = `您好，<span id="greetingName">${displayName}</span><button id="editNicknameBtn" class="edit-nickname-btn" title="編輯暱稱" aria-label="編輯暱稱">✎</button>`; 
+                        greet.style.display = 'block'; 
+                        const editBtn = document.getElementById('editNicknameBtn');
+                        if (editBtn) {
+                            editBtn.addEventListener('click', async () => {
+                                const currentNameSpan = document.getElementById('greetingName');
+                                const currentVal = currentNameSpan ? currentNameSpan.textContent : (user.displayName || user.email.split('@')[0]);
+                                if (window.openNicknameModal) {
+                                    window.openNicknameModal(currentVal || '');
+                                }
+                            });
+                        }
+                    }
+                    setAuthControlsEnabled(true);
+                    const starTop = document.getElementById('openStarredTop');
+                    if (starTop) starTop.style.display = 'flex';
+                    // Load starred cache for this user
+                    loadStarredFromFirebase().then(() => {
+                        updateStarButtonState();
+                    }).catch(e => console.error('[onAuthStateChanged] Failed to load starred:', e));
+                } else {
+                    window.currentPlayer = null;
+                    if (btn) {
+                        btn.textContent = '登入';
+                        btn.style.display = 'flex';
+                    }
+                    if (greet) { greet.textContent = ''; greet.style.display = 'none'; }
+                    setAuthControlsEnabled(false);
+                    const starTop = document.getElementById('openStarredTop');
+                    if (starTop) starTop.style.display = 'none';
+                    starredCache = {};
+                    updateStarButtonState();
+                }
             } else {
                 window.currentUserUid = null;
+                window.currentPlayer = null;
+                if (btn) {
+                    btn.textContent = '登入';
+                    btn.style.display = 'flex';
+                }
+                if (greet) { greet.textContent = ''; greet.style.display = 'none'; }
+                setAuthControlsEnabled(false);
+                const starTop = document.getElementById('openStarredTop');
+                if (starTop) starTop.style.display = 'none';
+                starredCache = {};
+                updateStarButtonState();
             }
+            
+            // Check for existing progress after auth state is determined
+            checkForExistingProgress().catch(error => {
+                console.error("[onAuthStateChanged] Error checking for existing progress:", error);
+            });
         });
-        const savedProg = localStorage.getItem('gameProgress');
-        if (savedProg) {
-          const prog = JSON.parse(savedProg);
-          document.getElementById('resumeButton').style.display = 'inline-block';
-          document.querySelector('.progress-actions').style.display = 'block';
-          document.querySelector('.start-buttons').style.display = 'none';
-        }
-        window.currentPlayer = null; // MODIFIED: No default "匿名"
+        window.currentPlayer = null; 
         var TIME = 31;
         var numOfProbs;
         var tm;
@@ -1386,6 +2189,10 @@
         var score = 0;
         var correctList = [];
         var wrongList = [];
+        let questionQueue = [];
+        const preloadedImagePaths = new Set();
+        const pendingPreloadMap = new Map();
+        const PRELOAD_AHEAD_COUNT = 3;
         const lowerCaseSwearWords = [
             "幹", "靠", "操", "媽的", "他媽的", "幹你娘", "機掰", "雞掰", "哭邀", "靠北", "靠腰",
             "操你媽", "王八蛋", "他媽", "賤人", "婊子", "俗辣", "垃圾", "智障", "白痴", "腦殘",
@@ -1454,6 +2261,80 @@
                 speechSynthesis.onvoiceschanged = () => {
                     availableVoices = speechSynthesis.getVoices();
                 };
+            }
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        function resetPreloadState() {
+            questionQueue = [];
+            preloadedImagePaths.clear();
+            pendingPreloadMap.clear();
+        }
+
+        function initializeQuestionQueue() {
+            questionQueue = [];
+            if (!Array.isArray(data) || !Array.isArray(done)) {
+                return;
+            }
+            for (let i = 0; i < data.length; i++) {
+                if (!done[i]) {
+                    questionQueue.push(i);
+                }
+            }
+            if (questionQueue.length > 1) {
+                shuffleArray(questionQueue);
+            }
+            preloadUpcomingImages();
+        }
+
+        // 添加处理图片路径的函数
+        function processImagePath(path) {
+            if (!path) return path;
+            // 如果路径已经包含 /anatomy/，则不重复添加
+            if (path.startsWith('/anatomy/') || path.startsWith('anatomy/')) {
+                return path;
+            }
+            // 如果是相对路径（不以 http:// 或 https:// 开头），则添加 /anatomy/ 前缀
+            if (!path.startsWith('http://') && !path.startsWith('https://')) {
+                return `/anatomy/${path}`;
+            }
+            return path;
+        }
+
+        function preloadImageAtIndex(index) {
+            if (!data || !data[index]) return;
+            const path = processImagePath(data[index]?.path);
+            if (!path || preloadedImagePaths.has(path) || pendingPreloadMap.has(path)) return;
+
+            const img = new Image();
+            img.decoding = 'async';
+            if ('loading' in HTMLImageElement.prototype) {
+                img.loading = 'eager';
+            }
+
+            pendingPreloadMap.set(path, img);
+            img.onload = () => {
+                preloadedImagePaths.add(path);
+                pendingPreloadMap.delete(path);
+            };
+            img.onerror = (error) => {
+                pendingPreloadMap.delete(path);
+                console.warn(`[preloadImageAtIndex] Failed to preload image ${path}`, error);
+            };
+            img.src = path;
+        }
+
+        function preloadUpcomingImages() {
+            if (!questionQueue.length) return;
+            const count = Math.min(PRELOAD_AHEAD_COUNT, questionQueue.length);
+            for (let i = 0; i < count; i++) {
+                preloadImageAtIndex(questionQueue[i]);
             }
         }
 
@@ -1552,21 +2433,21 @@
             const uid = window.currentUserUid;
             if (!uid) throw new Error("使用者尚未登入");
             
-            // Ensure window.currentPlayer is valid before writing
+            
             if (!window.currentPlayer || window.currentPlayer.trim() === "") {
                 console.error("Player name is not set. Cannot write score to leaderboard.");
-                // This should ideally be caught by game start/resume logic
+                
                 showAlertModal("玩家名稱未設定，無法記錄分數。請重新開始並輸入名稱。");
-                return score; // Return current score without updating Firebase
+                return score; 
             }
 
-            const scoreRef = ref(db, `leaderboard/${uid}`);
+            const scoreRef = ref(db, `ntumedsa-quiz-anatomy/${uid}`);
             try {
                 const snap = await get(scoreRef);
                 const prev = snap.val();
                 const prevScore = prev && typeof prev.score === 'number' ? prev.score : 0;
                 const newScore = prevScore + finalScore;
-                await set(scoreRef, {
+                await update(scoreRef, {
                     name: window.currentPlayer,
                     score: newScore,
                     timestamp: Date.now()
@@ -1583,7 +2464,7 @@
             listEl.innerHTML = '<li>載入中…</li>';
 
             try {
-                const snap = await get(ref(db, 'leaderboard'));
+                const snap = await get(ref(db, 'ntumedsa-quiz-anatomy'));
                 const dataObj = snap.val() || {};
                 const entries = Object.entries(dataObj).map(([uid, item]) => ({ uid, ...item }));
                 const sorted = entries.sort((a, b) => b.score - a.score);
@@ -1618,7 +2499,7 @@
                         if (item.uid === window.currentUserUid) inTop = true;
                     }
                 });
-                if (!inTop && window.currentUserUid) { // Check if currentUserUid is defined
+                if (!inTop && window.currentUserUid) { 
                     const userIndex = sorted.findIndex(item => item.uid === window.currentUserUid);
                     if (userIndex !== -1) {
                         const item = sorted[userIndex];
@@ -1653,7 +2534,7 @@
                 const playerData = window.currentUserUid ? sorted.find(item => item.uid === window.currentUserUid) : null;
                 const playerScore = playerData ? playerData.score : 0;
                 document.getElementById("score-display").textContent = playerScore;
-                score = playerScore; // Initialize global score with Firebase score
+                score = playerScore; 
 
                 const rankDisplay = document.getElementById("rank-display");
                 if (rankDisplay) {
@@ -1689,16 +2570,16 @@
             correct++;
             document.getElementById("correct").innerText = correct;
             const pointsEarned = 2;
-            // score += pointsEarned; // Local score variable is for Firebase update, not total sum here
+            
             if (data && data[x]) {
                 correctList.push(data[x]);
             }
-            // updateScoreDisplay(); // UI score is updated after Firebase write
+            
             writeScore(pointsEarned)
                 .then((newTotalScore) => {
-                    if (typeof newTotalScore === 'number') score = newTotalScore; // Update global score from Firebase
-                    fetchLeaderboard(); // Refresh leaderboard after score update
-                    updateScoreDisplay(); // Update UI display
+                    if (typeof newTotalScore === 'number') score = newTotalScore; 
+                    fetchLeaderboard(); 
+                    updateScoreDisplay(); 
                 })
                 .catch(err => console.error("寫入分數或更新排名失敗：", err));
         }
@@ -1706,11 +2587,11 @@
             wrong++;
             document.getElementById("wrong").innerText = wrong;
             const pointsLost = -2;
-            // score += pointsLost;
+            
             if (data && data[x]) {
                 wrongList.push(data[x]);
             }
-            // updateScoreDisplay();
+            
             writeScore(pointsLost)
                 .then((newTotalScore) => {
                     if (typeof newTotalScore === 'number') score = newTotalScore;
@@ -1723,11 +2604,11 @@
             wrong++;
             document.getElementById("wrong").innerText = wrong;
             const pointsLost = -1;
-            // score += pointsLost;
+            
             if (data && data[x]) {
                 wrongList.push(data[x]);
             }
-            // updateScoreDisplay();
+            
             writeScore(pointsLost)
                 .then((newTotalScore) => {
                     if (typeof newTotalScore === 'number') score = newTotalScore;
@@ -1741,11 +2622,11 @@
             const nextBtn = document.getElementById('next');
             const cardAnswerDiv = document.querySelector(".card-answer");
 
-            cardAnswerDiv.style.display = "flex"; // Show answer area for the button
+            cardAnswerDiv.style.display = "flex"; 
             document.querySelector('.answer-input-container').style.visibility = 'hidden';
             document.querySelector('.bottom-buttons').style.visibility = 'hidden';
             document.querySelector('.your-answer-label').style.visibility = 'hidden';
-            nextBtn.style.display = 'block'; // Ensure next button is visible
+            nextBtn.style.display = 'block'; 
 
             if (wrongList.length > 0) {
                 nextBtn.innerText = "重玩錯誤";
@@ -1755,10 +2636,10 @@
             } else {
                 showAlertModal(`恭喜你全部答對！最終分數：${score} 🎉`);
                 nextBtn.style.display = 'none';
-                localStorage.removeItem('gameProgress');
+                if (window.currentUserUid) { removeProgressFromFirebase().catch(e => console.warn('[endRound] Unable to clear Firebase progress:', e)); }
                 window.gameplayActive = false;
 
-                // Clean up game event listeners
+                
                 document.removeEventListener("keydown", enterKeyEvent);
                 const submitBtnEl = document.getElementById("submitAnswer");
                 if (submitBtnEl) submitBtnEl.removeEventListener("click", submitUserAnswer);
@@ -1768,7 +2649,7 @@
                 if (correctAreaEl) correctAreaEl.removeEventListener("click", showCorrectList);
                 const wrongAreaEl = document.getElementById("wrongArea");
                 if (wrongAreaEl) wrongAreaEl.removeEventListener("click", showWrongList);
-                if (nextBtn) nextBtn.removeEventListener('click', nextProb); // Might have been set
+                if (nextBtn) nextBtn.removeEventListener('click', nextProb); 
 
                 setTimeout(() => {
                     document.querySelector('.flashcard-container').style.display = 'none';
@@ -1802,10 +2683,12 @@
             
             document.getElementById("correct").innerText = correct;
             document.getElementById("wrong").innerText = wrong;
-            // updateScoreDisplay(); // Score is cumulative, round correct/wrong reset
+            
 
             done = new Array(numOfProbs).fill(false);
-            x = -1; 
+            resetPreloadState();
+            initializeQuestionQueue();
+            x = -1;
 
             const nextBtn = document.getElementById('next');
             nextBtn.innerText = "下一個";
@@ -1827,30 +2710,23 @@
             initDayNightToggle();
             populateVoices();
 
-            const savedName = localStorage.getItem("parasite_player_name");
-            const nameField = document.getElementById("playerName");
-            if (savedName) {
-                if (nameField) nameField.value = savedName;
-                window.currentPlayer = savedName; // MODIFIED: Set currentPlayer if name is found
-            } else {
-                // window.currentPlayer remains null
-                if (nameField) nameField.placeholder = "輸入玩家名稱"; 
-            }
+            
 
             fetchLeaderboard();
             const leaderboardEl = document.querySelector('.leaderboard');
-            if (leaderboardEl) {
-                leaderboardEl.addEventListener('click', function() {
-                    this.classList.toggle('expanded');
-                });
-            }
+            
+            
+            
+            
+            
+            
 
             document.addEventListener("keydown", function(e) {
                 if (window.isComposing) return;
 
                 if (e.key === "/") {
                     const answerInput = document.getElementById("answer");
-                    const playerNameInput = document.getElementById("playerName");
+                    const playerNameInput = document.getElementById("signInBtn");
                     const explanationContribInput = document.getElementById('explanation-input');
 
                     const flashcardContainer = document.querySelector('.flashcard-container');
@@ -1882,28 +2758,24 @@
                 return async function () {
                     console.log(`[createStartHandler] Starting game with ${jsonPath}`);
                     
-                    const nameInputVal = document.getElementById("playerName").value.trim(); // MODIFIED var name
-                    if (!nameInputVal) {
-                        showAlertModal("請先輸入玩家名稱！");
-                        document.getElementById("playerName").focus();
-                        window.gameplayActive = false; 
+                    if (!auth.currentUser) {
+                        showAlertModal("請先登入！");
+                        window.gameplayActive = false;
                         return;
                     }
-                    window.currentPlayer = nameInputVal; // MODIFIED: Set from input
-                    localStorage.setItem("parasite_player_name", nameInputVal);
+                    window.currentPlayer = (auth.currentUser.displayName || auth.currentUser.email || "使用者");
                     window.gameplayActive = true;
                     console.log("[createStartHandler] Set window.gameplayActive to true");
 
                     document.querySelector('.start-screen').style.display = 'none'; 
                     document.querySelector('.flashcard-container').style.display = 'flex';
-                    // fetchLeaderboard(); // Already called in init and after score updates
 
                     state = 1;
                     correct = 0; wrong = 0; total = 0; 
                     console.log("[createStartHandler] Resetting scores and lists. Correct:", correct, "Wrong:", wrong);
                     document.getElementById("correct").innerHTML = correct;
                     document.getElementById("wrong").innerHTML = wrong;
-                    updateScoreDisplay(); // Update overall score display as well from current 'score'
+                    updateScoreDisplay();
                     correctList = []; wrongList = [];
                     console.log("[createStartHandler] Cleared correctList:", JSON.parse(JSON.stringify(correctList)), "wrongList:", JSON.parse(JSON.stringify(wrongList)));
 
@@ -1911,7 +2783,6 @@
                     nextBtn.innerText = "下一個";
                     nextBtn.removeEventListener('click', startReviewWrong); 
                     nextBtn.addEventListener('click', nextProb); 
-
 
                     $.getJSON(jsonPath)
                         .done(function (jsonData) {
@@ -1921,6 +2792,8 @@
                                 if (numOfProbs === 0) throw new Error("No data loaded from JSON.");
                                 data = parseMultiAns(data);
                                 done = new Array(numOfProbs).fill(false);
+                                resetPreloadState();
+                                initializeQuestionQueue();
                                 console.log("[createStartHandler] Data loaded. numOfProbs:", numOfProbs, "Initial done array:", JSON.parse(JSON.stringify(done)));
                                 startGame();
                             } catch (error) {
@@ -1937,122 +2810,171 @@
                 };
             }
 
-            document.getElementById("startAllGame").addEventListener("click", createStartHandler("./all.json"));
+
 
             const dropdownItems = document.querySelectorAll(".dropdown-item");
             dropdownItems.forEach(item => {
                 item.addEventListener("click", function() {
                     const jsonPath = this.dataset.json;
-                    createStartHandler(`./${jsonPath}`)();
                     const dropdownMenuElement = this.closest('.dropdown-menu');
+                    const isTikuDropdown = dropdownMenuElement.querySelector('#openDoc') !== null;
+
+                    if (isTikuDropdown) {
+                        // Handle 題庫 dropdown - open question bank for specific JSON
+                        openTikuHandler(`/anatomy/${jsonPath}`)();
+                    } else {
+                        // Handle 單元 dropdown - start game with specific JSON
+                        createStartHandler(`/anatomy/${jsonPath}`)();
+                    }
+
                     if (dropdownMenuElement && dropdownMenuElement.classList.contains('active')) {
                         dropdownMenuElement.classList.remove('active');
                     }
                 });
             });
 
-            const dropdownMenuToggle = document.querySelector('.dropdown-toggle');
-            const dropdownMenuElement = document.querySelector('.dropdown-menu');
+            const dropdownMenuToggles = document.querySelectorAll('.dropdown-toggle');
+            const dropdownMenuElements = document.querySelectorAll('.dropdown-menu');
 
-            if (dropdownMenuToggle && dropdownMenuElement) {
-                dropdownMenuToggle.addEventListener('click', function(event) {
-                    if (window.matchMedia("(pointer: coarse)").matches) {
-                        dropdownMenuElement.classList.toggle('active');
-                        event.stopPropagation();
-                    }
-                });
-
-                document.addEventListener('click', function(event) {
-                    if (dropdownMenuElement.classList.contains('active') &&
-                        !dropdownMenuElement.contains(event.target)) {
-                        dropdownMenuElement.classList.remove('active');
-                    }
-                });
-            }
-
-
-            window.globalEnterPressStart = function (event) {
-                if (event.key === 'Enter') {
-                    console.log("[globalEnterPressStart] Enter key pressed.");
-                    if (window.gameplayActive) {
-                        console.log("[globalEnterPressStart] Gameplay is active, ignoring Enter for starting a new game.");
-                        return;
-                    }
-                    console.log("[globalEnterPressStart] Gameplay not active, proceeding to check for new game start.");
-                    const nameInputVal = document.getElementById("playerName").value.trim();
-                    if (!nameInputVal) {
-                        showAlertModal("請先輸入玩家名稱！");
-                        document.getElementById("playerName").focus();
-                        console.log("[globalEnterPressStart] Player name missing.");
-                        return;
-                    }
-                    const startScreen = document.querySelector('.start-screen');
-                    if (startScreen) {
-                        const displayStyle = getComputedStyle(startScreen).display;
-                        console.log("[globalEnterPressStart] start-screen display style:", displayStyle);
-                        if (displayStyle !== 'none') {
-                            console.log("[globalEnterPressStart] Start screen is visible, calling startAllGame.click().");
-                            document.getElementById("startAllGame").click();
-                        } else {
-                            console.log("[globalEnterPressStart] Start screen is NOT visible, not starting new game.");
+            dropdownMenuToggles.forEach((toggle, index) => {
+                const menuElement = dropdownMenuElements[index];
+                if (toggle && menuElement) {
+                    toggle.addEventListener('click', function(event) {
+                        if (window.matchMedia("(pointer: coarse)").matches) {
+                            menuElement.classList.toggle('active');
+                            event.stopPropagation();
                         }
-                    } else {
-                        console.warn("[globalEnterPressStart] start-screen element not found.");
-                    }
+                    });
                 }
-            };
-            document.addEventListener("keypress", window.globalEnterPressStart);
-            console.log("[init] Added 'globalEnterPressStart' listener.");
+            });
+
+            document.addEventListener('click', function(event) {
+                dropdownMenuElements.forEach(menuElement => {
+                    if (menuElement.classList.contains('active') &&
+                        !menuElement.contains(event.target)) {
+                        menuElement.classList.remove('active');
+                    }
+                });
+            });
+
+
 
             adjustPlaceholder();
             window.addEventListener('resize', adjustPlaceholder);
 
-            document.getElementById("openDoc").addEventListener("click", function() {
-                const container = document.getElementById("docContainer");
-                const content = document.getElementById("docContent");
-                content.innerHTML = '';
-                fetch('./all.json')
-                  .then(res => res.json())
-                  .then(dataArr => {
-                    window.docData = dataArr;
-                    dataArr.forEach(item => {
-                      const entry = document.createElement('div');
-                      entry.className = 'doc-entry';
-                      if (item.path) {
-                        const img = document.createElement('img');
-                        img.src = item.path;
-                        img.alt = item.answer[0] || '';
-                        entry.appendChild(img);
-                        img.style.cursor = 'pointer';
-                        img.addEventListener('click', () => {
-                          document.getElementById('modalImage').src = item.path;
-                          document.getElementById('modalAnswer').textContent = item.answer.join(' / ');
-                          const expl = item.explanation ? item.explanation : '';
-                          document.getElementById('modalExplanation').textContent = expl;
-                          document.getElementById('imageModal').style.display = 'flex';
-                          document.getElementById('imageModal').style.opacity = '1';
-                          window.modalIndex = dataArr.indexOf(item);
+            function populateImageModal(item) {
+                if (!item) return;
+                const modalImage = document.getElementById('modalImage');
+                if (modalImage) {
+                    modalImage.src = processImagePath(item.path) || '';
+                    modalImage.alt = item.answer?.[0] || 'Image preview';
+                    if ('fetchPriority' in modalImage) {
+                        modalImage.fetchPriority = 'high';
+                    }
+                }
+                const modalAnswer = document.getElementById('modalAnswer');
+                if (modalAnswer) {
+                    modalAnswer.textContent = Array.isArray(item.answer) ? item.answer.join(' / ') : '';
+                }
+                const modalExplanation = document.getElementById('modalExplanation');
+                if (modalExplanation) {
+                    modalExplanation.textContent = item.explanation || '';
+                }
+                const modalNumber = document.getElementById('modalNumber');
+                if (modalNumber) {
+                    const errataValue = item.num !== undefined && item.num !== null && String(item.num).trim() !== ''
+                        ? String(item.num)
+                        : 'N/A';
+                    modalNumber.textContent = `勘誤編號：${errataValue}`;
+                }
+            }
+
+            async function loadSpecificJsonData(jsonPath) {
+                try {
+                    const response = await $.getJSON(jsonPath);
+                    return Array.isArray(response) ? response : [];
+                } catch (error) {
+                    console.warn(`[loadSpecificJsonData] Failed to load ${jsonPath}:`, error);
+                    return [];
+                }
+            }
+
+            window.openTikuHandler = function(jsonPath) {
+                return async function() {
+                    if (!auth.currentUser) {
+                        showAlertModal('請先登入');
+                        return;
+                    }
+                    const container = document.getElementById("docContainer");
+                    const content = document.getElementById("docContent");
+                    container.style.display = 'block';
+                    content.innerHTML = '<p>載入中...</p>';
+
+                    try {
+                        const dataArr = await loadSpecificJsonData(jsonPath);
+                        window.docData = dataArr;
+                        content.innerHTML = '';
+                        dataArr.forEach(item => {
+                          const entry = document.createElement('div');
+                          entry.className = 'doc-entry';
+                          if (item.path) {
+                            const img = document.createElement('img');
+                            img.src = processImagePath(item.path);
+                            img.alt = item.answer[0] || '';
+                            img.loading = 'lazy';
+                            img.decoding = 'async';
+                            if ('fetchPriority' in img) {
+                                img.fetchPriority = 'low';
+                            }
+                            entry.appendChild(img);
+                            img.style.cursor = 'pointer';
+                            img.addEventListener('click', () => {
+                              populateImageModal(item);
+                              document.getElementById('imageModal').style.display = 'flex';
+                              document.getElementById('imageModal').style.opacity = '1';
+                              window.modalIndex = dataArr.indexOf(item);
+                            });
+                          }
+                          const textWrapper = document.createElement('div');
+                          textWrapper.className = 'doc-text';
+                          if (item.description) {
+                            const desc = document.createElement('p');
+                            desc.innerHTML = `<em>${escapeHtml(item.description)}</em>`;
+                            textWrapper.appendChild(desc);
+                          }
+                          const ans = document.createElement('p');
+                          const answerContent = Array.isArray(item.answer) ? item.answer.join(' / ') : '';
+                          ans.innerHTML = `<strong>${escapeHtml(answerContent)}</strong>`;
+                          textWrapper.appendChild(ans);
+                          if (item.explanation) {
+                            const pre = document.createElement('pre');
+                            pre.textContent = item.explanation;
+                            textWrapper.appendChild(pre);
+                          }
+                          const errata = document.createElement('p');
+                          errata.className = 'errata-number';
+                          const errataValue = item.num !== undefined && item.num !== null && String(item.num).trim() !== ''
+                            ? String(item.num)
+                            : 'N/A';
+                          errata.textContent = `勘誤編號：${errataValue}`;
+                          textWrapper.appendChild(errata);
+                          entry.appendChild(textWrapper);
+                          content.appendChild(entry);
                         });
-                      }
-                      const textWrapper = document.createElement('div');
-                      textWrapper.className = 'doc-text';
-                      const ans = document.createElement('p');
-                      ans.innerHTML = `<strong>${item.answer.join(' / ')}</strong>`;
-                      textWrapper.appendChild(ans);
-                      if (item.explanation) {
-                        const pre = document.createElement('pre');
-                        pre.textContent = item.explanation;
-                        textWrapper.appendChild(pre);
-                      }
-                      entry.appendChild(textWrapper);
-                      content.appendChild(entry);
-                    });
-                    container.style.display = 'block';
-                  })
-                  .catch(err => {
-                    content.innerHTML = '<p>讀取資料失敗</p>';
-                    container.style.display = 'block';
-                  });
+                    } catch (err) {
+                        console.error('[openTikuHandler] Failed to load data for doc view:', err);
+                        content.innerHTML = '<p>讀取資料失敗</p>';
+                    }
+                };
+            };
+
+            // Keep the old openDoc handler for backward compatibility (though it won't be used anymore)
+            document.getElementById("openDoc").addEventListener("click", async function() {
+                if (!auth.currentUser) {
+                    showAlertModal('請先登入');
+                    return;
+                }
+                showAlertModal('請從下拉選單中選擇要查看的題庫');
             });
             document.getElementById('closeImageModal').addEventListener('click', () => {
               document.getElementById('imageModal').style.display = 'none';
@@ -2063,18 +2985,14 @@
                 if (window.docData) {
                     window.modalIndex = (window.modalIndex - 1 + window.docData.length) % window.docData.length;
                     const it = window.docData[window.modalIndex];
-                    document.getElementById('modalImage').src = it.path;
-                    document.getElementById('modalAnswer').textContent = it.answer.join(' / ');
-                    document.getElementById('modalExplanation').textContent = it.explanation || '';
+                    populateImageModal(it);
                 }
             });
             nextBtn.addEventListener('click', () => {
                 if (window.docData) {
                     window.modalIndex = (window.modalIndex + 1) % window.docData.length;
                     const it = window.docData[window.modalIndex];
-                    document.getElementById('modalImage').src = it.path;
-                    document.getElementById('modalAnswer').textContent = it.answer.join(' / ');
-                    document.getElementById('modalExplanation').textContent = it.explanation || '';
+                    populateImageModal(it);
                 }
             });
             document.getElementById("closeDoc").addEventListener("click", function() {
@@ -2121,17 +3039,14 @@
             const resumeBtn = document.getElementById('resumeButton');
             const restartProgress = document.getElementById('restartProgress');
             if (resumeBtn) {
-              resumeBtn.addEventListener('click', () => {
+              resumeBtn.addEventListener('click', async () => {
                 console.log("[resumeButton] Clicked. Attempting to resume progress.");
                 
-                const nameFromInput = document.getElementById("playerName").value.trim();
-                if (!nameFromInput) {
-                    showAlertModal("請先輸入玩家名稱才能接續遊戲！");
-                    document.getElementById("playerName").focus();
-                    return; // Do not proceed if name is not entered
+                if (!auth.currentUser) {
+                    showAlertModal("請先登入才能接續遊戲！");
+                    return;
                 }
-                window.currentPlayer = nameFromInput; // Ensure currentPlayer is set from input
-                localStorage.setItem("parasite_player_name", nameFromInput); // Re-save, in case it was edited
+                window.currentPlayer = (auth.currentUser.displayName || auth.currentUser.email || "使用者"); 
 
                 window.gameplayActive = true;
                 console.log("[resumeButton] Set window.gameplayActive to true");
@@ -2141,9 +3056,22 @@
                 document.querySelector('.progress-actions').style.display = 'block';
                 document.querySelector('.start-buttons').style.display = 'none';
 
-                const progString = localStorage.getItem('gameProgress');
-                if (!progString) {
-                    console.warn("[resumeButton] No progress found in localStorage.");
+                // Load progress from Firebase (Firebase only)
+                let prog = null;
+                
+                if (window.currentUserUid) {
+                    try {
+                        prog = await loadProgressFromFirebase();
+                        if (prog) {
+                            console.log("[resumeButton] Loaded progress from Firebase:", JSON.parse(JSON.stringify(prog)));
+                        }
+                    } catch (error) {
+                        console.error("[resumeButton] Error loading progress from Firebase:", error);
+                    }
+                }
+
+                if (!prog) {
+                    console.warn("[resumeButton] No progress found in Firebase or localStorage.");
                     window.gameplayActive = false;
                     document.getElementById('resumeButton').style.display = 'none';
                     document.querySelector('.progress-actions').style.display = 'none';
@@ -2152,14 +3080,9 @@
                     return;
                 }
 
-                let prog;
-                try {
-                    prog = JSON.parse(progString);
-                    if (!prog) throw new Error("Parsed progress is null or undefined.");
-                     console.log("[resumeButton] Parsed progress from localStorage:", JSON.parse(JSON.stringify(prog)));
-                } catch (e) {
-                    console.error("Failed to parse gameProgress from localStorage or it's invalid:", e);
-                    localStorage.removeItem('gameProgress');
+                // Validate progress data
+                if (!prog || typeof prog !== 'object') {
+                    console.error("[resumeButton] Invalid progress data format");
                     showAlertModal('進度讀取失敗，已清除損壞的進度，請重新開始。');
                     window.gameplayActive = false;
                     document.getElementById('resumeButton').style.display = 'none';
@@ -2167,6 +3090,11 @@
                     document.querySelector('.start-buttons').style.display = 'flex';
                     document.querySelector('.flashcard-container').style.display = 'none';
                     document.querySelector('.start-screen').style.display = 'flex';
+                    
+                    // Clear Firebase
+                    if (window.currentUserUid) {
+                        removeProgressFromFirebase();
+                    }
                     return;
                 }
 
@@ -2174,7 +3102,10 @@
                  console.log("[resumeButton] Loaded data from progress. Length:", data.length);
                 if (data.length === 0) {
                     console.error("Resumed data is empty. Clearing progress.");
-                    localStorage.removeItem('gameProgress');
+                    // Clear Firebase
+                    if (window.currentUserUid) {
+                        removeProgressFromFirebase();
+                    }
                     window.gameplayActive = false;
                     document.getElementById('resumeButton').style.display = 'none';
                     document.querySelector('.progress-actions').style.display = 'none';
@@ -2196,13 +3127,16 @@
                 done = (Array.isArray(prog.done) && prog.done.length === numOfProbs) ? prog.done : new Array(numOfProbs).fill(false);
                  console.log("[resumeButton] Loaded 'done' array:", JSON.parse(JSON.stringify(done)));
 
+                resetPreloadState();
+                initializeQuestionQueue();
+
                 correct = Number(prog.correct) || 0;
                 wrong = Number(prog.wrong) || 0;
-                // score is loaded from Firebase via fetchLeaderboard, or from prog if available (though Firebase is master)
-                // If prog.score exists and is a number, could use it as a base before fetchLeaderboard,
-                // but fetchLeaderboard should be the source of truth for total score.
+                
+                
+                
                 if (typeof prog.score === 'number') {
-                    score = prog.score; // Temporary set from local, will be overwritten by Firebase
+                    score = prog.score; 
                 }
 
                 correctList = Array.isArray(prog.correctList) ? prog.correctList : [];
@@ -2274,11 +3208,20 @@
               });
             }
             if (restartProgress) {
-              restartProgress.addEventListener('click', () => {
-                console.log("[restartProgress] Clicked. Clearing game progress from localStorage.");
+              restartProgress.addEventListener('click', async () => {
+                console.log("[restartProgress] Clicked. Clearing game progress from Firebase.");
                 window.gameplayActive = false;
                 console.log("[restartProgress] Set window.gameplayActive to false");
-                localStorage.removeItem('gameProgress');
+                
+                // Clear progress from Firebase only
+                if (window.currentUserUid) {
+                    const success = await removeProgressFromFirebase();
+                    if (success) {
+                        console.log("[restartProgress] Successfully cleared progress from Firebase");
+                    } else {
+                        console.warn("[restartProgress] Failed to clear progress from Firebase, but continuing...");
+                    }
+                }
                 showAlertModal('進度已清除');
 
                 document.querySelector('.flashcard-container').style.display = 'none';
@@ -2293,14 +3236,17 @@
                 wrong = 0;
                 correctList = [];
                 wrongList = [];
-                // Score will be fetched from Firebase by fetchLeaderboard on next init/game start
-                // For display purposes, reset local score value that updateScoreDisplay uses
-                // score = 0; // Reset local score value; Firebase score is the master
+                done = [];
+                x = -1;
+                resetPreloadState();
+                
+                
+                
                 console.log("[restartProgress] Cleared correctList:", JSON.parse(JSON.stringify(correctList)), "wrongList:", JSON.parse(JSON.stringify(wrongList)));
 
                 document.getElementById("correct").innerText = correct;
                 document.getElementById("wrong").innerText = wrong;
-                updateScoreDisplay(); // Update display with reset round scores and current Firebase score
+                updateScoreDisplay(); 
 
                 const imageElement = document.getElementById("image");
                 if (imageElement) {
@@ -2405,12 +3351,13 @@
             });
 
             nextProb();
+            try { updateStarButtonState(); } catch (e) {}
             console.log("[startGame] Finished. Called nextProb().");
         }
         function checkAns(input, ansArr) {
             if (!Array.isArray(ansArr)) return false;
-            const normalizedInput = input.trim().toLowerCase();
-            return ansArr.some(ans => ans.trim().toLowerCase() === normalizedInput);
+            const normalizedInput = input.replace(/[\p{P}\s]/gu, "").toLowerCase();
+            return ansArr.some(ans => ans.replace(/[\p{P}\s]/gu, "").toLowerCase() === normalizedInput);
         }
         function submitUserAnswer() {
             console.log("[submitUserAnswer] Called. viewing:", viewing, "isComposing:", isComposing);
@@ -2419,7 +3366,7 @@
                 return;
             }
             var userAnswerRaw = document.getElementById("answer").value;
-            var lowerUserAnswer = userAnswerRaw.trim().toLowerCase();
+            var lowerUserAnswer = userAnswerRaw.replace(/[\p{P}\s]/gu, "").toLowerCase();
             console.log("[submitUserAnswer] User answer (raw):", userAnswerRaw, "(lower):", lowerUserAnswer);
 
 
@@ -2437,7 +3384,7 @@
             clearTimeout(tm);
 
             var userAnswer = userAnswerRaw;
-            if (userAnswer.trim() === "") return;
+            if (userAnswer.replace(/[\p{P}\s]/gu, "") === "") return;
 
             viewing = true;
             document.querySelector('.answer-input-container').style.visibility = 'hidden';
@@ -2537,6 +3484,25 @@
                     </div>
                 `;
             }
+            
+            
+            const errorNum = data[x]?.num;
+            const cardAnswerDiv = document.querySelector(".card-answer");
+            
+            
+            const existingErrorNum = cardAnswerDiv.querySelector('.error-number');
+            if (existingErrorNum) {
+                existingErrorNum.remove();
+            }
+            
+            
+            if (errorNum && cardAnswerDiv) {
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error-number';
+                errorDiv.textContent = `勘誤編號：${errorNum}`;
+                cardAnswerDiv.appendChild(errorDiv);
+            }
+            
             expDiv.style.display = "block";
         }
         window.showContributionInput = function showContributionInput() {
@@ -2570,12 +3536,12 @@
         }
         function updateScoreDisplay() {
             const scoreDisplay = document.getElementById("score-display");
-            if (scoreDisplay) scoreDisplay.textContent = score; // Global accumulated score from Firebase
+            if (scoreDisplay) scoreDisplay.textContent = score; 
             
             const correctEl = document.getElementById("correct");
-            if (correctEl) correctEl.textContent = correct; // Current round correct
+            if (correctEl) correctEl.textContent = correct; 
             const wrongEl = document.getElementById("wrong");
-            if (wrongEl) wrongEl.textContent = wrong; // Current round wrong
+            if (wrongEl) wrongEl.textContent = wrong; 
         }
         async function submitContribution() {
             let ip = 'unknown';
@@ -2602,7 +3568,7 @@
             const period = now.getHours() >= 12 ? 'PM' : 'AM';
             const formattedDate = `${now.getMonth()+1}月${now.getDate()}日${hours12}:${minutes}${period}`;
             
-            // Ensure currentPlayer is valid for contributorInfo
+            
             const playerNameForContrib = (window.currentPlayer && window.currentPlayer.trim() !== "") ? window.currentPlayer : "未設定名稱玩家";
             const contributorInfo = `${playerNameForContrib}[IP: ${ip}, ${os}, ${browser}]（${formattedDate}）：\n`;
 
@@ -2693,32 +3659,40 @@
             const savedCorrectList = JSON.parse(JSON.stringify(correctList));
             const savedWrongList = JSON.parse(JSON.stringify(wrongList));
 
-            // score (total score) is now primarily managed by Firebase, so saving it to gameProgress
-            // might be redundant if fetchLeaderboard is always the source of truth on resume.
-            // However, keeping it for potential offline resume or faster UI update before Firebase sync.
-            localStorage.setItem('gameProgress', JSON.stringify({ data, x, done, correct, wrong, score, correctList: savedCorrectList, wrongList: savedWrongList }));
-            console.log("[nextProb] Saved progress to localStorage. x:", x, "correct (round):", correct, "wrong (round):", wrong, "score (total from local/Firebase):", score);
+            // Save progress to Firebase (Firebase only)
+            const progressData = { data, x, done, correct, wrong, score, correctList: savedCorrectList, wrongList: savedWrongList };
+            
+            if (window.currentUserUid) {
+                // Save to Firebase if user is logged in
+                saveProgressToFirebase(progressData).then(success => {
+                    if (success) {
+                        console.log("[nextProb] Saved progress to Firebase. x:", x, "correct (round):", correct, "wrong (round):", wrong, "score (total from Firebase):", score);
+                    } else {
+                        console.warn("[nextProb] Failed to save to Firebase");
+                    }
+                }).catch(error => {
+                    console.error("[nextProb] Error saving to Firebase:", error);
+                });
+            }
+            
             console.log("[nextProb] Saved correctList:", JSON.parse(JSON.stringify(savedCorrectList)));
             console.log("[nextProb] Saved wrongList:", JSON.parse(JSON.stringify(savedWrongList)));
             console.log("[nextProb] Exiting.");
         }
         function pickNewImage() {
             console.log("[pickNewImage] Called. Current 'done' array:", JSON.parse(JSON.stringify(done)));
-             const availableIndices = [];
-            for (let i = 0; i < numOfProbs; i++) {
-                if (!done[i]) availableIndices.push(i);
-            }
-            console.log("[pickNewImage] Available indices:", JSON.parse(JSON.stringify(availableIndices)));
-
-
-            if (availableIndices.length === 0) {
-                return -1; 
+            if (!questionQueue.length) {
+                initializeQuestionQueue();
             }
 
-            const randomIndex = Math.floor(Math.random() * availableIndices.length);
-            const selectedIndex = availableIndices[randomIndex];
-            done[selectedIndex] = true; 
+            if (!questionQueue.length) {
+                return -1;
+            }
+
+            const selectedIndex = questionQueue.shift();
+            done[selectedIndex] = true;
             console.log(`[pickNewImage] Selected index: ${selectedIndex}. Updated 'done' array:`, JSON.parse(JSON.stringify(done)));
+            preloadUpcomingImages();
             return selectedIndex;
         }
         function updateImage(isResuming = false) {
@@ -2745,7 +3719,7 @@
             }
             console.log(`[updateImage] Updating image for index x: ${x}. Item:`, JSON.parse(JSON.stringify(data[x])));
 
-            const picref = data[x]?.path;
+            const picref = processImagePath(data[x]?.path);
 
             if (picref) {
                  imageElement.setAttribute('src', picref);
@@ -2758,12 +3732,28 @@
                  document.querySelector('.loading-screen').style.display = 'none';
             }
             console.log("[updateImage] Exiting.");
+            // Update star button state after image changes
+            try { updateStarButtonState(); } catch (e) {}
             return true; 
         }
         function countdown() { }
         function resetTime() { clearTimeout(tm); }
         function showWrongList() { displayListInModal(wrongList, "你答錯的"); }
         function showCorrectList() { displayListInModal(correctList, "你答對的"); }
+        function escapeHtml(value) {
+            if (value === null || value === undefined) {
+                return '';
+            }
+            const stringValue = String(value);
+            const escapeMap = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#39;'
+            };
+            return stringValue.replace(/[&<>"']/g, match => escapeMap[match] || match);
+        }
         function displayListInModal(list, title) {
             let modal = document.getElementById('modal');
             let modalBody = document.getElementById('modalBody');
@@ -2776,16 +3766,25 @@
                 list.forEach(item => {
                     if (!item) return;
                     content += '<li>';
+                    const answers = Array.isArray(item.answer) ? item.answer : [];
+                    const answerText = answers.length ? answers.join(' / ') : 'N/A';
+                    const primaryAnswer = answers.length ? answers[0] : 'item';
                     if (item.path) {
-                        content += `<img src="${item.path}" alt="Image for ${item.answer?.[0] || 'item'}" style="max-width: 200px; margin-bottom: 8px; border-radius: 4px;">`;
+                        const sanitizedPath = escapeHtml(processImagePath(item.path));
+                        const sanitizedAlt = escapeHtml(primaryAnswer || 'item');
+                        content += `<img src="${sanitizedPath}" loading="lazy" decoding="async" alt="Image for ${sanitizedAlt}" style="max-width: 200px; margin-bottom: 8px; border-radius: 4px;">`;
                     } else { content += '<p><i>（沒跑出圖片）</i></p>'; }
-                    const answerText = Array.isArray(item.answer) ? item.answer.join(' / ') : 'N/A';
-                    content += `<p><strong>答案：</strong>${answerText}</p>`;
+                    const sanitizedAnswer = escapeHtml(answerText);
+                    content += `<p><strong>答案：</strong>${sanitizedAnswer}</p>`;
                     const explanationText = item.explanation?.trim();
                      if (explanationText && explanationText !== "\"\"" && explanationText !== "\"\"") {
-                        const sanitizedExplanation = explanationText.replace(/<script.*?>.*?<\/script>/gi, '');
-                        content += `<p style="font-size: 0.9rem; color: #4B5563;"><em>解釋：</em>${sanitizedExplanation}</p>`;
+                    const sanitizedExplanation = explanationText.replace(/<script.*?>.*?<\/script>/gi, '');
+                    content += `<p style="font-size: 0.9rem; color: var(--text-secondary);"><em>解釋：</em>${sanitizedExplanation}</p>`;
                      }
+                    const errataValue = item.num !== undefined && item.num !== null && String(item.num).trim() !== ''
+                        ? String(item.num)
+                        : 'N/A';
+                    content += `<p class="modal-errata-number">勘誤編號：${escapeHtml(errataValue)}</p>`;
                     content += '</li>';
                 });
                 content += '</ol>';
@@ -2819,6 +3818,53 @@
         }
         window.showAlertModal = showAlertModal;
 
+        function showForgotPasswordLink() {
+            const forgotPasswordLink = document.getElementById('forgotPasswordLink');
+            if (forgotPasswordLink) {
+                forgotPasswordLink.style.display = 'inline';
+                
+                // 移除之前的事件监听器，避免重复绑定
+                const newLink = forgotPasswordLink.cloneNode(true);
+                forgotPasswordLink.parentNode.replaceChild(newLink, forgotPasswordLink);
+                
+                // 添加点击事件
+                newLink.addEventListener('click', async function(e) {
+                    e.preventDefault();
+                    const emailInput = document.getElementById('email');
+                    const email = emailInput ? emailInput.value.trim() : '';
+                    if (!email) {
+                        showAlertModal('請先在 Email 欄位輸入您的 Email。');
+                        return;
+                    }
+                    try {
+                        await sendPasswordResetEmail(auth, email);
+                        showAlertModal('已寄出重設密碼郵件，請至信箱查收。');
+                    } catch (error) {
+                        let msg = '寄送失敗，請稍後再試。';
+                        switch (error.code) {
+                            case 'auth/invalid-email':
+                                msg = '電子郵件格式無效。';
+                                break;
+                            case 'auth/user-not-found':
+                                msg = '找不到此電子郵件的帳戶。';
+                                break;
+                            case 'auth/too-many-requests':
+                                msg = '嘗試次數過多，請稍後再試。';
+                                break;
+                        }
+                        showAlertModal(msg);
+                    }
+                });
+            }
+        }
+        
+        function hideForgotPasswordLink() {
+            const forgotPasswordLink = document.getElementById('forgotPasswordLink');
+            if (forgotPasswordLink) {
+                forgotPasswordLink.style.display = 'none';
+            }
+        }
+
         function closeAlertModal() {
             document.getElementById('alertModal').style.display = 'none';
         }
@@ -2831,17 +3877,314 @@
             }
         });
 
-        window.preloadNextImage = function preloadNextImage() {
-            if (!data || numOfProbs === 0) return; 
-            const nextIndex = (x + 1) % numOfProbs; 
-            if (nextIndex < 0 || nextIndex >= data.length || !data[nextIndex]) return;
+        // 暱稱編輯模態框
+        (function(){
+            const nicknameModal = document.getElementById('nicknameModal');
+            const closeNicknameModalBtn = document.getElementById('closeNicknameModal');
+            const nicknameInput = document.getElementById('nicknameInput');
+            const saveNicknameBtn = document.getElementById('saveNicknameBtn');
 
-            const nextPath = data[nextIndex]?.path;
-            if (nextPath) {
-                const img = new Image();
-                img.src = nextPath;
+            function openNicknameModal(prefill) {
+                if (nicknameInput) nicknameInput.value = prefill || '';
+                if (nicknameModal) {
+                    nicknameModal.style.display = 'flex';
+                    nicknameModal.style.opacity = '1';
+                }
+            }
+            function closeNicknameModal() {
+                if (nicknameModal) nicknameModal.style.display = 'none';
+            }
+            window.openNicknameModal = openNicknameModal;
+
+            if (closeNicknameModalBtn) {
+                closeNicknameModalBtn.addEventListener('click', closeNicknameModal);
+            }
+            window.addEventListener('click', function(event) {
+                if (event.target === nicknameModal) {
+                    closeNicknameModal();
+                }
+            });
+            if (saveNicknameBtn) {
+                saveNicknameBtn.addEventListener('click', async () => {
+                    const user = auth.currentUser;
+                    if (!user) {
+                        closeNicknameModal();
+                        showAlertModal('請先登入');
+                        return;
+                    }
+                    const raw = nicknameInput ? nicknameInput.value : '';
+                    const trimmed = (raw || '').trim();
+                    if (!trimmed) {
+                        showAlertModal('暱稱不可為空');
+                        return;
+                    }
+                    try {
+                        await updateProfile(user, { displayName: trimmed });
+                        try {
+                            const uid = user.uid;
+                            const userNodeRef = ref(db, `ntumedsa-quiz-anatomy/${uid}`);
+                            await update(userNodeRef, { name: trimmed });
+                        } catch (e) {
+                            console.warn('同步更新排行榜名稱失敗：', e);
+                        }
+                        const currentNameSpan = document.getElementById('greetingName');
+                        if (currentNameSpan) currentNameSpan.textContent = trimmed;
+                        window.currentPlayer = trimmed;
+                        if (typeof fetchLeaderboard === 'function') fetchLeaderboard();
+                        closeNicknameModal();
+                    } catch (err) {
+                        console.error('更新暱稱失敗：', err);
+                        showAlertModal('更新暱稱失敗');
+                    }
+                });
+            }
+        })();
+
+        window.handleMainImageLoad = function handleMainImageLoad(imgElement) {
+            if (!imgElement) return;
+            imgElement.classList.add('loaded');
+            const loadingScreen = document.querySelector('.loading-screen');
+            if (loadingScreen) {
+                loadingScreen.style.display = 'none';
+            }
+
+            const attrSrc = imgElement.getAttribute('src');
+            if (attrSrc) {
+                preloadedImagePaths.add(attrSrc);
+            }
+
+            window.preloadNextImage();
+        };
+
+        window.preloadNextImage = function preloadNextImage() {
+            preloadUpcomingImages();
+        }
+        
+        // ===== Starred feature (Firebase only) =====
+        let starredCache = {};
+        function getCurrentItemKey(item) {
+            if (!item) return null;
+            if (item.num && String(item.num).trim() !== '') return `num:${String(item.num)}`;
+            if (item.path && String(item.path).trim() !== '') return `path:${String(item.path)}`;
+            return null;
+        }
+        async function loadStarredFromFirebase() {
+            if (!window.currentUserUid) { starredCache = {}; return starredCache; }
+            try {
+                const starredRef = ref(db, `ntumedsa-quiz-anatomy/${window.currentUserUid}/starred/anatomy`);
+                const snapshot = await get(starredRef);
+                if (snapshot.exists()) {
+                    const val = snapshot.val();
+                    starredCache = (val && typeof val === 'object') ? val : {};
+                } else {
+                    starredCache = {};
+                }
+            } catch (e) {
+                console.error('[starred] Failed to load from Firebase:', e);
+                starredCache = {};
+            }
+            return starredCache;
+        }
+        async function saveStarredToFirebase(map) {
+            if (!window.currentUserUid) return false;
+            try {
+                const starredRef = ref(db, `ntumedsa-quiz-anatomy/${window.currentUserUid}/starred/anatomy`);
+                await set(starredRef, map || {});
+                starredCache = map || {};
+                return true;
+            } catch (e) {
+                console.error('[starred] Failed to save to Firebase:', e);
+                return false;
             }
         }
+        function isItemStarred(item) {
+            const key = getCurrentItemKey(item);
+            if (!key) return false;
+            return !!starredCache[key];
+        }
+        async function setItemStarred(item, starred) {
+            if (!window.currentUserUid) {
+                showAlertModal('請先登入才能使用「星號」功能');
+                return;
+            }
+            const key = getCurrentItemKey(item);
+            if (!key) return;
+            const nextMap = { ...(starredCache || {}) };
+            if (starred) {
+                nextMap[key] = {
+                    num: item.num || '',
+                    path: item.path || '',
+                    answer: Array.isArray(item.answer) ? item.answer : [],
+                    explanation: item.explanation || '',
+                    description: item.description || ''
+                };
+            } else {
+                delete nextMap[key];
+            }
+            await saveStarredToFirebase(nextMap);
+        }
+        function getAllStarredItems() {
+            return Object.values(starredCache || {});
+        }
+        function updateStarButtonState() {
+            const starBtn = document.getElementById('starToggle');
+            if (!starBtn) return;
+            const item = (typeof x !== 'undefined' && Array.isArray(data)) ? data[x] : null;
+            if (!item) { starBtn.classList.remove('active'); starBtn.textContent = '☆'; return; }
+            if (isItemStarred(item)) {
+                starBtn.classList.add('active');
+                starBtn.textContent = '★';
+            } else {
+                starBtn.classList.remove('active');
+                starBtn.textContent = '☆';
+            }
+        }
+        const starBtnEl = document.getElementById('starToggle');
+        if (starBtnEl) {
+            starBtnEl.addEventListener('click', async function() {
+                const item = (typeof x !== 'undefined' && Array.isArray(data)) ? data[x] : null;
+                if (!item) return;
+                const nowStarred = !isItemStarred(item);
+                await setItemStarred(item, nowStarred);
+                updateStarButtonState();
+            });
+        }
+        const openStarredTopBtn = document.getElementById('openStarredTop');
+        if (openStarredTopBtn) {
+            openStarredTopBtn.addEventListener('click', async function(){
+                    // Load latest from Firebase before showing
+                    if (window.currentUserUid) {
+                        try { await loadStarredFromFirebase(); } catch (e) { console.warn('[starred] refresh failed:', e); }
+                    }
+                    const list = getAllStarredItems();
+                    const body = document.getElementById('starredModalBody');
+                    const modal = document.getElementById('starredModal');
+                    let content = `<h2>已加星號 (${list.length})</h2>`;
+                    if (list.length === 0) {
+                        content += '<p>尚未加入任何星號。</p>';
+                    } else {
+                        content += '<ol>';
+                        list.forEach(item => {
+                            if (!item) return;
+                            content += '<li style="cursor:pointer;" class="starred-entry">';
+                            const answers = Array.isArray(item.answer) ? item.answer : [];
+                            const answerText = answers.length ? answers.join(' / ') : 'N/A';
+                            const primaryAnswer = answers.length ? answers[0] : 'item';
+                            if (item.path) {
+                                const sanitizedPath = escapeHtml(processImagePath(item.path));
+                                const sanitizedAlt = escapeHtml(primaryAnswer || 'item');
+                                content += `<img src="${sanitizedPath}" loading="lazy" decoding="async" alt="Image for ${sanitizedAlt}" style="max-width: 150px; height:auto; margin-bottom: 8px; border-radius: 4px;">`;
+                            } else { content += '<p><i>（沒跑出圖片）</i></p>'; }
+                            const sanitizedAnswer = escapeHtml(answerText);
+                            content += `<p><strong>答案：</strong>${sanitizedAnswer}</p>`;
+                            const explanationText = item.explanation?.trim();
+                            if (explanationText && explanationText !== "\"\"" && explanationText !== "\"\"") {
+                                const sanitizedExplanation = explanationText.replace(/<script.*?>.*?<\/script>/gi, '');
+                                content += `<p style="font-size: 0.9rem; color: var(--text-secondary);"><em>解釋：</em>${sanitizedExplanation}</p>`;
+                            }
+                            const errataValue = item.num !== undefined && item.num !== null && String(item.num).trim() !== ''
+                                ? String(item.num)
+                                : 'N/A';
+                            content += `<p class="modal-errata-number">勘誤編號：${escapeHtml(errataValue)}</p>`;
+                            content += '</li>';
+                        });
+                        content += '</ol>';
+                    }
+                    content += `
+                        <div style="margin: 10px 0 0 0; text-align:center;">
+                            <button id="startStarredPractice" class="next-button" 
+                            style="display:block; margin:0 auto;">
+                            練習
+                            </button>
+                        </div>
+                        `;
+                    body.innerHTML = content;
+                    modal.style.display = 'flex';
+                    const practiceBtn = body.querySelector('#startStarredPractice');
+                    if (practiceBtn) {
+                        practiceBtn.addEventListener('click', async () => {
+                            const items = getAllStarredItems();
+                            if (!items || items.length === 0) {
+                                showAlertModal("尚未加入任何星號。");
+                                return;
+                            }
+                            if (!auth.currentUser) {
+                                showAlertModal("請先登入！");
+                                return;
+                            }
+
+                            // Close the modal and start a starred-only session
+                            modal.style.display = 'none';
+
+                            window.currentPlayer = (auth.currentUser.displayName || auth.currentUser.email || "使用者");
+                            window.gameplayActive = true;
+
+                            document.querySelector('.start-screen').style.display = 'none';
+                            document.querySelector('.flashcard-container').style.display = 'flex';
+
+                            state = 1;
+                            correct = 0; wrong = 0; total = 0;
+                            document.getElementById("correct").innerHTML = correct;
+                            document.getElementById("wrong").innerHTML = wrong;
+                            updateScoreDisplay();
+                            correctList = []; wrongList = [];
+
+                            const nextBtn = document.getElementById('next');
+                            nextBtn.innerText = "下一個";
+                            nextBtn.removeEventListener('click', startReviewWrong);
+                            nextBtn.addEventListener('click', nextProb);
+
+                            data = items;
+                            numOfProbs = data.length;
+                            data = parseMultiAns(data);
+                            done = new Array(numOfProbs).fill(false);
+                            resetPreloadState();
+                            initializeQuestionQueue();
+                            startGame();
+                        });
+                    }
+                    const entries = body.querySelectorAll('.starred-entry');
+                    const listCopy = getAllStarredItems();
+                    entries.forEach((el, idx) => {
+                        el.addEventListener('click', () => {
+                            const item = listCopy[idx];
+                            if (!item) return;
+                            const imageModal = document.getElementById('imageModal');
+                            if (typeof populateImageModal === 'function') {
+                                populateImageModal(item);
+                                imageModal.style.display = 'flex';
+                                imageModal.style.opacity = '1';
+                            }
+                        });
+                    });
+            });
+        }
+        const closeStarredBtn = document.getElementById('closeStarredModal');
+        if (closeStarredBtn) {
+            closeStarredBtn.addEventListener('click', function() {
+                const modal = document.getElementById('starredModal');
+                modal.style.display = 'none';
+            });
+        }
     </script>
+
+    <!-- 登入模態框 -->
+    <div id="loginModal" class="login-modal">
+        <div class="login-modal-content">
+            <span class="close-modal" id="closeLoginModal">&times;</span>
+            <h2 id="modalTitle">登入</h2>
+            <form class="login-form" id="loginForm">
+                <input type="text" id="displayName" placeholder="暱稱" style="display: none;">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="密碼" required>
+                <button type="submit" id="submitBtn">登入</button>
+            </form>
+            <div class="login-toggle">
+                <span>還沒有帳號？</span>
+                <a id="toggleMode">註冊</a>
+                <a id="forgotPasswordLink" class="forgot-password-link" style="display: none;">忘記密碼？</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
