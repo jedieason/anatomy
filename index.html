@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="國立臺灣大學醫學系解剖學跑台機">
     <meta name="keywords" content="解剖學跑台機">
-    <link rel="icon" href="/anatomy/icon.png" type="image/png">
+    <link rel="icon" href="icon.png" type="image/png">
     <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <title>解剖學跑台</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -499,6 +499,22 @@
         .login-form button:disabled {
             background-color: #ccc;
             cursor: not-allowed;
+        }
+
+        /* 登入方式分隔線 */
+        .or-divider {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-secondary, #777);
+            font-size: 14px;
+        }
+        .or-divider::before,
+        .or-divider::after {
+            content: "";
+            flex: 1 1 auto;
+            height: 1px;
+            background: var(--border-color, #e0e0e0);
         }
 
         .login-toggle {
@@ -2104,6 +2120,26 @@ if (loginForm) {
         }
     });
 }
+
+// Google 登入
+const googleSignInBtn = document.getElementById('googleSignInBtn');
+if (googleSignInBtn) {
+    googleSignInBtn.addEventListener('click', async () => {
+        try {
+            await signInWithPopup(auth, provider);
+            showAlertModal('登入成功！');
+            loginModal.style.display = 'none';
+            resetForm();
+        } catch (error) {
+            console.error('Google 登入失敗:', error);
+            let msg = 'Google 登入失敗，請稍後再試。';
+            if (error && error.code === 'auth/popup-closed-by-user') {
+                msg = '已關閉登入視窗。';
+            }
+            showAlertModal(msg);
+        }
+    });
+}
         onAuthStateChanged(auth, user => {
             const btn = document.getElementById('signInBtn');
             const greet = document.getElementById('greeting');
@@ -2293,23 +2329,9 @@ if (loginForm) {
             preloadUpcomingImages();
         }
 
-        // 添加处理图片路径的函数
-        function processImagePath(path) {
-            if (!path) return path;
-            // 如果路径已经包含 /anatomy/，则不重复添加
-            if (path.startsWith('/anatomy/') || path.startsWith('anatomy/')) {
-                return path;
-            }
-            // 如果是相对路径（不以 http:// 或 https:// 开头），则添加 /anatomy/ 前缀
-            if (!path.startsWith('http://') && !path.startsWith('https://')) {
-                return `/anatomy/${path}`;
-            }
-            return path;
-        }
-
         function preloadImageAtIndex(index) {
             if (!data || !data[index]) return;
-            const path = processImagePath(data[index]?.path);
+            const path = data[index]?.path;
             if (!path || preloadedImagePaths.has(path) || pendingPreloadMap.has(path)) return;
 
             const img = new Image();
@@ -2560,7 +2582,7 @@ if (loginForm) {
                 }
             } catch (err) {
                 console.error("讀排行榜失敗：", err);
-                listEl.innerHTML = '<li>讀取失敗</li>';
+                listEl.innerHTML = '<li>請先登入</li>';
                 const rankDisplay = document.getElementById("rank-display");
                 if (rankDisplay) rankDisplay.textContent = "N/A";
             }
@@ -2821,10 +2843,10 @@ if (loginForm) {
 
                     if (isTikuDropdown) {
                         // Handle 題庫 dropdown - open question bank for specific JSON
-                        openTikuHandler(`/anatomy/${jsonPath}`)();
+                        openTikuHandler(`${jsonPath}`)();
                     } else {
                         // Handle 單元 dropdown - start game with specific JSON
-                        createStartHandler(`/anatomy/${jsonPath}`)();
+                        createStartHandler(`${jsonPath}`)();
                     }
 
                     if (dropdownMenuElement && dropdownMenuElement.classList.contains('active')) {
@@ -2866,7 +2888,7 @@ if (loginForm) {
                 if (!item) return;
                 const modalImage = document.getElementById('modalImage');
                 if (modalImage) {
-                    modalImage.src = processImagePath(item.path) || '';
+                    modalImage.src = item.path || '';
                     modalImage.alt = item.answer?.[0] || 'Image preview';
                     if ('fetchPriority' in modalImage) {
                         modalImage.fetchPriority = 'high';
@@ -2919,7 +2941,7 @@ if (loginForm) {
                           entry.className = 'doc-entry';
                           if (item.path) {
                             const img = document.createElement('img');
-                            img.src = processImagePath(item.path);
+                            img.src = item.path;
                             img.alt = item.answer[0] || '';
                             img.loading = 'lazy';
                             img.decoding = 'async';
@@ -3719,7 +3741,7 @@ if (loginForm) {
             }
             console.log(`[updateImage] Updating image for index x: ${x}. Item:`, JSON.parse(JSON.stringify(data[x])));
 
-            const picref = processImagePath(data[x]?.path);
+            const picref = data[x]?.path;
 
             if (picref) {
                  imageElement.setAttribute('src', picref);
@@ -3770,7 +3792,7 @@ if (loginForm) {
                     const answerText = answers.length ? answers.join(' / ') : 'N/A';
                     const primaryAnswer = answers.length ? answers[0] : 'item';
                     if (item.path) {
-                        const sanitizedPath = escapeHtml(processImagePath(item.path));
+                        const sanitizedPath = escapeHtml(item.path);
                         const sanitizedAlt = escapeHtml(primaryAnswer || 'item');
                         content += `<img src="${sanitizedPath}" loading="lazy" decoding="async" alt="Image for ${sanitizedAlt}" style="max-width: 200px; margin-bottom: 8px; border-radius: 4px;">`;
                     } else { content += '<p><i>（沒跑出圖片）</i></p>'; }
@@ -4071,7 +4093,7 @@ if (loginForm) {
                             const answerText = answers.length ? answers.join(' / ') : 'N/A';
                             const primaryAnswer = answers.length ? answers[0] : 'item';
                             if (item.path) {
-                                const sanitizedPath = escapeHtml(processImagePath(item.path));
+                                const sanitizedPath = escapeHtml(item.path);
                                 const sanitizedAlt = escapeHtml(primaryAnswer || 'item');
                                 content += `<img src="${sanitizedPath}" loading="lazy" decoding="async" alt="Image for ${sanitizedAlt}" style="max-width: 150px; height:auto; margin-bottom: 8px; border-radius: 4px;">`;
                             } else { content += '<p><i>（沒跑出圖片）</i></p>'; }
@@ -4168,7 +4190,6 @@ if (loginForm) {
         }
     </script>
 
-    <!-- 登入模態框 -->
     <div id="loginModal" class="login-modal">
         <div class="login-modal-content">
             <span class="close-modal" id="closeLoginModal">&times;</span>
@@ -4178,6 +4199,18 @@ if (loginForm) {
                 <input type="email" id="email" placeholder="Email" required>
                 <input type="password" id="password" placeholder="密碼" required>
                 <button type="submit" id="submitBtn">登入</button>
+                <div class="or-divider"><span>或</span></div>
+                <button type="button" id="googleSignInBtn" class="google-signin-btn" style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 10px 12px; border: 1px solid var(--border-color, #e0e0e0); border-radius: 6px; background: #fff; color: #333; cursor: pointer;">
+                    <span aria-hidden="true" style="display:inline-flex; width:18px; height:18px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 533.5 544.3">
+                            <path fill="#4285F4" d="M533.5 278.4c0-18.6-1.6-37-4.9-54.8H272.1v103.7h146.9c-6.3 34-25.1 62.8-53.6 82v68.1h86.8c50.8-46.8 81.3-115.8 81.3-199z"/>
+                            <path fill="#34A853" d="M272.1 544.3c72.9 0 134.1-24.1 178.8-65.3l-86.8-68.1c-24.1 16.2-55 25.8-92 25.8-70.7 0-130.6-47.7-152-111.8h-90.3v70.2c44.6 88.4 135.7 149.2 242.3 149.2z"/>
+                            <path fill="#FBBC05" d="M120.1 325c-10.2-30.4-10.2-63.3 0-93.7v-70.2H29.8c-39.7 80-39.7 174.1 0 254.1L120.1 325z"/>
+                            <path fill="#EA4335" d="M272.1 107.7c39.6-.6 77.8 14.5 106.6 42.2l79.6-79.6C406.2 24.8 340.2-1.2 272.1 0 165.6 0 74.5 60.8 29.8 149.2l90.3 70.2c21.4-64.1 81.3-111.7 152-111.7z"/>
+                        </svg>
+                    </span>
+                    <span>使用Google登入</span>
+                </button>
             </form>
             <div class="login-toggle">
                 <span>還沒有帳號？</span>
