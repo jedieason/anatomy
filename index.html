@@ -2070,6 +2070,8 @@ if (loginForm) {
             
             loginModal.style.display = 'none';
             resetForm();
+            // 登入後刷新排行榜
+            try { await fetchLeaderboard(); } catch (e) { console.error('[login] Failed to fetch leaderboard after email login:', e); }
             
         } catch (error) {
             console.error('認證失敗:', error);
@@ -2130,6 +2132,8 @@ if (googleSignInBtn) {
             showAlertModal('登入成功！');
             loginModal.style.display = 'none';
             resetForm();
+            // 登入後刷新排行榜
+            try { await fetchLeaderboard(); } catch (e) { console.error('[login] Failed to fetch leaderboard after Google login:', e); }
         } catch (error) {
             console.error('Google 登入失敗:', error);
             let msg = 'Google 登入失敗，請稍後再試。';
@@ -2173,6 +2177,8 @@ if (googleSignInBtn) {
                     setAuthControlsEnabled(true);
                     const starTop = document.getElementById('openStarredTop');
                     if (starTop) starTop.style.display = 'flex';
+                    // 登入後刷新排行榜
+                    try { fetchLeaderboard(); } catch (e) { console.error('[auth] Failed to fetch leaderboard after login:', e); }
                     // Load starred cache for this user
                     loadStarredFromFirebase().then(() => {
                         updateStarButtonState();
