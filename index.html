@@ -281,6 +281,49 @@
             box-shadow: 0 1px 3px var(--shadow-color);
         }
 
+        /* Resume button: border-only style */
+        #resumeButton {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-primary);
+            box-shadow: none;
+            animation: none;
+        }
+        #resumeButton:hover {
+            background: var(--bg-secondary);
+        }
+        body.dark-mode #resumeButton {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border-secondary);
+        }
+
+        /* Resume progress bar */
+        .resume-progress {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        .resume-progress-bar {
+            width: 220px;
+            height: 8px;
+            background: var(--border-secondary);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+        .resume-progress-fill {
+            height: 100%;
+            width: 0;
+            background: var(--accent-blue);
+            transition: width 0.3s ease;
+        }
+        .resume-progress-text {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
         #signInBtn {
             position: absolute;
             top: 20px;
@@ -1689,7 +1732,13 @@
       </div>
     </div>
     <div class="progress-actions" style="text-align:center; margin-top:10px; display:none;">
-      <button id="resumeButton" class="start-button" style="background-color: var(--accent-green); display:none;">接續上次</button>
+      <button id="resumeButton" class="start-button" style="display:none;">接續上次</button>
+      <div id="resumeProgress" class="resume-progress" style="display:none;">
+        <div class="resume-progress-bar">
+          <div class="resume-progress-fill" id="resumeProgressFill"></div>
+        </div>
+        <span class="resume-progress-text" id="resumeProgressText">已完成 0%</span>
+      </div>
       <div style="margin-top:8px;">
         <span id="restartProgress" style="color:#999;text-decoration:underline;cursor:pointer;">重新開始</span>
       </div>
@@ -1872,11 +1921,37 @@
             
             // Update UI based on progress availability
             if (hasProgress) {
-                document.getElementById('resumeButton').style.display = 'inline-block';
+                const resumeEl = document.getElementById('resumeButton');
+                const prog = await loadProgressFromFirebase();
+                let unitNameText = '單元';
+                let percent = 0;
+                if (prog && Array.isArray(prog.done) && Array.isArray(prog.data) && prog.data.length > 0) {
+                    const total = prog.data.length;
+                    const completed = prog.done.filter(Boolean).length;
+                    percent = Math.round((completed / total) * 100);
+                }
+                if (prog && prog.unitName) {
+                    unitNameText = prog.unitName;
+                }
+                if (resumeEl) {
+                    resumeEl.textContent = `繼續 ${unitNameText}`;
+                    resumeEl.style.display = 'inline-block';
+                }
+                const resumeProgress = document.getElementById('resumeProgress');
+                const fill = document.getElementById('resumeProgressFill');
+                const text = document.getElementById('resumeProgressText');
+                if (resumeProgress && fill && text) {
+                    resumeProgress.style.display = 'flex';
+                    fill.style.width = `${percent}%`;
+                    text.textContent = `已完成 ${percent}%`;
+                }
                 document.querySelector('.progress-actions').style.display = 'block';
                 document.querySelector('.start-buttons').style.display = 'none';
             } else {
-                document.getElementById('resumeButton').style.display = 'none';
+                const resumeEl = document.getElementById('resumeButton');
+                if (resumeEl) resumeEl.style.display = 'none';
+                const resumeProgress = document.getElementById('resumeProgress');
+                if (resumeProgress) resumeProgress.style.display = 'none';
                 document.querySelector('.progress-actions').style.display = 'none';
                 document.querySelector('.start-buttons').style.display = 'flex';
             }
@@ -2812,6 +2887,21 @@ if (googleSignInBtn) {
                     nextBtn.removeEventListener('click', startReviewWrong); 
                     nextBtn.addEventListener('click', nextProb); 
 
+                    // remember current unit info for resume label
+                    try {
+                        const clickedItem = Array.from(document.querySelectorAll('.dropdown-item'))
+                          .find(el => el.dataset.json === jsonPath);
+                        if (clickedItem) {
+                            window.currentUnitName = clickedItem.textContent.trim();
+                        } else {
+                            window.currentUnitName = jsonPath.split('/')?.pop()?.replace(/\.json$/,'') || '單元';
+                        }
+                        window.currentJsonPath = jsonPath;
+                    } catch (_) {
+                        window.currentUnitName = '單元';
+                        window.currentJsonPath = jsonPath;
+                    }
+
                     $.getJSON(jsonPath)
                         .done(function (jsonData) {
                             try {
@@ -3154,6 +3244,28 @@ if (googleSignInBtn) {
 
                 done = (Array.isArray(prog.done) && prog.done.length === numOfProbs) ? prog.done : new Array(numOfProbs).fill(false);
                  console.log("[resumeButton] Loaded 'done' array:", JSON.parse(JSON.stringify(done)));
+
+                // restore unit info if available
+                if (prog.unitName) { window.currentUnitName = prog.unitName; }
+                if (prog.jsonPath) { window.currentJsonPath = prog.jsonPath; }
+
+                // update resume label and progress in case UI is visible
+                try {
+                    const unitNameText = (prog.unitName || window.currentUnitName || '單元');
+                    const total = Array.isArray(prog.data) ? prog.data.length : 0;
+                    const completed = Array.isArray(prog.done) ? prog.done.filter(Boolean).length : 0;
+                    const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+                    const resumeEl = document.getElementById('resumeButton');
+                    if (resumeEl) resumeEl.textContent = `繼續 ${unitNameText}`;
+                    const resumeProgress = document.getElementById('resumeProgress');
+                    const fill = document.getElementById('resumeProgressFill');
+                    const text = document.getElementById('resumeProgressText');
+                    if (resumeProgress && fill && text) {
+                        resumeProgress.style.display = 'flex';
+                        fill.style.width = `${percent}%`;
+                        text.textContent = `已完成 ${percent}%`;
+                    }
+                } catch (e) { }
 
                 resetPreloadState();
                 initializeQuestionQueue();
@@ -3688,7 +3800,7 @@ if (googleSignInBtn) {
             const savedWrongList = JSON.parse(JSON.stringify(wrongList));
 
             // Save progress to Firebase (Firebase only)
-            const progressData = { data, x, done, correct, wrong, score, correctList: savedCorrectList, wrongList: savedWrongList };
+            const progressData = { data, x, done, correct, wrong, score, correctList: savedCorrectList, wrongList: savedWrongList, unitName: window.currentUnitName || undefined, jsonPath: window.currentJsonPath || undefined };
             
             if (window.currentUserUid) {
                 // Save to Firebase if user is logged in
